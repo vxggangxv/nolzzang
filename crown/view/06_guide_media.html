@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+
+ <head>
+	<meta charset="UTF-8">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/> -->
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=9"/> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1"/>
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<title>크라운</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="http://static.nolzzang.com/crown/css/reset.css">
+	<link rel="stylesheet" href="http://static.nolzzang.com/crown/css/layout.css">
+	<link href="http://static.nolzzang.com/crown/css/jquery.bxslider.css" rel="stylesheet">
+	<link href="http://static.nolzzang.com/crown/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css">
+
+
+	<!-- script -->
+	<script type="text/javascript" src="http://static.nolzzang.com/crown/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="http://static.nolzzang.com/crown/js/jquery.transit.min.js"></script>
+	<script type="text/javascript" src="http://static.nolzzang.com/crown/js/jquery.easing.1.3.min.js"></script>
+	<script type="text/javascript" src="http://static.nolzzang.com/crown/js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="http://static.nolzzang.com/crown/js/select.js"></script>
+	<script type="text/javascript" src="http://static.nolzzang.com/crown/js/custom.js"></script>
+	<script type="text/javascript" src="http://static.nolzzang.com/crown/js/crown.js"></script>
+	<script type="text/javascript" src="http://static.nolzzang.com/2sin/js/placeholders.js"></script>
+	<script type="text/javascript" src="http://static.nolzzang.com/crown/js/jquery.jplayer.min.js"></script>
+	<!-- <script src="../src/js/css_browser_selector.min.js"></script> -->
+
+	<!--공통-->
+	<script type="text/javascript" src="http://static.nolzzang.com/common/js/follower.js?ver=20"></script>
+	<script type="text/javascript" src="http://static.nolzzang.com/common/js/common.js?ver=20"></script>
+	
+	<!-- Android icon -->
+	<link rel="shortcut icon" href="http://img.nolzzang.com/crown/images/book_icon128x128.png" />
+	<!-- iPhone icon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="http://img.nolzzang.com/crown/images/book_icon57x57.png" />
+	<!-- iPad icon -->
+	<link rel="apple-touch-icon" sizes="72x72" href="http://img.nolzzang.com/crown/images/book_icon72x72.png" />
+	<!-- iPhone icon(Retina) -->
+	<link rel="apple-touch-icon" sizes="114x114" href="http://img.nolzzang.com/crown/images/book_icon114x114.png" />
+	<!-- iPad icon(Retina) -->
+	<link rel="apple-touch-icon" sizes="144x144" href="http://img.nolzzang.com/crown/images/book_icon144x144.png" />
+
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+
+ </head>
+
+ <body>
+	<!--top-->
+	<div id="top">
+		<div class="top_menu">
+			<h1>
+				<a href="http://www.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_nolzzang_logo.jpg" alt="놀짱배너"></a>
+				<a href="#" class="top_crown" style="background-position:0 -45px;">&gt;무사</a>
+				<a href="http://musa.nolzzang.com" class="top_musa">&gt;무사</a>                
+				<a href="http://aggro.nolzzang.com" class="top_aggro">&gt;어그로</a>
+				<a href="http://book.nolzzang.com" class="top_book">&gt;천서세계</a>
+				<a href="http://1000king.nolzzang.com" class="top_king">&gt;천왕온라인</a>
+				
+			</h1>
+			<ul class="login_menu">
+				<li class="bg_none"><a href="http://www.nolzzang.com/home/mypage/mypage3.php" title="마이페이지">마이페이지</a></li>
+				<li><a href="http://www.nolzzang.com/home/cash.php" title="캐시충전">캐시충전</a></li>
+				<li><a href="http://www.nolzzang.com/home/customer.php" title="고객센터">고객센터</a></li>
+				<li class="bg_none"><a href="http://www.nolzzang.com/home/login.php?rtn=FgpXU3oOcT9GJ1FMUBAREllZIU85cEIvTgwWERMbDA==" title="로그인"><img src="http://img.nolzzang.com/aggro/images/top_btn_login.jpg" alt="로그인"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--top end-->
+	
+	<!--서버창-->
+	<div id="sever_popup" style="display:none">
+		<div id="server">
+			<div class="close">
+				<a href="#"><img src="http://img.nolzzang.com/crown/images/btn_popup_close.png" alt="닫기" /></a>
+			</div>
+			<div id="recommend_s">
+				<!--<h4>추천서버</h4>-->
+				<div id="btn_recommend_sv"><a href="">크라운 1서버</a></div>
+			</div>
+			<div id="recently_s">
+				<!--<h4>최근접속서버</h4>-->
+				<div id="btn_recently_sv"><a href="">크라운 2서버</a></div>
+			</div>
+			<div id="sever_body">
+				<!--<h4>서버리스트</h4>-->
+				<ul>
+					<li class="new_server">
+						<div id="icon_new"><img src="http://img.nolzzang.com/crown/images/icon_new.png" alt="new" /></div>
+						<a href="#">크라운 1서버</a>
+					</li>
+					<li class="old_server"><a href="#">크라운 1서버</a></li>
+					<li class="old_server"><a href="#">크라운 2서버</a></li>
+					<li class="old_server"><a href="#">크라운 3서버</a></li>
+					<li class="old_server"><a href="#">크라운 4서버</a></li>
+					<li class="old_server"><a href="#">크라운 5서버</a></li>
+					<li class="old_server"><a href="#">크라운 6서버</a></li>                                                                                                                                              
+				</ul>
+				<div id="page_rol">
+					<p><a href="#"><img src="http://img.nolzzang.com/crown/images/s_left_btn.png" /> 이전페이지</a><img src="http://img.nolzzang.com/crown/images/vertical_line2.jpg" /><a href="#">다음페이지 <img src="http://img.nolzzang.com/crown/images/s_right_btn.png" /></a></p>
+				</div>
+			</div>
+		</div>
+		<div id="server_bg"></div>
+	</div>
+	<!--서버창 끝-->
+
+	<div id="wrapper">
+	  <div id="header">
+	    <h1><a href="#"><img src="http://img.nolzzang.com/crown/images/logo.png" /></a></h1>
+	    <!--GNB-->
+	    <ul id="gnb">
+	      <li class="m_l0"><a href="01_notice_list.html">게임소식</a>
+	        <ul class="sub_menu">
+	          <li><a href="01_notice_list.html">공지사항</a></li>
+	          <li><a href="02_event_list.html">이벤트</a></li>
+            </ul>
+          </li>
+	      <li><a href="03_info.html">게임정보</a>
+	        <ul class="sub_menu">
+	          <li><a href="03_info.html">게임소개</a></li>
+	          <li><a href="04_story.html">게임배경</a></li>
+	          <li><a href="05_job.html">직업소개</a></li>
+            </ul>
+          </li>
+	      <li><a href="06_guide.html">게임가이드</a>
+	        <ul class="sub_menu">
+	          <li><a href="06_guide.html">게임가이드</a></li>
+            </ul>
+          </li>
+	      <li class="m_l300"><a href="07_free_list.html">커뮤니티</a>
+	        <ul class="sub_menu">
+	          <li><a href="07_free_list.html">자유게시판</a></li>
+	          <li><a href="08_strategy_list.html">공략게시판</a></li>
+	          <li><a href="09_screen_list.html">스크린샷</a></li>
+            </ul>
+          </li>
+	      <li><a href="10_shop.html">상점</a>
+	        <ul class="sub_menu">
+	          <li><a href="10_shop.html">수정구매</a></li>
+            </ul>
+          </li>
+	      <li class="m_r0"><a href="">고객지원</a>
+	        <ul class="sub_menu">
+	          <li><a href="">자주묻는질문</a></li>
+	          <li><a href="">문의하기</a></li>
+	          <li><a href="">운영정책</a></li>
+            </ul>
+          </li>
+        </ul>
+	    <!--메인배너-->
+	    <div id="main_banner">
+	      <ul class="bxslider">
+	        <li style="background-image:url(http://img.nolzzang.com/crown/images/main_1.jpg); width:1920px; height:777px;">
+            	<div><a href="#"><img src="http://img.nolzzang.com/crown/images/banner_bg.png" width="1100" height="458" style="margin:74px 0 0 410px;"/></a></div>
+            </li>
+	        <li style="background-image:url(http://img.nolzzang.com/crown/images/main_2.jpg); width:1920px; height:777px;">
+            	<div><a href="#"><img src="http://img.nolzzang.com/crown/images/banner_bg.png" width="1100" height="458" style="margin:74px 0 0 410px;"/></a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+			<div id="container">
+				<div id="left_contents">
+                    <!--게임스타트-->
+                    <div id="game_start">
+                        <a href="#"><img src="http://img.nolzzang.com/crown/images/start_bt.png" onmouseover="this.src='http://img.nolzzang.com/crown/images/start_bt_ov.png'" onmouseout="this.src='http://img.nolzzang.com/crown/images/start_bt.png'" border="0"></a>
+                    </div>
+					<div id="login">
+					<div id="login_contents">
+						<!--놀짱 로그인-->
+						<div style="display:none">
+							<!--로그아웃일때 노출-->
+							<form method="post" name="iform" id="out">
+							<input type="hidden" name="rtn" value="FgpXU3oOcTxOL0gNEBESBFlCLkZwPU4tDEsRExtR"/>
+							<input type="hidden" name="login_site" value="놀짱"/>
+							<div id="out">
+								<div class="select open" style="width:130px; position:absolute; top:20px; left:15px; z-index:2;">
+									<span class="ctrl"><img src="http://img.nolzzang.com/book/images/select.jpg" /></span>
+									<button type="button" class="myValue">놀짱ID 로그인</button>
+									<ul class="aList">
+										<li><a href="javascript:member.login_site('놀짱');">놀짱ID 로그인</a></li>
+										<li><a href="javascript:member.login_site('다게임');">다게임ID 로그인</a></li>
+									</ul>
+								</div>
+								<!--자동로그인-->
+								<div id="auto_check"><input type="checkbox" id="auto_login" /><label for="auto_login" />자동 로그인</label></div>
+
+								<div id="id_pw">
+									<input type="text" id="userid" name="userid" class="input_style" placeholder="아이디" style="width:128px; border-bottom:none" onkeypress="if(event.keyCode==13){ common.login(); event.returnValue=false; }" /><br/>
+									<input type="password" id="passwd" name="passwd" class="input_style" placeholder="비밀번호" style="width:128px" onkeypress="if(event.keyCode==13){ common.login(); event.returnValue=false; }" />
+								</div>
+								<div id="btn_login">
+									<a href="javascript:common.login();">로그인</a>
+								</div>
+								<ul class="login_menu">
+									<li class="id_sc"><a href="javascript:find.pop('id');">아이디찾기</a></li>
+									<li class="pw_sc"><a href="javascript:find.pop('pw');">비밀번호찾기</a></li>
+								</ul>
+                                <div class="login_signup">
+	                                <a href="#"><img src="http://img.nolzzang.com/crown/images/signup.png" /></a>
+                                </div>
+								<div class="sns_login">
+									<p>	SNS아이디 로그인 
+										<a href="#"><img src="http://img.nolzzang.com/crown/images/i_naver.png" title="네이버 아이디 로그인"></a>
+										<a href="#"><img src="http://img.nolzzang.com/crown/images/i_cacao.png" title="카카오톡 아이디 로그인"></a>
+										<a href="#"><img src="http://img.nolzzang.com/crown/images/i_twiter.png" title="트위터 아이디 로그인"></a>
+										<a href="#"><img src="http://img.nolzzang.com/crown/images/i_google.png" title="구글플러스 아이디 로그인"></a>
+										<a href="#"><img src="http://img.nolzzang.com/crown/images/i_daum.png" title="다음 아이디 로그인"></a>
+									</p>
+								</div>
+							</div>
+							</form>
+						</div>
+
+					<div id="login_contents2">
+						<!--놀짱 로그인-->
+						<div>
+							<!--로그인일때 노출-->
+							<p class="login_text">놀짱 아이디로 로그인 중입니다.</p>
+							<div id="in">
+								<p id="thanks"><span class="font_yellow1">mykasya</span>님 안녕하세요</p>
+								<div id="user_info">
+									<p>
+										놀짱캐시 : <span class="font_red1">1,000</span> <img src="http://img.nolzzang.com/book/images/icon_cash.png" width="19" height="19" border="0" alt="캐시" /><br/>
+										최근접속서버 : <a href="">서버이름</a><br/>
+										최근로그인 : <span class="font_white">2016.09.30</span>
+									</p>
+								</div>
+								<ul class="login_menu">
+									<li class="btn_customer"><a href="http://www.nolzzang.com/home/customer.php" class="font_white">고객센터</a></li>
+									<li class="btn_mypage"><a href="http://www.nolzzang.com/home/mypage/mypage3.php">마이페이지</a></li>
+									<li class="btn_logout"><a href="https://secu.nolzzang.com/member/logout.php?rtn=FgpXU3oOcTxOL0gNEBESBFlCLkZwPU4tDEsRExtR">로그아웃</a></li>
+								</ul>
+								<div class="cash_info">
+                                	<a href=""><img src="http://img.nolzzang.com/crown/images/btn_charge.jpg" alt="캐시충전" /></a>
+                                	<a href=""><img src="http://img.nolzzang.com/crown/images/btn_charge_list.jpg" alt="무료캐시충전"  /></a>
+                                </div>
+							</div>
+						</div>
+					</div>
+
+						<!--네이버 로그인-->
+						<div style="display:none">
+							<div id="naver_login"><a href="javascript:common.login_naver('FgpXU3oOcTxOL0gNEBESBFlCLkZwPU4tDEsRExtR');"><img src="http://img.nolzzang.com/book/images/naver_loigin.png" alt="네이버 로그인" /></a></div>
+							<p id="n_login_text">
+							네이버 회원이시면<br />
+							별도의 회원가입 없이<br />
+							게임을 플레이 하실 수 있습니다.
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<!--게임머니-->
+				<div id="cash_banner">
+                    <div class="buy"><a href="#"><img src="http://img.nolzzang.com/crown/images/left_1.png" onmouseover="this.src='http://img.nolzzang.com/crown/images/left_1_ov.png'" onmouseout="this.src='http://img.nolzzang.com/crown/images/left_1.png'" border="0"></a></div>
+                    <div class="cash"><a href="#"><img src="http://img.nolzzang.com/crown/images/left_2.png" onmouseover="this.src='http://img.nolzzang.com/crown/images/left_2_ov.png'" onmouseout="this.src='http://img.nolzzang.com/crown/images/left_2.png'" border="0"></a></div>
+                    <div class="qa"><a href="#"><img src="http://img.nolzzang.com/crown/images/left_3.png" onmouseover="this.src='http://img.nolzzang.com/crown/images/left_3_ov.png'" onmouseout="this.src='http://img.nolzzang.com/crown/images/left_3.png'" border="0"></a></div>
+					<div class="cs"><a href="#"><img src="http://img.nolzzang.com/crown/images/left_4.png" onmouseover="this.src='http://img.nolzzang.com/crown/images/left_4_ov.png'" onmouseout="this.src='http://img.nolzzang.com/crown/images/left_4.png'" border="0"></a></div>
+				</div>		
+			</div>
+        	<!--서브 우측 컨텐츠-->
+			<div id="sub_top">
+				<h2>멀티미디어</h2>
+				<p id="navi">홈 > 게임가이드 > <span>멀티미디어</span></p>
+			</div>
+			<div id="sub_contents">
+				<div id="sub_main">
+					<div id="game_story">
+                        <!-- <object type="text/html" width="760" height="428" data="https://www.youtube.com/embed/NO6JbBTmJu4"></object> -->
+
+                        <img src="http://img.nolzzang.com/crown/images/media_tap1.jpg" alt="크라운 티저 동영상" /><br/>
+                        <video width="760" height="428" controls autoplay="autoplay" style="background: #000;">
+												  <source src="http://static.nolzzang.com/crown/video/crown_teaser.mp4" type="video/mp4">
+												  <source src="http://static.nolzzang.com/crown/video/crown_teaser.webm" type="video/webm">
+												  <source src="http://static.nolzzang.com/crown/video/crown_teaser.ogg" type="video/ogg">
+												  <div style="background: none;">
+												  	Your browser does not support the video tag. click down Link
+												  	브라우저 버전이 너무 낮습니다. 최신브라우저로 업그레이드 해주시기바랍니다.
+												  	<a href="https://www.google.co.kr/chrome/browser/desktop/" target="_blank">크롬다운로드</a>
+												  </div>
+												</video>
+												
+												<img src="http://img.nolzzang.com/crown/images/media_tap1.jpg" alt="크라운 티저 동영상" /><br/>
+                        <video width="760" height="428" controls autoplay="autoplay" style="background: #000;">
+												  <source src="http://static.nolzzang.com/crown/video/crown_making.mp4" type="video/mp4">
+												  <source src="http://static.nolzzang.com/crown/video/crown_making.webm" type="video/webm">
+												  <source src="http://static.nolzzang.com/crown/video/crown_making.ogg" type="video/ogg">
+											  	<div style="background: none;">
+												  Your browser does not support the video tag. click down Link
+												  브라우저 버전이 너무 낮습니다. 최신브라우저로 업그레이드 해주시기바랍니다.
+												  <a href="https://www.google.co.kr/chrome/browser/desktop/" target="_blank">크롬다운로드</a>
+												  </div>
+												</video>
+
+                        <!-- <img src="http://img.nolzzang.com/crown/images/media_tap1.jpg" alt="크라운 티저 동영상" /><br/>
+                        <iframe width="760" height="428" src="https://www.youtube.com/embed/NO6JbBTmJu4" frameborder="0" allowfullscreen></iframe>
+                        <br/>
+                        <br/>
+                        <br/>                    
+                        <img src="http://img.nolzzang.com/crown/images/media_tap2.jpg" alt="ost 제작 메이킹 동영상" /><br/>
+                        <iframe width="760" height="428" src="https://www.youtube.com/embed/AV3WZSxHUKM" frameborder="0" allowfullscreen></iframe>                    
+                        <br/> 
+                        <br/>                                          -->
+                    </div>                    
+				</div>
+			</div>
+        <!-- 날개배너-->
+        <div style="width:118px; height:200px; position:absolute; top: -27px;right: -138px; ">
+	        <a href="#"><img src="http://img.nolzzang.com/crown/images/wing.png"></a>
+        </div>       
+	</div>
+	<!--footer-->
+		<div id="footer">
+			<div id="ft_contents">
+				<h3><img src="http://img.nolzzang.com/crown/images/footer_logo.png" width="89" border="0" alt="이비즈네트웍스" /></h3>
+				<ul>
+					<li><a href="">이용약관</a></li>
+					<li><a href="">개인정보 처리방침</a></li>
+					<li><a href="">청소년 보호정책</a></li>
+					<li><a href="">운영정책</a></li>
+					<li><a href="">캐시정책</a></li>
+					<li><a href="">제휴문의</a></li>
+					<li><a href="">고객센터</a></li>
+					<li class="last"><a href="">문의 및 신고하기</a></li>
+				</ul>
+				<div id="company_info">
+					<p>
+					(주)이비즈 네트웍스  l  대표이사 : 박기범  l  서울특별시 강남구 삼성동 695-30 모노타워  l  고객센터 1544-2950<br />
+					E-mail:help@nolzzang.co.kr  l  사업자등록번호 : 220-87-30865  l  부가통신사업신고번호 : 강남-11501호
+					</P>
+					<p class="copyright">Copyright ⓒ <span class="font_orange1">Ebiznetworks</span> All Rights Reserved.</p>
+				</div>
+				<div id="rating">
+					<img src="http://img.nolzzang.com/crown/images/19_mark.jpg" alt="청소년 이용불가" />
+				</div>
+			</div>
+		</div>
+ </body>
+</html>
