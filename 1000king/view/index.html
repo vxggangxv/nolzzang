@@ -1,0 +1,788 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title>천왕온라인</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Cache-Control" content="No-Cache"/>
+<meta http-equiv="Pragma" content="No-Cache"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="imagetoolbar" content="false"/>
+<meta name="author" content="놀짱"/>
+<meta name="description" content="이비즈네트웍스제작, 웹RPG게임, 게임정보 소식, 커뮤니티, 가이드 제공 놀짱"/>
+<meta name="keywords" content=" 게임,겜,게임포털,웹게임,성인,놀짱,놀짱닷컴,온라인,온라인웹게임,천왕"/>
+<meta name="classification" content="웹게임,놀짱"/>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="천왕온라인">
+<meta property="og:description" content="이비즈네트웍스제작, 웹RPG게임, 게임정보 소식, 커뮤니티, 가이드 제공 놀짱">
+<meta property="og:image" content="http://img.nolzzang.com/1000king/images/king_icon128x128.png">
+<meta property="og:url" content="http://1000king.nolzzang.com">
+
+<link rel="shortcut icon" href="http://img.nolzzang.com/www/images/common/nolzzang_favicon.ico" />
+<link rel="stylesheet" href="http://static.nolzzang.com/1000king/css/reset.css" type="text/css"/>
+<!-- <link rel="stylesheet" href="http://static.nolzzang.com/1000king/css/layout.css?ver=20170213134230" type="text/css"/> -->
+<link rel="stylesheet" href="	../src/css/layout.css" />
+
+<!--공통-->
+<script type="text/javascript" src="http://static.nolzzang.com/1000king/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://static.nolzzang.com/1000king/js/bjqs-1.3.min.js" ></script>
+<!-- <script type="text/javascript" src="http://static.nolzzang.com/common/js/follower.js?ver=30"></script>
+<script type="text/javascript" src="http://static.nolzzang.com/common/js/common.js?ver=30"></script>
+공통
+<script type="text/javascript" src="http://static.nolzzang.com/1000king/js/tab.js"></script>
+<script type="text/javascript" src="http://static.nolzzang.com/1000king/js/placeholders.js"></script>
+<script type="text/javascript" src="http://static.nolzzang.com/1000king/js/scroll_top.js" ></script>
+<script type="text/javascript" src="http://static.nolzzang.com/1000king/js/cheonwang.js?ver=20170213"></script>
+<script type="text/javascript" src="http://static.nolzzang.com/1000king/js/EJ_minislide.js?ver=20170213"></script> -->
+<!-- Android icon -->
+<link rel="shortcut icon" href="http://img.nolzzang.com/1000king/images/king_icon128x128.png" />
+<!-- iPhone icon -->
+<link rel="apple-touch-icon" sizes="57x57" href="http://img.nolzzang.com/1000king/images/king_icon57x57.png" />
+<!-- iPad icon -->
+<link rel="apple-touch-icon" sizes="72x72" href="http://img.nolzzang.com/1000king/images/king_icon72x72.png" />
+<!-- iPhone icon(Retina) -->
+<link rel="apple-touch-icon" sizes="114x114" href="http://img.nolzzang.com/1000king/images/king_icon114x114.png" />
+<!-- iPad icon(Retina) -->
+<link rel="apple-touch-icon" sizes="144x144" href="http://img.nolzzang.com/1000king/images/king_icon144x144.png" />
+<!---에디터-->
+<!-- <script type="text/javascript" src="/webnote/webnote.js"></script> -->
+<script type="text/javascript">
+$(function(){
+	/*메뉴노출*/
+	$('#menu_box').mouseover(function() {
+		$('#sub_menu').show();
+	}).mouseout(function() {
+		$('#sub_menu').hide();
+	});
+	$('#gnb').mouseover(function() {
+		$('#sub_menu').hide();
+	});
+
+	/*서브메뉴 오버 */
+	
+	/*메인페이지 배너*/
+	$('#main_banner').bjqs({
+		height      : 440,
+		width       : 1100,
+		responsive  : true,
+		automatic	: true,
+		showcontrols : true,
+		centermarkers : false
+	});
+
+	//서버레이어
+/*	$("#server").scrollFollower({pageAlign:"center",pageWidth:920,type:"left",topMargin:($(window).height()-$("#server").height())/2,minTop:($(window).height()-$("#server").height())/2,margin:20,speed:1200,easing:"swing",zindex:9999});
+
+		minislide.start();*/
+	
+	//제휴문의
+	/*$("#jehu").scrollFollower({pageAlign:"center",pageWidth:920,type:"left",topMargin:($(window).height()-$("#jehu").height())/2,minTop:($(window).height()-$("#jehu").height())/2,margin:20,speed:1200,easing:"swing",zindex:9999});*/
+
+
+			
+	
+});
+
+var base_main = "http://www.nolzzang.com";
+var base_request = "FgpXU3oOcW8RcBNIFxAZUE1MLFskP08nDUARE1E=";
+var mcash = "";
+var nov = "";
+var dagame_agree = "";
+var uip = "61.74.233.194";
+var login_mode = "";
+</script>
+ </head>
+
+ <body>
+	<!-- Top 버튼 -->
+	<div style="display:scroll; position:fixed; bottom:5px; right:5px; z-index:9999; cursor:pointer">
+		<a onclick="go_top();" title="Top"><img src="http://img.nolzzang.com/1000king/images/btn_top.gif" alt="top" /></a>
+	</div>
+
+	<!--놀짱-->
+		<!--top-->
+	<div id="top">
+		<div class="top_menu">
+			<h1>
+				<a href="http://www.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_nolzzang_logo.jpg" alt="놀짱배너"></a>
+								<a href="http://crown.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_crown.jpg" alt="크라운"></a>
+								<a href="http://musa.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_musa.jpg" alt="무사"></a>
+								<a href="http://aggro.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_aggro.jpg" alt="어그로"></a>
+								<a href="http://book.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_book.jpg" alt="천서"></a>
+								<a href="http://1000king.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_king.jpg" alt="천왕"></a>
+							</h1>
+			<ul class="login_menu">
+				<li class="bg_none"><a href="http://www.nolzzang.com/home/mypage/mypage3.php" title="마이페이지">마이페이지</a></li>
+				<li><a href="http://www.nolzzang.com/home/cash.php" title="캐시충전">캐시충전</a></li>
+				<li><a href="http://www.nolzzang.com/home/customer.php" title="고객센터">고객센터</a></li>
+				<li class="bg_none">
+										<a href="http://www.nolzzang.com/home/login.php?rtn=FgpXU3oOcW8RcBNIFxAZUE1MLFskP08nDUARE1E=" title="로그인"><img src="http://img.nolzzang.com/www/images/top_btn_login.jpg" alt="로그인" /></a>
+									</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--top end-->
+
+	<!--
+	
+	<div id="top">
+		<div class="top_menu">
+			<h1>
+				<a href="http://www.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_nolzzang_logo.jpg" alt="놀짱배너"></a>
+				<a href="#" class="top_crown" style="background-position:0 -45px;">&gt;무사</a>
+				<a href="http://musa.nolzzang.com" class="top_musa">&gt;무사</a>                
+				<a href="http://aggro.nolzzang.com" class="top_aggro">&gt;어그로</a>
+				<a href="http://book.nolzzang.com" class="top_book">&gt;천서세계</a>
+				<a href="http://1000king.nolzzang.com" class="top_king">&gt;천왕온라인</a>
+				
+			</h1>
+			<ul class="login_menu">
+				<li class="bg_none"><a href="http://www.nolzzang.com/home/mypage/mypage3.php" title="마이페이지">마이페이지</a></li>
+				<li><a href="http://www.nolzzang.com/home/cash.php" title="캐시충전">캐시충전</a></li>
+				<li><a href="http://www.nolzzang.com/home/customer.php" title="고객센터">고객센터</a></li>
+				<li class="bg_none"><a href="http://www.nolzzang.com/home/login.php?rtn=FgpXU3oOcT9GJ1FMUBAREllZIU85cEIvTgwWERMbDA==" title="로그인"><img src="http://img.nolzzang.com/aggro/images/top_btn_login.jpg" alt="로그인"></a></li>
+			</ul>
+		</div>
+	</div>
+
+	-->
+
+
+
+	<!--top end-->
+
+	<div id="wrapper">
+		<div id="header">
+
+			<div id="menu_box" style="position:relative;z-index:9000">
+			<!--메인메뉴-->
+			<div id="gnb">
+				<h1>
+					<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="230" height="310" id="FlashID" title="천왕온라인">
+						<param name="movie" value="http://1000king.nolzzang.com/home/flash/logo.swf?ver=2" />
+						<param name="quality" value="high" />
+						<param name="menu" value="false" />
+						<param name="wmode" value="transparent" />
+						<param name="swfversion" value="8.0.35.0" />
+						<param name="allowScriptAccess" value="always" />
+						<!--[if !IE]>-->
+						<object type="application/x-shockwave-flash" data="http://1000king.nolzzang.com/home/flash/logo.swf?ver=3" width="230" height="310" title="천왕온라인">
+						<!--<![endif]-->
+							<param name="quality" value="high" />
+							<param name="menu" value="false" />
+							<param name="wmode" value="transparent" />
+							<param name="swfversion" value="8.0.35.0" />
+							<param name="allowScriptAccess" value="sameDomain" />
+							<p><a href="#"><img src="http://img.nolzzang.com/1000king/images/logo.png" alt="천왕온라인" /></a></p>
+					   <!--[if !IE]>-->
+						</object>
+						<!--<![endif]-->
+					</object>
+				</h1>
+				<ul>
+					<li class="game_news"><a href="http://1000king.nolzzang.com/home/list.php?brd=Ty9XKSNE" title="게임소식">게임소식</a></li>
+					<li class="game_info"><a href="http://1000king.nolzzang.com/home/game_info.php" title="게임정보">게임정보</a></li>
+					<li class="ranking"><a href="http://1000king.nolzzang.com/home/ranking01_01.php" title="랭킹">랭킹</a></li>
+					<li class="shop"><a href="http://1000king.nolzzang.com/home/cash_shop.php" title="상점">상점</a></li>
+					<li class="comunity"><a href="http://1000king.nolzzang.com/home/list.php?brd=RzJGJQ==" title="커뮤니티">커뮤니티</a></li>
+					<li class="customer"><a href="http://www.nolzzang.com/home/board/list.php?brd=RyFS" title="고객센터">고객센터</a></li>
+				</ul>
+			</div>
+
+			<!--서브메뉴-->
+			<div id="sub_menu" style="display:none">
+				<dl>
+					<dt class="hidden">서브메뉴</dt>
+					<dd>
+						<ul class="game_news">
+							<li><a href="http://1000king.nolzzang.com/home/list.php?brd=Ty9XKSNE" title="공지사항">공지사항</a></li>
+							<li><a href="http://1000king.nolzzang.com/home/list.php?brd=RDZGLjQ=" title="이벤트">이벤트</a></li>
+						</ul>
+						<ul class="game_info">
+							<li><a href="http://1000king.nolzzang.com/home/game_info.php" title="게임소개">게임소개</a></li>
+							<li><a href="http://1000king.nolzzang.com/home/game_job.php" title="직업소개">직업소개</a></li>
+							<li><a href="http://1000king.nolzzang.com/home/game_beginner.php" title="초보자가이드">초보자가이드</a></li>
+							<li><a href="http://1000king.nolzzang.com/home/game_guide.php" title="게임가이드">게임가이드</a></li>
+						</ul>
+						<ul class="ranking">
+							<li><a href="http://1000king.nolzzang.com/home/ranking01_01.php" title="전투력">전투력</a></li>
+							<li><a href="http://1000king.nolzzang.com/home/ranking02_01.php" title="비무장">비무장</a></li>
+							<li><a href="http://1000king.nolzzang.com/home/ranking03_01.php" title="수련">수련</a></li>
+							<li><a href="http://1000king.nolzzang.com/home/ranking04_01.php" title="사회">사회</a></li>
+						</ul>
+						<ul class="shop">
+							<li><a href="http://1000king.nolzzang.com/home/cash_shop.php" title="금자구매">금자구매</a></li>
+							<li><a href="http://1000king.nolzzang.com/home/shop_guide.php" title="금자가이드">금자가이드</a></li>
+						</ul>
+						<ul class="comunity">
+							<li><a href="http://1000king.nolzzang.com/home/list.php?brd=RzJGJQ==" title="자유게시판">자유게시판</a></li>
+							<li><a href="http://1000king.nolzzang.com/home/list.php?brd=RiFOJQ==" title="공략게시판">공략게시판</a></li>
+							<li><a href="http://1000king.nolzzang.com/home/list.php?brd=UiNRJSVP" title="스크린샷">스크린샷</a></li>
+							<li><a href="http://1000king.nolzzang.com/home/list.php?brd=Qi9WLjRTBw==" title="문파/국가게시판">문파/국가</a></li>
+						</ul>
+						<ul class="customer">
+							<li><a href="http://www.nolzzang.com/home/board/list.php?brd=RyFS&cate2=%EA%B2%8C%EC%9E%84&catefaq=%EC%B2%9C%EC%99%95" title="자주묻는질문">자주묻는질문</a></li>
+							<li><a href="http://www.nolzzang.com/home/board/report.php?category1=%EC%B2%9C%EC%99%95%EC%98%A8%EB%9D%BC%EC%9D%B8" title="문의사항">문의사항</a></li>
+							<li><a href="http://www.nolzzang.com/home/policy1.php?val=1000king" title="운영정책">운영정책</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			</div>
+
+
+			<!--메인배너-->
+			<div id="main_banner" style="position:relative">
+				<!--배너 이미지-->
+				<ul class="bjqs">
+					<!--
+					<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=EncQdnk=" alt="VIP 혜택"><img src="http://img.nolzzang.com/1000king/images/event/cash/main.png" border="0" alt="VIP 혜택" /></a></li>
+					-->
+					
+										<!--<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3cWcHg=" alt="천왕온라인"><img src="http://img.nolzzang.com/1000king/images/banner/main_08.png" border="0" alt="천왕온라인" /></a></li>-->
+					<!--<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3MVc3A=" alt="천왕온라인"><img src="http://img.nolzzang.com/1000king/images/banner/main_01.png" border="0" alt="천왕온라인" /></a></li>-->
+					<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3MVc3I=" alt="천왕온라인"><img src="http://img.nolzzang.com/1000king/images/banner/main_02.png" border="0" alt="천왕온라인" /></a></li>
+					<!--<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3MVc3M=" alt="천왕온라인"><img src="http://img.nolzzang.com/1000king/images/banner/main_03.png" border="0" alt="천왕온라인" /></a></li>-->
+					<!--<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3MVc3Q=" alt="천왕온라인"><img src="http://img.nolzzang.com/1000king/images/banner/main_04.png" border="0" alt="천왕온라인" /></a></li>-->
+					<!--<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3MVc3U=" alt="천왕온라인"><img src="http://img.nolzzang.com/1000king/images/banner/main_05.png" border="0" alt="천왕온라인" /></a></li>-->
+					<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3MVc3Y=" alt="천왕온라인"><img src="http://img.nolzzang.com/1000king/images/banner/main_06.png" border="0" alt="천왕온라인" /></a></li>
+					<!--<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3MVc3c=" alt="천왕온라인"><img src="http://img.nolzzang.com/1000king/images/banner/main_07.png" border="0" alt="천왕온라인" /></a></li>-->
+
+					<!--<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3EaeXI=" alt="천왕온라인"><img src="http://img.nolzzang.com/1000king/images/main_02.png" border="0" alt="천왕온라인" /></a></li>
+					<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3Ead3g=" alt="천왕온라인 캐릭터선점 이벤트"><img src="http://img.nolzzang.com/1000king/images/main_01.png" border="0" alt="천왕온라인 캐릭터선점 이벤트" /></a></li>-->
+					<li><a href="http://1000king.nolzzang.com/home/list.php?brd=RDZGLjQ=" alt="천왕온라인 그랜드 오픈"><img src="http://img.nolzzang.com/1000king/images/main_title.png" border="0" alt="천왕온라인 그랜드 오픈" /></a></li>
+				</ul>
+
+				
+
+				<div id="btn_facebook">
+					<a href="https://www.facebook.com/nolzzang1" target="_blank" title="천왕 페이스북"><img src="http://img.nolzzang.com/1000king/images/btn_facebook.png" width="173" height="45" border="0" alt="천왕 페이스북" /></a>
+				</div>
+			</div>
+
+						<!----유입수 아이프레임---->
+			<div style="position:absolute; left:50%; top:5px;">
+				<div style="width:330px; position:absolute; left:580px;">
+					<iframe src="http://www.nolzzang.com/home/common/ebiz_counter_ver2.php?cate=1000king&pvalue=Lw==" width="330" height="100" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" ></iframe>
+				</div>
+			</div>
+			<!----유입수 아이프레임---->
+			
+		</div>
+
+		<div id="container">
+			<div id="contents">
+
+				<!--서브페이지 메뉴-->
+				
+				<div id="left_contents">
+
+					<!--게임스타트-->
+					<div id="gamestart">
+						<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="264" height="201" id="FlashID" title="게임스타트">
+							<param name="movie" value="http://1000king.nolzzang.com/home/flash/game_start.swf?ver=1" />
+							<param name="quality" value="high" />
+							<param name="menu" value="false" />
+							<param name="wmode" value="transparent" />
+							<param name="swfversion" value="8.0.35.0" />
+							<param name="allowScriptAccess" value="always" />
+							<!--[if !IE]>-->
+							<object type="application/x-shockwave-flash" data="http://1000king.nolzzang.com/home/flash/game_start.swf?ver=1" width="264" height="201" title="게임스타트">
+							<!--<![endif]-->
+								<param name="quality" value="high" />
+								<param name="menu" value="false" />
+								<param name="wmode" value="transparent" />
+								<param name="swfversion" value="8.0.35.0" />
+								<param name="allowScriptAccess" value="sameDomain" />
+								<p><a href="#"><img src="http://img.nolzzang.com/1000king/images/game_start.png" alt="게임스타트" /></a></p>
+						   <!--[if !IE]>-->
+							</object>
+							<!--<![endif]-->
+						</object>
+					</div>
+					<!--게임스타트 끝-->
+
+					<!--로그인-->
+					<div id="login">
+												<style type="text/css">
+						#auto_login_info{position:absolute; z-index:99; top:31px; left:15px}</style>
+						<!--아웃-->
+						<form method="post" name="iform" id="out">
+						<input type="hidden" name="rtn" value="FgpXU3oOcW8RcBNIFxAZUE1MLFskP08nDUARE1E="/>
+							<fieldset>
+								<div id="login_nz" class="login_form" style="margin:0px; padding:0px;">
+									<select id="login_select" name="login_site">
+										<option value="놀짱">놀짱 ID</option>
+										<option value="다게임">다게임 ID</option>
+									</select>
+									<!--자동로그인-->
+									<div id="auto_check"><input type="checkbox" id="auto_login" name="auto_login" onclick="javascript:common.check_auto();"/><label for="auto_login" />자동 로그인</label></div>
+									<div id="auto_login_info" style ='display:none;'><a href="javascript:util.closewin_auto();"><img src="http://img.nolzzang.com/1000king/images/auto_login_info.png" /></a></div>
+									<input type="text" id="id" placeholder="아이디" name="userid" value="" maxlength="12"/>
+									<input type="password" id="pw" placeholder="비밀번호" name="passwd" maxlength="12" onkeypress="if(event.keyCode==13){ common.login(); event.returnValue=false; }"/>
+									<input type="button" value="로그인" id="btn_login" onclick="common.login();"/>
+									<p class="login_text"><a href="http://www.nolzzang.com/home/member/new_join1.php?g_val=T04TEytIMDk=" title="회원가입"><span>회원가입</span></a> <img src="http://img.nolzzang.com/1000king/images/vertical_line.gif" width="2" height="11" alt="라인" /> <a onclick="find.pop('id');" title="아이디찾기" style="cursor:pointer;">아이디</a>/<a onclick="find.pop('pw');" title="비밀번호 찾기" style="cursor:pointer;">비밀번호 찾기</a></p>
+								</div>
+								<div id="sns_login">
+									<p>	
+										<a href="javascript:common.login_naver('FgpXU3oOcW8RcBNIFxAZUE1MLFskP08nDUARE1E=');"><img src="http://img.nolzzang.com/1000king/images/btn_naver_login.jpg" title="네이버 아이디 로그인" /></a>
+										<!--<a href=""><img src="http://img.nolzzang.com/1000king/images/btn_facebook.jpg" title="페이스북 아이디 로그인" /></a>-->
+										<a href="javascript:sns_login('kakao','FgpXU3oOcW8RcBNIFxAZUE1MLFskP08nDUARE1E=');"><img src="http://img.nolzzang.com/1000king/images/btn_kakao.jpg" title="카카오톡 아이디 로그인" /></a>
+										<a href="javascript:sns_login('twitter','FgpXU3oOcW8RcBNIFxAZUE1MLFskP08nDUARE1E=');"><img src="http://img.nolzzang.com/1000king/images/btn_twitter.jpg" title="트위터 아이디 로그인" /></a>
+										<a href="javascript:sns_login('google','FgpXU3oOcW8RcBNIFxAZUE1MLFskP08nDUARE1E=');"><img src="http://img.nolzzang.com/1000king/images/btn_google.jpg" title="구글플러스 아이디 로그인" /></a>
+										<a href="javascript:sns_login('daum','FgpXU3oOcW8RcBNIFxAZUE1MLFskP08nDUARE1E=');"><img src="http://img.nolzzang.com/1000king/images/btn_daum.jpg" title="다음 아이디 로그인" /></a>
+									</p>
+								</div>
+							</fieldset>
+						</form>
+											</div>
+
+					<div id="left_banner">
+						<a href="http://1000king.nolzzang.com/home/cash_shop.php" title="게임머니 구매하기"><img src="http://img.nolzzang.com/1000king/images/banner_cashshop.jpg" width="233" height="69" border="0" alt="게임머니 구매하기" /></a>
+						<a href="http://www.nolzzang.com/home/charge/charge1.php" title="무료캐시 충전소"><img src="http://img.nolzzang.com/1000king/images/banner_free_charge.jpg" width="233" height="69" border="0" alt="무료캐시 충전소" /></a>
+						<a href="../app/1000king_favorites.exe" target="_blank" class="m_bottom_0" title="아이콘 설치하기"><img src="http://img.nolzzang.com/1000king/images/banner_icon_ist.jpg" width="233" height="69" border="0" alt="아이콘설치하기" /></a>
+					</div>
+
+					<div id="customer_banner">
+						<img src="http://img.nolzzang.com/1000king/images/browser_download.gif" width="233" height="67" border="0" alt="브라우저 다운로드" usemap="#browser" />
+						<a href="http://www.nolzzang.com/home/board/list.php?brd=RyFS&cate2=%EA%B2%8C%EC%9E%84&catefaq=%EC%B2%9C%EC%99%95" title="자주묻는질문"><img src="http://img.nolzzang.com/1000king/images/banner_faq.jpg" width="233" height="67" border="0" alt="자주묻는질문" /></a>
+						<a href="http://www.nolzzang.com/home/board/report.php?category1=%EC%B2%9C%EC%99%95%EC%98%A8%EB%9D%BC%EC%9D%B8" title="문의하기"><img src="http://img.nolzzang.com/1000king/images/banner_qna.jpg" width="233" height="67" border="0" alt="문의하기" /></a>
+					</div>
+					<map name="browser">
+						<area shape = "rect" coords="82,12,122,52" href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie" target="_blank" title="익스플로러" />
+						<area shape = "rect" coords="130,12,170,52" href="https://www.google.com/intl/ko/chrome/browser/" target="_blank" title="크롬" />
+						<area shape = "rect" coords="175,12,215,52" href="http://get.adobe.com/kr/flashplayer/" target="_blank" title="플래시 플레이어"/>
+					</map>
+
+					<div id="left_banner">
+						<script type="text/javascript" src="http://search2.nuriclick.co.kr/search.php?ma=241"></script>					</div>
+				</div><script>
+function closewin() {
+	if($("#today").is(":checked") == true) {
+		pop = "chk_y";
+		setCookie("pop", pop, 1);
+		$("#update_event").css("display", "none");
+	} else {
+		$("#update_event").css("display", "none");
+	}
+}
+</script>
+<!----2013-11-04 16:22 노출:KEJ--->
+<div id="pop_box" style="position:absolute;display:none;z-index:5;width:850px;">
+	</div>
+<style>#update_event{width:px; height:px; border:1px solid #909090; background-color:#ffffff}</style><div id="main_contents">
+	<div id="m_notice">
+		<dl class="mainTab">
+			<!--공지사항-->
+			<dt onmouseover="show_img_sub('img_tab',1,'tab_name')" style="cursor:pointer"><img src="http://img.nolzzang.com/1000king/images/tab_notice_01_.gif" alt="" name="tab_name" /></dt>
+			<dd id="img_tab1" style="display:block;">
+				<ul>	
+					<li><a href="http://1000king.nolzzang.com/home/view.php?brd=Ty9XKSNE&num=FHQacXc=">· <span class="subject">[공지사항]</span> 고객센터 설연휴 휴무 안내</a> <span class="day">2017.01.26</span></li><li><a href="http://1000king.nolzzang.com/home/view.php?brd=Ty9XKSNE&num=FHQbeHI=">· <span class="subject">[공지사항]</span> 1월25일(수) 정기점검 안내</a> <span class="day">2017.01.24</span></li><li><a href="http://1000king.nolzzang.com/home/view.php?brd=Ty9XKSNE&num=FHQWdXc=">· <span class="subject">[공지사항]</span> 접속 이상현상 수정진행 안내 (완료)</a> <span class="day">2017.01.01</span></li><li><a href="http://1000king.nolzzang.com/home/view.php?brd=Ty9XKSNE&num=FHQXeHQ=">· <span class="subject">[공지사항]</span> 천왕온라인 서비스 재개 안내</a> <span class="day">2016.12.26</span></li><li><a href="http://1000king.nolzzang.com/home/view.php?brd=Ty9XKSNE&num=FHQXcnk=">· <span class="subject">[공지사항]</span> 12월22일(목) 정기점검 안내</a> <span class="day">2016.12.21</span></li>				</ul>
+				<p class="more"><a href="http://1000king.nolzzang.com/home/list.php?brd=Ty9XKSNE"><img src="http://img.nolzzang.com/1000king/images/icon_more.jpg" alt="더보기" /></a></p>
+			</dd>
+			<!--이벤트-->
+			<dt onmouseover="show_img_sub('img_tab',2,'tab_name')" style="cursor:pointer"><img src="http://img.nolzzang.com/1000king/images/tab_event_02.gif" alt="" name="tab_name" /></dt>
+			<dd id="img_tab2">
+				<ul>	
+					<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3cWcnI=">· <span class="subject">[진행중]</span> [첫충전 이벤트]</a> <span class="day">2014.12.10</span></li><li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3MVc3Y=">· <span class="subject">[진행중]</span> 바콘 이벤트</a> <span class="day">2014.11.14</span></li><li><a href="http://1000king.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=E3MVc3I=">· <span class="subject">[진행중]</span> 인증 이벤트</a> <span class="day">2014.11.14</span></li>				</ul>
+				<p class="more"><a href="http://1000king.nolzzang.com/home/list.php?brd=RDZGLjQ="><img src="http://img.nolzzang.com/1000king/images/icon_more.jpg" alt="더보기" /></a></p>
+			</dd>
+			<!--자유게시판-->
+			<dt onmouseover="show_img_sub('img_tab',3,'tab_name')" style="cursor:pointer"><img src="http://img.nolzzang.com/1000king/images/tab_freebord_03.gif" alt="" name="tab_name" /></dt>
+			<dd id="img_tab3">
+				<ul>	
+					<li><a href="http://1000king.nolzzang.com/home/view.php?brd=RzJGJQ==&num=FHQXdHg=">· ㅋㅋ 서비스종료</a> <span class="day">2016.12.23</span></li><li><a href="http://1000king.nolzzang.com/home/view.php?brd=RzJGJQ==&num=FHIadXg=">· 모하시는지??;;;;</a> <span class="day">2016.09.08</span></li><li><a href="http://1000king.nolzzang.com/home/view.php?brd=RzJGJQ==&num=FHIQc3g=">· 랙걸려 못한 경치보상은 안해주남요</a> <span class="day">2016.07.11</span></li><li><a href="http://1000king.nolzzang.com/home/view.php?brd=RzJGJQ==&num=FHIQc3U=">· 뭐가 이래,공지도 없고,</a> <span class="day">2016.07.11</span></li><li><a href="http://1000king.nolzzang.com/home/view.php?brd=RzJGJQ==&num=FHIQcnk=">· 뭐하는겨,,,10.8</a> <span class="day">2016.07.11</span></li>				</ul>
+				<p class="more"><a href="http://1000king.nolzzang.com/home/list.php?brd=RzJGJQ=="><img src="http://img.nolzzang.com/1000king/images/icon_more.jpg" alt="더보기" /></a></p>
+			</dd>
+		</dl>
+	</div>
+
+	<!--게임가이드-->
+	<div id="guide_banner">
+		<a href="http://1000king.nolzzang.com/home/game_guide.php" title="게임가이드"><img src="http://img.nolzzang.com/1000king/images/banner_guide.jpg" width="460px; height:176px;" alt="게임가이드" /></a>
+	</div>
+
+	<!--캐릭터소개-->
+	<div id="character">
+		<div class="character_img" style="overflow:hidden">
+			<img src="http://img.nolzzang.com/1000king/images/banner_character01.jpg" width="390" height="217" alt="전사" id="cimg1" style="position:absolute;top:0;"/>
+			<img src="http://img.nolzzang.com/1000king/images/banner_character02.jpg" width="390" height="217" alt="도사" id="cimg2" style="position:absolute;top:217px;"/>
+			<img src="http://img.nolzzang.com/1000king/images/banner_character03.jpg" width="390" height="217" alt="궁사" id="cimg3" style="position:absolute;top:434px;"/>
+			<img src="http://img.nolzzang.com/1000king/images/banner_character04.jpg" width="390" height="217" alt="검사" id="cimg4" style="position:absolute;top:651px"/>
+		</div>
+		<ul>
+			<li><a href="javascript:minislide.navi('1')"><img src="http://img.nolzzang.com/1000king/images/thumbnail01_on.jpg" id="navi1" width="64" height="51" border="0" alt="전사" /></a></li>
+			<li><a href="javascript:minislide.navi('2')"><img src="http://img.nolzzang.com/1000king/images/thumbnail02.jpg" id="navi2" width="64" height="51" border="0" alt="도사"/></a></li>
+			<li><a href="javascript:minislide.navi('3')"><img src="http://img.nolzzang.com/1000king/images/thumbnail03.jpg" id="navi3" width="64" height="51" border="0" alt="궁사"/></a></li>
+			<li><a href="javascript:minislide.navi('4')"><img src="http://img.nolzzang.com/1000king/images/thumbnail04.jpg" id="navi4" width="64" height="52" border="0" alt="검사"/></a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="right_contents">
+	<!--랭킹-->
+	<div id="ranking">
+		<form method="" action="">
+			<fieldset>
+				<table>
+					<colgroup>
+						<col width="60" />
+						<col width="110" />
+						<col width="64" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th colspan="4">
+							<h3>랭킹</h3>
+							<p>
+								<select name="serverId" id="serverId" onChange="game.ranking(this.value)">
+								<option value="1">1서버 황제(통합1)</option><option value="2">2서버 염제(통합1)</option><option value="3">3서버 치우(통합1)</option><option value="4">4서버 복희(통합1)</option><option value="5">5서버 여와(통합1)</option><option value="6">6서버 신농(통합1)</option><option value="7">7서버 제우(통합1)</option><option value="8">8서버 제순(통합1)</option><option value="9">9서버 제요</option>								</select>
+								<a href="http://1000king.nolzzang.com/home/ranking01_01.php?rtype=Qi9OMDJEFhswLRcIRB8iRjRVTSU="><img src="http://img.nolzzang.com/1000king/images/icon_more.jpg" alt="더보기" /></a>
+							</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="ranklist_main">
+						<!-- <script>game.ranking('1')</script> -->
+					</tbody>
+				</table>
+			</fieldset>
+		</form>
+	</div>
+	<!--네이버검색-->
+	<div id="naver_search">
+		<a href="http://www.nolzzang.com/nolzzang.php?pid=1kbaro1" target="_blank"><img src="http://img.nolzzang.com/1000king/images/banner_naver.jpg" width="233" height="90" border="0" alt="네이버검색[천왕온라인]" /></a>
+	</div>
+	<!--실시간 이벤트-->
+	<div id="ingame_event">
+		<h3>실시간 이벤트 [인게임]</h3>
+		<ul id="realtime_main">
+			<!-- <script>game.realtime('1');</script> -->
+		</ul>
+	</div>
+</div>
+<!--스크린샷-->
+<div id="main_screenshot">
+	<h3>스크린샷</h3>
+	<p><a href="http://1000king.nolzzang.com/home/list.php?brd=UiNRJSVP" title="스크린샷 게시판 더보기"><img src="http://img.nolzzang.com/1000king/images/icon_more.jpg" width="10" height="10" border="0" alt="더보기" /></a></p>
+	<dl class="first"><dt><a href="http://1000king.nolzzang.com/home/view.php?brd=UiNRJSVP&num=EnkQeHA="><img src="http://file.nolzzang.com/board/1444315598_1.jpg" width="225" height="138" border="0" alt="GM흔적찾기 이벤트" /></a></dt><dd><a href="http://1000king.nolzzang.com/home/view.php?brd=UiNRJSVP&num=EnkQeHA=">GM흔적찾기 이벤트</a></dd></dl><dl><dt><a href="http://1000king.nolzzang.com/home/view.php?brd=UiNRJSVP&num=EnkQd3Q="><img src="http://file.nolzzang.com/board/1444301165_1.png" width="225" height="138" border="0" alt="GM 흔적찾기 이벤트 " /></a></dt><dd><a href="http://1000king.nolzzang.com/home/view.php?brd=UiNRJSVP&num=EnkQd3Q=">GM 흔적찾기 이벤트 </a></dd></dl><dl><dt><a href="http://1000king.nolzzang.com/home/view.php?brd=UiNRJSVP&num=EnkQd3M="><img src="http://file.nolzzang.com/board/1444300913_1.png" width="225" height="138" border="0" alt="GM 흔적찾기 이벤트 " /></a></dt><dd><a href="http://1000king.nolzzang.com/home/view.php?brd=UiNRJSVP&num=EnkQd3M=">GM 흔적찾기 이벤트 </a></dd></dl></div>
+</div>
+
+<div id="footer">
+			<!--사이트맵-->
+			<div id="sitemap">
+				<dl class="first">
+					<dt>게임소식</dt>
+					<dd><a href="http://1000king.nolzzang.com/home/list.php?brd=Ty9XKSNE" title="공지사항">공지사항</a></dd>
+					<dd><a href="http://1000king.nolzzang.com/home/list.php?brd=RDZGLjQ=" title="이벤트">이벤트</a></dd>
+				</dl>
+				<dl>
+					<dt>게임정보</dt>
+					<dd><a href="http://1000king.nolzzang.com/home/game_info.php" title="게임소개">게임소개</a></dd>
+					<dd><a href="http://1000king.nolzzang.com/home/game_job.php" title="직업소개">직업소개</a></dd>
+					<dd><a href="http://1000king.nolzzang.com/home/game_beginner.php" title="초보자가이드">초보자가이드</a></dd>
+					<dd><a href="http://1000king.nolzzang.com/home/game_guide.php" title="게임가이드">게임가이드</a></dd>
+				</dl>
+				<dl>
+					<dt>랭킹</dt>
+					<dd><a href="http://1000king.nolzzang.com/home/ranking01_01.php" title="전투력">전투력</a></dd>
+					<dd><a href="http://1000king.nolzzang.com/home/ranking02_01.php" title="비무장">비무장</a></dd>
+					<dd><a href="http://1000king.nolzzang.com/home/ranking03_01.php" title="수련">수련</a></dd>
+					<dd><a href="http://1000king.nolzzang.com/home/ranking04_01.php" title="사회">사회</a></dd>
+				</dl>
+				<dl>
+					<dt>상점</dt>
+					<dd><a href="http://1000king.nolzzang.com/home/cash_shop.php" title="금자구매">금자구매</a></dd>
+					<dd><a href="http://1000king.nolzzang.com/home/shop_guide.php" title="금자가이드">금자가이드</a></dd>
+				</dl>
+				<dl>
+					<dt>커뮤니티</dt>
+					<dd><a href="http://1000king.nolzzang.com/home/list.php?brd=RzJGJQ==" title="자유게시판">자유게시판</a></dd>
+					<dd><a href="http://1000king.nolzzang.com/home/list.php?brd=RiFOJQ==" title="공략게시판">공략게시판</a></dd>
+					<dd><a href="http://1000king.nolzzang.com/home/list.php?brd=UiNRJSVP" title="스크린샷">스크린샷</a></dd>
+					<dd><a href="http://1000king.nolzzang.com/home/list.php?brd=Qi9WLjRTBw==" title="문파/국가">문파/국가</a></dd>
+				</dl>
+				<dl>
+					<dt>고객센터</dt>
+					<dd><a href="http://www.nolzzang.com/home/board/list.php?brd=RyFS&cate2=%EA%B2%8C%EC%9E%84&catefaq=%EC%B2%9C%EC%99%95" title="자주묻는 질문">자주묻는 질문</a></dd>
+					<dd><a href="http://www.nolzzang.com/home/board/report.php?category1=%EC%B2%9C%EC%99%95%EC%98%A8%EB%9D%BC%EC%9D%B8" title="문의사항">문의사항</a></dd>
+					<dd><a href="http://www.nolzzang.com/home/policy1.php?val=1000king" title="운영정책">운영정책</a></dd>
+				</dl>
+			</div>
+
+
+			<!--copyright-->
+						<div id="copyright">
+				<div id="footer_logo">
+					<img src="http://img.nolzzang.com/1000king/images/footer_logo01.jpg" width="89" height="36" border="0" alt="이비즈네트웍스" />
+					<img src="http://img.nolzzang.com/1000king/images/footer_logo02.jpg" width="89" height="36" border="0" alt="놀짱" />
+				</div>
+				<ul>
+					<li><a href="http://www.nolzzang.com/home/clause.php" title="이용약관"><img src="http://img.nolzzang.com/1000king/images/footer_menu01.jpg" width="44" height="13" border="0" alt="이용약관" /></a></li>
+					<li><a href="http://www.nolzzang.com/home/protect.php" title="개인정보보호정책"><img src="http://img.nolzzang.com/1000king/images/footer_menu02.jpg" width="88" height="13" border="0" alt="개인정보보호정책" /></a></li>
+					<li><a href="http://www.nolzzang.com/home/youth.php" title="청소년보호정책"><img src="http://img.nolzzang.com/1000king/images/footer_menu03.jpg" width="76" height="13" border="0" alt="청소년보호정책" /></a></li>
+					<li><a href="http://www.nolzzang.com/home/policy1.php?val=1000king" title="운영정책"><img src="http://img.nolzzang.com/1000king/images/footer_menu04.jpg" width="45" height="13" border="0" alt="운영정책" /></a></li>
+					<li><a href="http://www.nolzzang.com/home/policy2.php" title="캐시정책"><img src="http://img.nolzzang.com/1000king/images/footer_menu05.jpg" width="45" height="13" border="0" alt="캐시정책" /></a></li>
+					<li><a href="javascript: alert('준비중입니다.')" title="제휴문의"><img src="http://img.nolzzang.com/1000king/images/footer_menu06.jpg" width="44" height="13" border="0" alt="제휴문의" /></a></li>
+					<li><a href="http://www.nolzzang.com/home/customer.php" title="고객센터"><img src="http://img.nolzzang.com/1000king/images/footer_menu07.jpg" width="44" height="13" border="0" alt="고객센터" /></a></li>
+					<li><a href="http://www.nolzzang.com/home/board/report.php?category1=%EC%B2%9C%EC%99%95%EC%98%A8%EB%9D%BC%EC%9D%B8" title="문의 및 신고하기"><img src="http://img.nolzzang.com/1000king/images/footer_menu08.jpg" width="84" height="13" border="0" alt="문의 및 신고하기" /></a></li>
+				</ul>
+
+			<!----------family----------->
+			<script>
+			var fsite = {
+				go_family: function(url){
+					window.open(url);
+					fsite.click_family();
+				}, 
+
+				click_family: function(){
+					var hh = $("#family_list").attr("class");
+					if(hh == "f_on"){
+						$("#family_list").css({"display":"none"});
+						$("#family_list").removeClass("f_on");
+					}else{
+						$("#family_list").css({"display":"block"});
+						$("#family_list").addClass("f_on");
+					}
+				}
+			}
+			</script>
+			<style>
+			#smenu2 a { float:left; }
+			#family_site a:hover, a:active { color: white; }
+			#family_site UL LI { margin-right:0px; }
+			#family_site { width:100px; float:left; position:relative; margin-top:13px; }
+			#family_list { border:1px solid #dddddd; min-height:200px; display:none; position:absolute; bottom:20px; left:0; border-bottom:none; background:#000000; }
+			#family_list .fam_btn { padding:0px 3px 0px 3px; cursor:hand; height:20px; line-height:20px; width:100px;  }
+			.fam_btn_m { width:100px; padding:0px 3px 0px 3px; cursor:hand; height:20px; border:1px solid #dddddd; line-height:20px;background:#000000; }
+			</style>
+			<div id="family_site">
+				<div class="fam_btn_m"><a href="javascript:fsite.click_family();">Family Site&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▲</a></div>
+				<ul id="family_list">
+				<li><div class="fam_btn"><a href="http://www.daemon-tools.kr" target="_blank">데몬툴즈</a></div></li><li><div class="fam_btn"><a href="http://www.ancamera.co.kr/home/download_01.html" target="_blank">안카메라</a></div></li><li><div class="fam_btn"><a href="http://www.ancamera.co.kr/home/download_02.html" target="_blank">안캠코더</a></div></li><li><div class="fam_btn"><a href="http://www.startools.co.kr" target="_blank">별툴즈</a></div></li><li><div class="fam_btn"><a href="http://www.badakencoder.com" target="_blank">바닥툴즈</a></div></li><li><div class="fam_btn" style='color:#ffffff;'><b>놀짱</b></div></li><li><div class="fam_btn"><a href="http://www.pcclear.co.kr" target="_blank">피씨클리어</a></div></li><li><div class="fam_btn"><a href="http://www.nurisoop.co.kr" target="_blank">누리숲</a></div></li><li><div class="fam_btn"><a href="http://www.monotower.com/" target="_blank">모노타워</a></div></li><li><div class="fam_btn"><a href="http://www.monopalace.com" target="_blank">모노팰리스</a></div></li><li><div class="fam_btn"><a href="http://partners.monopalace.com" target="_blank">모노팰리스 파트너스</a></div></li><li><div class="fam_btn"><a href="http://www.ebiznetworks.co.kr" target="_blank">이비즈네트웍스</a></div></li><li><div class="fam_btn"><a href="http://www.enasset.co.kr" target="_blank">이엔자산개발</a></div></li><li><div class="fam_btn"><a href="http://www.monocityvil.com" target="_blank">모노씨티빌 등촌</a></div></li><li><div class="fam_btn"><a href="http://www.entv.co.kr" target="_blank">이엔티비</a></div></li><li><div class="fam_btn"><a href="http://www.ditower.co.kr" target="_blank">DI타워</a></div></li><li><div class="fam_btn"><a href="http://www.ssenflower.co.kr" target="_blank">쎈플라워</a></div></li><li><div class="fam_btn"><a href="http://www.onbiz.co.kr/" target="_blank">온비즈 오피스</a></div></li>				</ul>
+			</div>
+			<!----------famaily------------>
+		
+				<p>
+				(주)이비즈네트웍스  l  대표이사 : 박기범  l  서울특별시 강남구 선릉로 99길 12 모노타워  l  고객센터 1544-2950<br />
+				E-mail:help@nolzzang.co.kr  l  사업자등록번호 : 220-87-30865  l  부가통신사업신고번호 : 강남-11501호<br />
+				Copyright ⓒ <span>Ebiznetworks</span> All Rights Reserved.
+				</p>
+				<div id="rating">
+					<img src="http://img.nolzzang.com/1000king/images/18_rating.jpg" width="431" height="54" border="0" alt="청소년 이용불가" />
+				</div>
+				<script>
+					function pop_taxpayer() {
+						var win_tax	= window.open('http://1000king.nolzzang.com/home/common/taxpayer.php','taxpayer','scrollbars=no,resizable=no,width=510,height=720');
+					}
+				</script>
+				<div id="footer_mark"><img src="http://img.nolzzang.com/1000king/images/footer_mark.png" alt="이비즈네트웍스 인증마크" usemap="#Map"  /></div>
+                 <map name="Map" id="Map">
+                    <area shape="rect" coords="349,8,483,38" href="javascript:pop_taxpayer();">
+                  </map>
+			</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="event_banner" style="position:absolute;left:50%;top:535px;margin-left:570px;width:120px">
+
+<script type="text/javascript" src="http://search2.nuriclick.co.kr/search.php?ma=239"></script>
+</div>
+
+<!-------------// 20141114 광고팀 송보라 주임 요청 -> 20150213 교체 -> 20150330 교체 //----------------------->
+<script type="text/javascript">
+    var roosevelt_params = {
+        retargeting_id:'DEawrG4AZ21oVGNhq16AVw00',
+        tag_label:'aIkj26S1T4uS43w0E79BnQ'
+    };
+</script>
+<!-- <script type="text/javascript" src="//adimg.daumcdn.net/rt/roosevelt.js" async></script> -->
+
+
+<!----------- 20141117 광고팀 송보라주임요청 -------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 964619303;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<!-- <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"> -->
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/964619303/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!------------- 20141117 rhdmswl -------------------->
+<div id="jehu">
+<form name="mform" method="post">
+<input type="hidden" name="mode" value="jehu" />
+<input type="hidden" name="cate1" value="천왕" />
+<input type="hidden" name="mobile" value="" />
+	<p><img src="http://img.nolzzang.com/1000king/images/EX_1_t_04.gif" width="200" height="15" alt="메일보내기"></p>
+	<div id="jehu_in">
+		<div class="white">
+			<table class="jehu_t">
+				<tr>
+					<th>문의내용</th>
+					<td>
+						<input type="radio" name="genre" value="ad" checked id="ad"/><label for="ad">광고/제휴문의</label>
+						<input type="radio" name="genre" value="ask" id="ask"/><label for="ask">이용문의</label> 
+					</td>
+				</tr>
+				<tr>
+					<th>보내는 메일</th>
+					<td><input type="text" name="sender" value="" class="form" size="30" onclick="jehu.login_chk('')"></td>
+				</tr>
+				<tr>
+					<th>보내는 사람</th>
+					<td><input type="text" name="sendname" value="" class="form" size="30" onclick="jehu.login_chk('')"></td>
+				</tr>
+				<tr>
+					<th>제목</th>
+					<td><input type="text" name="subject" class="form" size="30" onclick="jehu.login_chk('')"></td>
+				</tr>
+				<tr>
+					<td colspan='2'><textarea name='contents'  style="border:1px solid #B4B4B4;width:99%;height:200px" onclick="jehu.login_chk('')"></textarea></td>
+				</tr>
+				<tr>
+					<td colspan='2' style='text-align:center;padding:10px 0;'>
+							<img src="http://img.nolzzang.com/1000king/images/my_post_button_03.gif" width="60" height="21" border="0" onclick="jehu.mail_send()" style="cursor:pointer">
+							<a onclick="common.out('#jehu');"> <img src="http://img.nolzzang.com/1000king/images/my_post_button_04.gif" width="60" height="21" border="0"></a>
+					  </td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</form>
+</div>
+
+<div id="server" style="position: absolute;float:left;z-index: 9999; display: none;">
+	<div id="close">
+		<a href="javascript:common.out('#server')"><img src="http://img.nolzzang.com/1000king/images/server_close.jpg" alt="닫기" /></a>
+	</div>
+	<!----추천서버------>
+	<div id="recommend">
+		<a class="c9"><img src="http://img.nolzzang.com/1000king/images/btn_server_re09.png" alt="제요" onclick="game.start('9', '')" style="cursor:pointer"></a>	</div>
+	<div id="contact">
+				<a onclick="game.start('1', '')" style="cursor:pointer"><img src="http://img.nolzzang.com/1000king/images/btn_server_b01.png" alt="최근접속서버" onerror="this.src='http://img.nolzzang.com/1000king/images/btn_server_b01.png';" style="width:193px; height:49px;" /></a>
+	</div>
+	<div id="server_list_box">
+		<!-- <script>slayer.server_show('1')</script> -->
+	</div>
+	<form id="sv" target="_blank" method="post">
+		<input type="hidden" name="gurl" id="gurl" value="" />
+		<input type="hidden" name="server" id="servers" value="" />
+		<input type="hidden" name="userid" id="userid" value="" />
+			</form>
+</div>
+<style type="text/css">
+
+#idenpop {width:100%; height:100%; background-color:#000;}
+#idenpop .pop{width:700px; height:auto; background-color:#FFF; margin:0 auto;}
+#idenpop .pop .pop_top{width:auto; height:26px; background-color:#ffd300; margin:0 auto; padding:24px;}
+#idenpop .pop .pop_top .title {width:146px; height:26px; float:left;} 
+#idenpop .pop .pop_top .close {width:27px; height:27px; float:right;} 
+#idenpop .pop .pop_title {width:auto; height:auto; font-size:16px;  font-family:'Malgun Gothic'; color:#000; letter-spacing:-1.4px; padding:24px;}
+#idenpop .pop .pop_box {width:auto; height:auto;  margin:0 auto; text-align:center; border-top:1px solid #c8c8c8; padding:36px;}
+#idenpop .pop .pop_box img{margin:5px;}
+#idenpop .pop .pop_text {width:700px; height:auto; font-size:12px; color:#646464; background-color:#f8f8f8; letter-spacing:-0.5px; padding: 20px 0 20px 0;}
+#idenpop .pop .pop_text p {margin: 6px 0 0 24px;}
+</style>
+
+<script>
+	function close_kcb_pop(){
+		common.out('#nverify_new');
+		common.out('#overlay');
+	}
+
+	var popup_open = "N";
+	var win = "";
+
+	function phone_chk(){
+		var auth_popup = window.open("", "auth_popup", "width=430,height=590,scrollbar=yes");
+		popup_open = "Y";
+		win = auth_popup;
+
+		var form1 = document.iForm;
+		form1.target = "auth_popup";
+		form1.action = "http://verify.nolzzang.com/chk/safe_hs_cert2.php";
+		form1.submit();	
+
+		jsf_pay_popup_chk();
+	}
+
+	function jsf_pay_popup_chk(){ 
+		if (popup_open =="Y") { 
+			try { 
+				if(typeof(win)=='undefined' || win.closed) { 
+					close_kcb_pop();
+					$.post("/home/common/aj_kcb_chk.php", {}, function(data){
+						popup_open ="N";
+						nov = data;
+					});
+				} 
+			} 
+			catch (e) { 
+				location.reload(); 
+			} 
+		  
+			setTimeout("jsf_pay_popup_chk()", 100); 
+		} 
+	} 
+</script>
+
+<div id="nverify_new"  style="position:fixed; left:50%; top:50%; z-index:99999; display:none;">
+	<div id="idenpop" style="position:relative; ">
+		<div class="pop">
+			<div class="pop_top">
+				<span class="title"><img src="http://img.nolzzang.com/www/images/member/pop_title.jpg" alt="" /></span>
+				<span class="close"><a href="javascript:void(0);" onclick="javascript:close_kcb_pop();"><img src="http://img.nolzzang.com/www/images/member/pop_x.jpg" alt="" /></a></span>
+			</div>
+			<div class="pop_title">
+				개정된 정보통신망법(정보통신망 이용 촉진 및 정보보호 등에 관한 법률 제23조2)에 따라<br />
+				주민번호를 사용하실 수 없으며, 본인인증 또는 아이핀 인증을 통해서만 회원 가입이 가능합니다. 
+			</div>  
+			<div class="pop_box">
+				<a href="javascript:void(0);" onclick="javascript:phone_chk();"><img src="http://img.nolzzang.com/www/images/member/bt_03.jpg" alt="휴대폰 인증" /></a>
+			</div>  
+			<div class="pop_text">
+				<p> - 입력한 본인확인 정보는 본인확인을 위해 사용되며, 그외 용도로 사용 또는 저장되지 않습니다. </p>
+				<p> - 인증이 정상적으로 작동하지 않으면 브라우저의 팝업 차단 기능을 해제하고 이용해 주시기 바랍니다. </p>
+				<p> - 본인 인증 중 공인인증서 인증은 인터넷 익스플로어 브라우저에서만 이용할 수 있습니다. </p>
+			</div>        
+		</div>
+	</div>
+</div>
+
+<form method="post" name="iForm">
+	<input type="hidden" name="r_s" value="hphone"/>
+	<input type="hidden" name="rsv1" value="kcb_chk" />
+	<input type="hidden" name="rsv2" value="" />
+</form>
+<script>
+function flayer_start(url, title) {
+	document.body.style.behavior='url(#default#homepage)';
+	document.body.setHomePage(url);
+	window.external.AddFavorite("http://cheonwang.nolzzang.com", "천왕온라인");
+	return common.out('#favorite_layer');
+}
+</script>
+
+<div id="favorite_layer">
+	<div class="fclose" onclick="javascript:common.out('#favorite_layer')"><img src="http://img.nolzzang.com/1000king/images/f_btn_close.gif" alt="닫기"/></div>
+	<div class="fbt">
+		<img src="http://img.nolzzang.com/1000king/images/f_btn_ok.gif" alt="확인" style="cursor:pointer" onclick="flayer_start('http://cheonwang.nolzzang.com/home/index.php', '천왕온라인');"/>
+		<img src="http://img.nolzzang.com/1000king/images/f_btn_cancel.gif" alt="취소" onclick="common.out('#favorite_layer')" style="cursor:pointer"/>
+	</div>
+</div>
+</body>
+</html>
+

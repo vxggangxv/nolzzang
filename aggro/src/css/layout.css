@@ -1,0 +1,892 @@
+@charset "utf-8";
+@import url("http://static.nolzzang.com/common/css/webfont.css");
+
+body {font-size:12px; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; color:#4c4c4c; background-color:#000000}
+
+a:link, a:visited {text-decoration:none; color:#4c4c4c}
+a:hover, a:active {text-decoration:underline; color:#000000}
+
+#overlay { position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 100%; background-color: #464646; opacity: 0.8 }
+
+
+#top{width:100%; height:45px; clear:both; background-color:#ffffff}
+#top .top_menu{width:1100px; margin:auto; }
+#top .top_menu h1{float:left}
+#top .top_menu h1 a{float:left}
+#top .top_menu h1 .top_reborn{width:138px; height:45px; display:block; background:url(http://img.nolzzang.com/www/images/common/topmenu_reborn.jpg) 0 0 no-repeat; text-indent:-99999px}
+#top .top_menu h1 .top_sin{width:138px; height:45px; display:block; background:url(http://img.nolzzang.com/www/images/common/topmenu_sin.jpg) 0 0 no-repeat; text-indent:-99999px}
+#top .top_menu h1 .top_king{width:138px; height:45px; display:block; background:url(http://img.nolzzang.com/www/images/common/topmenu_king.jpg) 0 0 no-repeat; text-indent:-99999px}
+#top .top_menu h1 .top_book{width:138px; height:45px; display:block; background:url(http://img.nolzzang.com/www/images/common/topmenu_book.jpg) 0 0 no-repeat; text-indent:-99999px}
+#top .top_menu h1 .top_aggro{width:138px; height:45px; display:block; background:url(http://img.nolzzang.com/www/images/common/topmenu_aggro.jpg) 0 0 no-repeat; text-indent:-99999px}
+#top .top_menu h1 .top_musa{width:138px; height:45px; display:block; background:url(http://img.nolzzang.com/www/images/common/topmenu_musa.jpg) 0 0 no-repeat; text-indent:-99999px}
+#top .top_menu h1 a:hover{background-position:0 -45px}
+#top .top_menu .game{float:left; background-color:#ffffff}
+#top .top_menu .game li{float:left; margin-left:9px; padding-left:9px; margin-top:15px; background:url(http://img.nolzzang.com/aggro/images/vertical_line.gif) no-repeat 0 3px}
+#top .top_menu .game li.bg_none{background:none; margin-left:25px}
+#top .top_menu .logout_menu{float:right; position:relative; top:10px; line-height:2}
+#top .top_menu .logout_menu li{float:left; margin-left:10px; padding-left:10px; background:url(http://img.nolzzang.com/aggro/images/vertical_line2.gif) no-repeat 0 7px}
+#top .top_menu .logout_menu li.bg_none{background:none}
+#top .top_menu .logout_menu li a{text-decoration:none; font-size:11px; line-height:2}
+#top .top_menu .login_menu{float:right; position:relative; top:10px; line-height:2}
+#top .top_menu .login_menu li{float:left; margin-left:10px; padding-left:10px; background:url(http://img.nolzzang.com/aggro/images/vertical_line2.gif) no-repeat 0 7px}
+#top .top_menu .login_menu li.bg_none{background:none}
+#top .top_menu .login_menu li a{text-decoration:none; font-size:11px; line-height:2}
+
+#wrapper{width:100%; min-width:1100px; background:url(http://img.nolzzang.com/aggro/images/bg.jpg) center 50px no-repeat}
+#top{width:100%; height:45px; background-color:#ffffff}
+#header{width:100%; height:490px; min-width:1100px; background:url(http://img.nolzzang.com/aggro/images/gnb_bg.jpg) center 0 repeat-x}
+
+/*GNB*/
+#header #gnb{width:1100px; margin:auto;}
+#header #gnb h1{position:absolute; z-index:999; left:50%; margin-left:-106px}
+#header #gnb ul{float:left;}
+#header #gnb ul li{float:left} 
+#header #gnb ul .game_news a{display:block; width:148px; height:50px; background:url(http://img.nolzzang.com/aggro/images/manu01.png) 0 0 no-repeat; text-indent:-99999px}
+#header #gnb ul .game_info a{display:block; width:148px; height:50px;  background:url(http://img.nolzzang.com/aggro/images/manu02.png) 0 0 no-repeat; text-indent:-99999px}
+#header #gnb ul .ranking a{display:block; width:148px; height:50px; background:url(http://img.nolzzang.com/aggro/images/manu03.png) 0 0 no-repeat; text-indent:-99999px}
+#header #gnb ul .shop a{display:block; width:148px; height:50px; margin-left:211px; background:url(http://img.nolzzang.com/aggro/images/manu04.png) 0 0 no-repeat; text-indent:-99999px}
+#header #gnb ul .comunity a{display:block; width:148px; height:50px; background:url(http://img.nolzzang.com/aggro/images/manu05.png) 0 0 no-repeat; text-indent:-99999px}
+#header #gnb ul .customer a{display:block; width:148px; height:50px; background:url(http://img.nolzzang.com/aggro/images/manu06.png) 0 0 no-repeat; text-indent:-99999px}
+#header #gnb ul a:hover{background-position:0 -50px}
+#header #sub_menu{display:none;float:left; position:absolute; top:50px; z-index:500; width:100%; height:165px; background:url(http://img.nolzzang.com/aggro/images/sub_gnb_bg.png) center 0 no-repeat  }
+#header #sub_menu dl{width:1100px; margin:auto;}
+#header #sub_menu dl dd{float:left; margin-top:20px;}
+#header #sub_menu dl dd ul{float:left;}
+#header #sub_menu dl dd ul li {clear:both; font-size:13px; line-height:1.7; color:#ada8a8}
+#header #sub_menu dl dd ul li a{display:block; float:left; width:117px; color:#ada8a8}
+#header #sub_menu dl dd ul li a:hover{color:#d50000; text-decoration:none}
+#header #sub_menu dl dd .game_news{margin-left:15px; margin-right:15px;}
+#header #sub_menu dl dd .game_info{margin-left:15px; margin-right:15px;}
+#header #sub_menu dl dd .ranking{margin-left:15px; margin-right:15px;}
+#header #sub_menu dl dd .shop{margin-left:231px; margin-right:15px;}
+#header #sub_menu dl dd .comunity{margin-left:15px; margin-right:15px;}
+#header #sub_menu dl dd .customer{margin-left:15px; margin-right:15px;}
+#header #sub_menu dl dd ul li a:hover{color:#e56100; text-decoration:none}
+/*메인배너*/
+/*#header #main_banner{width:1100px; margin:auto}*/
+#header #main_banner{position:absolute; top:0;width:1100px;height:463px;margin:auto;}
+@-moz-document url-prefix() { #header #main_banner{position:absolute; top:0; width:1100px;height:463px;margin:auto;} }
+#header #main_banner .banner_img{width:1100px; margin:auto;}
+#header #main_banner ol{position:absolute; top:455px; width:100%; text-align:center; *top:405px; z-index:500;}
+@-moz-document url-prefix() { #header #main_banner ol{position:absolute; top:455px; z-index:500;} }
+#header #main_banner #event_num ul{float:left}
+#header #main_banner #event_num ul li{float:left; text-align:center; line-height:1.9}
+/*#header #main_banner #event_num ul li a{display:block; width:24px; height:24px; color:#242323; background:url(http://img.nolzzang.com/aggro/images/rolling_btn.png) 0 0 no-repeat}*/
+#header #main_banner #event_num ul li.num01 a{width:25px; height:24px; color:#242323; display:block; background:url(http://img.nolzzang.com/aggro/images/rolling_btn01.png) 0 0 no-repeat; text-indent:-99999px}
+#header #main_banner #event_num ul li.num02 a{width:25px; height:24px; color:#242323; display:block; background:url(http://img.nolzzang.com/aggro/images/rolling_btn02.png) 0 0 no-repeat; text-indent:-99999px}
+#header #main_banner #event_num ul li.num03 a{width:25px; height:24px; color:#242323; display:block; background:url(http://img.nolzzang.com/aggro/images/rolling_btn03.png) 0 0 no-repeat; text-indent:-99999px}
+#header #main_banner #event_num ul li.num04 a{width:25px; height:24px; color:#242323; display:block; background:url(http://img.nolzzang.com/aggro/images/rolling_btn04.png) 0 0 no-repeat; text-indent:-99999px}
+#header #main_banner #event_num ul li.num05 a{width:25px; height:24px; color:#242323; display:block; background:url(http://img.nolzzang.com/aggro/images/rolling_btn05.png) 0 0 no-repeat; text-indent:-99999px}
+#header #main_banner #event_num ul li a:hover{background-position:0 -24px; text-decoration:none; color:#ffffff}
+
+#header #main_banner #btn_facebook{position:absolute; top:445px; *top:395px; left:912px; z-index:500}
+@-moz-document url-prefix() { #header #main_banner #btn_facebook{position:absolute; top:395px; left:912px; z-index:500;} }
+
+/*sns바로가기*/
+#header #main_banner #btn_go_sns{position:absolute; top:67px; right:0; z-index:500}
+#header #main_banner #btn_go_sns ul{float:left;}
+#header #main_banner #btn_go_sns ul li{float:left; margin-left:5px; margin-right:5px; text-indent:-99999px}
+#header #main_banner #btn_go_sns ul li.blog a{display:block; width:30px; height:30px; background:url(http://img.nolzzang.com/aggro/images/go_sns01.png) 0 0 no-repeat}
+#header #main_banner #btn_go_sns ul li.facebook a{display:block; width:30px; height:30px; background:url(http://img.nolzzang.com/aggro/images/go_sns02.png) 0 0 no-repeat}
+#header #main_banner #btn_go_sns ul li.twitter a{display:block; width:30px; height:30px; background:url(http://img.nolzzang.com/aggro/images/go_sns03.png) 0 0 no-repeat}
+#header #main_banner #btn_go_sns ul li.kakao a{display:block; width:30px; height:30px; background:url(http://img.nolzzang.com/aggro/images/go_sns04.png) 0 0 no-repeat}
+#header #main_banner #btn_go_sns ul li a:hover{background-position:0 -30px}
+
+
+/* Basic jQuery Slider essential styles */
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;z-index:1;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:1;}
+ul.bjqs-controls.v-centered li a {
+position: absolute;
+top: 50%;
+margin-top: 114px;
+outline: 0;
+width: 52px;
+height: 83px;
+text-indent: -9999px;
+z-index: 9999;
+}
+ul.bjqs-controls.v-centered li.bjqs-prev a { 
+left: 0px; background: url("http://img.nolzzang.com/crown/images/control_left.png") no-repeat 0 0;
+}
+ul.bjqs-controls.v-centered li.bjqs-next a { 
+right: 0px; background: url("http://img.nolzzang.com/crown/images/control_right.png") no-repeat 0 0;
+}
+ul.bjqs-controls.v-centered li.bjqs-prev a:hover,
+ul.bjqs-controls.v-centered li.bjqs-next a:hover {
+background-position: 0 -83px;
+}
+ol.bjqs-markers{list-style: none; padding: 0; margin:0;position:absolute;bottom:-40px;left:0;z-index:1;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;color:#ffffff;font-weight:bold;width:30px; height:30px; background:url(http://img.nolzzang.com/aggro/images/rolling_btn.png) 0 0 no-repeat;font-size:11px;line-height:30px;text-align:center; text-indent:-99999px}
+ol.bjqs-markers li.active-marker a {background-position:0 -30px}
+ol.bjqs-markers li a:hover {background-position:0 -30px}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+
+
+
+
+#container {*zoom:1; width:1100px; margin:auto; background:url(http://img.nolzzang.com/aggro/images/border_middle.jpg) 0 0 repeat-y;}
+#container:after {content:""; display:block; clear:both; }
+#contents{float:left; width:1100px; margin:auto; padding-top:20px; background:url(http://img.nolzzang.com/aggro/images/border_top.png) center top no-repeat;}
+#left_contents{float:left; width:320px; }
+#left_contents #gamestart{float:left; width:264px; margin-left:30px; margin-right:25px; margin-top:-10px}
+#left_contents #plugin_download{float:left; margin-left:30px;}
+
+/*로그아웃일때*/
+#left_contents #login{float:left; width:233px; height:176px; margin-left:47px; margin-top:12px; background:url(http://img.nolzzang.com/aggro/images/login_bg.jpg) 0 0 no-repeat}
+#left_contents #login h3{height:33px; font-size:14px; color:#ffffff; line-height:2.2; text-align:center; background:url(http://img.nolzzang.com/aggro/images/m_login_top_bg.jpg) 0 0 no-repeat}
+#left_contents #login #out {clear:both; position:relative; width:229px; height:137px;}
+#left_contents #login #out fieldset{padding-left:15px; margin-top:12px}
+#left_contents #login #out #login_select{position:absolute; width:117px; height:25px}
+#left_contents #login #out #id{position:absolute; top:35px; width:127px; height:18px; padding:5px 3px 5px 3px; color:#513a38; background-color:#1b0e0c; border:1px solid #000000}
+#left_contents #login #out #pw{position:absolute; top:65px; float:left; width:127px;height:18px; padding:5px 3px 5px 3px; margin-top:3px; color:#513a38; background-color:#1b0e0c; border:1px solid #000000}
+#left_contents #login #out #btn_login{position:absolute; top:35px; left:154px; width:63px; height:63px; border:0; background:url(http://img.nolzzang.com/aggro/images/btn_login.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+#left_contents #login #out .login_text{position:absolute; top:107px; color:#fff;}
+#left_contents #login #out .login_text a span{color:#ffd200}
+#left_contents #login #out .login_text a{color:#fff; text-decoration:none}
+#left_contents #login #out .naver_login_text{width:201px; height:63px; margin-top:7px; background-color:#59302c; color:#f6d0d0; text-align:center;}
+#left_contents #login #out .naver_login_text span{display:block; line-height:1.5; padding-top:3px}
+#auto_check{position:absolute; left:137px; top:5px; color:#fff}
+#auto_login_info{position:absolute; z-index:99; top:25px; left:15px}
+
+#left_contents #login #out #sns_login{position:absolute; top:130px; left:0; float:left; width:231px; height:35px;}
+#left_contents #login #out #sns_login p{float:left; margin-top:6px; margin-left:15px}
+#left_contents #login #out #sns_login ul li{float:left}
+
+/*로그인일때*/
+#left_contents #login ul{width:230px; height:33px;  background-color:#6f0100; border:1px solid #8b0100}
+#left_contents #login ul li{float:left}
+#left_contents #login ul li.nolzzang_login_on a{display:block; width:114px; height:33px; color:#ffffff; text-align:center; line-height:2.8; text-decoration:none}
+#left_contents #login ul li.nolzzang_login a{display:block; width:114px; height:33px; color:#d66c6c; text-align:center; line-height:2.8; background-color:#5e0000; text-decoration:none}
+#left_contents #login ul li.naver_login_on a{display:block; width:114px; height:33px; color:#ffffff; border-left:1px solid #8b0100; text-align:center; line-height:2.8; text-decoration:none}
+#left_contents #login ul li.naver_login a{display:block; width:114px; height:33px; color:#d66c6c; border-left:1px solid #8b0100; text-align:center; line-height:2.8; background-color:#5e0000; text-decoration:none}
+#left_contents #login #in {width:232px; height:137px; border-top:1px solid #bd9f3f}
+#left_contents #login #in fieldset{padding-left:15px;}
+#left_contents #login #in .user{float:left; color:#fff; margin-top:9px}
+#left_contents #login #in .user span{color:#f2c703; font-weight:bold}
+#left_contents #login #in #user_info{float:left; width:175px; height:49px; padding:6px 10px 7px 10px; margin-top:10px; line-height:2; color:#e0d0ae; background-color:#1b0e0c; border:1px solid #0c0604}
+#left_contents #login #in #user_info .cash{color:#e40200}
+#left_contents #login #in #user_info .day{color:#d4d4d4}
+#left_contents #login #in .login_menu{float:left; margin-top:20px; color:#fff;}
+#left_contents #login #in .login_menu a{color:#fff; text-decoration:none}
+#left_contents #login #in .login_menu img{margin:0 10px 0 10px}
+
+/*채널링로그인*/
+#left_contents .channeling_login{float:left; width:233px; height:176px; margin-left:47px; margin-top:12px; background:url("http://img.nolzzang.com/aggro/images/login_bg2.jpg") 0 0 no-repeat}
+#left_contents .channeling_login .out .channeling_text{width:197px; height:84px; background-color:#1b0e0c; margin-left:15px; margin-top:15px; color:#d4d4d4; text-align:center; line-height:1.5}
+#left_contents .channeling_login .out .channeling_text p{float:left; width:100%;}
+#left_contents .channeling_login .out .channeling_text span{color:#fff; font-weight:bold}
+#left_contents .channeling_login .out .btn_channeling_login{width:197px; height:50px; margin-left:15px; margin-top:10px }
+#left_contents .channeling_login .out .btn_channeling_login .btn_channeling{display:block; width:195px; height:48px; background-color:#9f0402; border:1px solid #b70200; color:#fff; font-size:16px; text-decoration:none; text-align:center; line-height:3;}
+
+#left_contents .channeling_login .in {width:232px;}
+#left_contents .channeling_login .in .user{float:left; color:#fff; width:233px; height:33px; line-height:2.5; border-bottom:1px solid #bd9f3f; text-align:center; background:url(http://img.nolzzang.com/aggro/images/m_login_top_bg.jpg) 0 0 no-repeat}
+#left_contents .channeling_login .in .user span{color:#f2c703; font-weight:bold}
+#left_contents .channeling_login .in #user_info{float:left; width:197px; height:85px; margin-top:10px; margin-left:15px; line-height:1.8; color:#e0d0ae; background-color:#1b0e0c; border:1px solid #0c0604}
+#left_contents .channeling_login .in #user_info .cash{color:#e40200}
+#left_contents .channeling_login .in #user_info .day{color:#d4d4d4}
+#left_contents .channeling_login .in #user_info p{margin-top:10px; margin-left:10px;}
+#left_contents .channeling_login .in #user_info p a{clear:both; color:#ffd200}
+#left_contents .channeling_login .in .login_menu{float:left; width:231px; height:34px; margin-top:10px; margin-left:1px; color:#fff; background:url("http://img.nolzzang.com/aggro/images/login_bg3.jpg") 0 0 repeat-x}
+#left_contents .channeling_login .in .login_menu p{margin-left:13px; margin-top:10px}
+#left_contents .channeling_login .in .login_menu a{color:#fff; text-decoration:none}
+#left_contents .channeling_login .in .login_menu img{margin:0 10px 0 10px}
+
+
+/*좌측 배너*/
+#left_contents #left_banner{float:left; margin-left:46px; margin-top:20px;}
+#left_contents #left_banner a{float:left; margin-bottom:5px}
+#left_contents #left_banner a.m_bottom_0{margin-bottom:0}
+#left_contents #customer_banner{float:left; margin-left:46px; margin-top:20px}
+#left_contents #browser_download{float:left; margin-left:46px; margin-top:20px}
+
+/*공지사항 미리보기*/
+#main_contents{float:left; width:460px}
+#main_contents #m_notice{width:460px; float:left; margin-top:27px}
+.mainTab{position:relative; width:460px; height:180px; background:url("http://img.nolzzang.com/aggro/images/notice_bg.jpg") 0 0 no-repeat}
+.mainTab dt{float:left; height:31px; background-color:#6f0100}
+.mainTab dd{display:none; position:absolute; left:16px; top:50px}
+.mainTab dd ul{width:430px;}
+.mainTab dd li{float:left; padding-bottom:9px; width:100%; color:#fff;}
+.mainTab dd li a{float:left; width:340px; color:#fff; text-overflow:ellipsis; overflow:hidden; white-space:nowrap}
+.mainTab dd li .subject {color:#ffe400}
+.mainTab dd li .day{float:right; color:#ffedbe}
+.more{position:absolute; right:-10px; top:-45px;}
+
+/*게임가이드 배너*/
+#guide_banner{float:left; width:460px; margin-top:16px}
+
+/*캐릭터소개 배너*/
+#character{ float:left;width:460px; height:217px; margin-top:18px; background:url(http://img.nolzzang.com/aggro/images/character_bg.jpg) 0 0 no-repeat}
+#character .character_img{float:left; position:relative; top:1px; width:386px; height:215px}
+#character ul{float:right; margin-right:1px; margin-top:1px}
+#character ul li{margin-bottom:1px}
+
+/*랭킹*/
+#right_contents{float:left; width:280px; margin-left:40px;}
+#right_contents #ranking{float:left; width:233px; height:499px; overflow:hidden; margin-top:27px}
+#right_contents #ranking form{width:100%; height:499px; background:url(http://img.nolzzang.com/aggro/images/m_ranking_bg.jpg) 0 33px no-repeat}
+#right_contents #ranking form table{width:233px;}
+#right_contents #ranking form table th{height:33px; color:#ffffff; font-size:14px; background:url(http://img.nolzzang.com/aggro/images/m_ranking_top_bg.jpg) 0 0 no-repeat }
+#right_contents #ranking form table h3{float:left; margin-left:10px}
+#right_contents #ranking form table p{float:right; margin-right:10px}
+#right_contents #ranking form table p select{border:0; width:142px; height:23px;}
+#right_contents #ranking form table p a{margin-left:5px}
+#right_contents #ranking form table td{color:#fff; height:42px; .height:42px; \0/IE8+9; height:42px \0/IE8+9; border-spacing:0; padding:0; border:0; border-collapse:collapse}
+#right_contents #ranking form table .num{width:60px;}
+#right_contents #ranking form table .nickname{width:78px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; float:left}
+#right_contents #ranking form table .nation{width:95px; color:#ff8080;}
+#right_contents #ranking form table .power{width:80px; padding-right:15px;}
+#right_contents #ranking form table .power span{color:#ffd200; font-size:14px; font-family:arial; font-weight:bold}
+#right_contents #ranking form table tbody{float:left; position:relative; width:233px; height:466px;}
+#right_contents #ranking form table tbody tr{display:table; width:233px; height:40px;}
+#right_contents #ranking form table tbody td img{margin-left:1px}
+
+/*우측배너*/
+#right_contents #naver_search{float:left; margin-top:20px}
+#right_contents #chrome{float:left; margin-top:5px}
+#right_contents #movie{float:left; margin-top:20px}
+
+/*메인 스크린샷*/
+#main_screenshot{float:left; width:733px; height:201px; margin-top:20px; background:url(http://img.nolzzang.com/aggro/images/m_screenshot_bg.jpg) 0 0 no-repeat;}
+#main_screenshot h3{height:33px; font-size:14px; color:#fff; line-height:2; text-indent:10px}
+#main_screenshot p{float:right; margin-top:-28px; margin-right:7px}
+#main_screenshot dl{float:left; margin-top:15px; margin-left:13px}
+#main_screenshot dl dt{border:1px solid #916e32}
+#main_screenshot dl dd{width:205px; height:27px; padding:0 10px 0 10px; margin-top:-28px; margin-left:1px; line-height:2; text-align:center; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; background-color:#000; filter:alpha(opacity:80); opacity:0.8; -moz-opacity:0.8;}
+#main_screenshot dl dd a{color:#d8d8d8}
+#main_screenshot dl dd a:hover{color:#ffffff; text-decoration:none}
+
+
+#footer{clear:both; float:left; width:1100px; margin:auto; background:#000 url(http://img.nolzzang.com/aggro/images/border_bottom.png) 0 0 no-repeat}
+
+/*사이트맵*/
+#sitemap{float:left; width:1100px; margin-top:50px; margin-left:23px}
+#sitemap dl{float:left; width:160px;}
+#sitemap .first{margin-left:30px}
+#sitemap dl dt{float:left; color:#a7a7a7; font-size:15px; margin-bottom:13px}
+#sitemap dl dd{float:left; clear:both}
+#sitemap dl dd a{color:#4c4c4c; font-size:13px; line-height:1.6}
+#sitemap dl dd a:hover{color:#a7a7a7; text-decoration:none}
+#sitemap #sns{float:left; clear:both; width:1075px;}
+#sitemap #sns p{float:right}
+#sitemap #sns p a{margin-right:5px; float:left;}
+
+/*footer*/
+#copyright{width:1100px; float:left; margin-top:80px;}
+#copyright #footer_logo{float:left; width:120px; margin-top:20px}
+#copyright ul{float:left; margin-top:20px;}
+#copyright ul li{float:left; margin-right:23px}
+#copyright ul li a{color:#a6a6a6; text-decoration:none}
+#copyright p{float:left; width:540px; margin-top:15px; line-height:1.5; font-size:11px; color:#5d5d5d}
+#copyright p span{color:#7a311d}
+#rating{float:right; margin-top:12px;}
+#footer_mark{float:right; margin-left:450px; margin-top:15px; }
+
+
+/*깜놀_footer*/
+#ggamnol_footer{clear:both; float:left; width:1100px; margin:auto; background:url(http://img.nolzzang.com/aggro/images/border_bottom.png) 0 0 no-repeat}
+#gn_footer_copyright{width:1100px; float:left; margin-top:80px; padding-bottom:20px;}
+#gn_footer_copyright #footer_logo{float:left; margin-top:20px}
+#gn_footer_copyright ul{float:right; margin-top:20px;}
+#gn_footer_copyright ul li{float:left; margin-right:23px}
+#gn_footer_copyright ul li a{color:#a6a6a6; text-decoration:none}
+#gn_footer_copyright p{clear:both; float:left; width:540px; margin-top:15px; line-height:1.5; font-size:11px; color:#5d5d5d}
+#gn_footer_copyright p span{color:#7a311d}
+#gn_footer_copyright #rating{float:right; margin-top:-10px }
+#gn_footer_copyright #footer_mark{float:right; margin-left:450px; margin-top:-5px; }
+
+
+/*게임매니아_footer*/
+/*Footer-basicLayout (black)*/
+#footer_wrap_black {width:100%; height:158px; font-size:11px; line-height:16px;  margin-top:90px}
+#footer_wrap_black .footer_cont {width:1110px; margin:0 auto;}
+#footer_wrap_black .footer_cont .f_top {height:26px; border-bottom:1px solid #353635; padding-top:14px;}
+#footer_wrap_black .footer_cont .f_top .footer_bi {float:left;}
+#footer_wrap_black .footer_cont .f_top .footer_bi li {float:left; margin-right:25px;}
+#footer_wrap_black .footer_cont .f_top .policy {float:right;}
+#footer_wrap_black .footer_cont .f_top .policy ul {clear:both;}
+#footer_wrap_black .footer_cont .f_top .policy ul li {float:left; margin-left:9px;}
+#footer_wrap_black .footer_cont .f_top .policy ul li span.footer_bar {display:inline-block; width:1px; height:8px;
+	background:url("./images/footer_imgs.png") no-repeat -1px 0; vertical-align:0px; margin-left:9px;}
+*:first-child+html #footer_wrap_black .footer_cont .f_top .policy ul li span.footer_bar {vertical-align:4px;} 
+#footer_wrap_black .footer_cont .f_top .policy ul li.brandStory {margin-top:0px;}
+#footer_wrap_black .footer_cont .f_top .policy ul li a {color:#a3a3a3;display:inline-block;vertical-align:middle;}
+#footer_wrap_black .footer_cont .f_top .policy ul li a.policy_point {font-weight:bold; color:#ff7112;}
+#footer_wrap_black .footer_cont .copyright {float:left;  margin-top:15px;}
+#footer_wrap_black .footer_cont .copyright address{color:#707070; line-height:15px;}
+#footer_wrap_black .footer_cont .copyright address .e_mail {color:#707070; text-decoration:underline;}
+#footer_wrap_black .footer_cont .copyright address span.footer_bar {display:inline-block; width:1px; height:8px;
+	background:url("./images/footer_imgs.png") no-repeat -1px 0; vertical-align:0px; margin:0px 9px;}
+*:first-child+html #footer_wrap_black .footer_cont .copyright address span.footer_bar {vertical-align:4px;}
+#footer_wrap_black .footer_cont .copyright p.copy_note {padding-top:15px; font-family:"Helvetica"; letter-spacing:0.3px; color:#bababa; font-size:10px; line-height:10px;}
+#footer_wrap_black .footer_cont .copyright p.copy_note em {color:#ff7112;}
+#footer_wrap_black .footer_cont .copyright address .licenceInfo {text-decoration:underline; color:#707070;
+background:url("./images/licenceInfo_icon_b.png") no-repeat right 3px; padding-right:8px;}
+
+
+/*서브페이지 메뉴*/
+#sub_gnb{float:right; width:735px; height:41px; margin:27px 45px 0 0;  background:url(http://img.nolzzang.com/aggro/images/sub_menu_bg.jpg) 0 0 no-repeat}
+#sub_gnb ul{float:left; width:735px; height:39px; margin:1px 0 0 1px; text-align:center}
+#sub_gnb ul li{float:left; width:244px; height:39px; line-height:3;}
+#sub_gnb ul li.bg_none{background:none}
+#sub_gnb ul li.w496{width:244px}
+#sub_gnb ul li.w330{width:244px}
+#sub_gnb ul li a{display:block; width:244px; height:39px; font-size:13px; color:#d5d0cd; font-weight:bold; background:url(http://img.nolzzang.com/aggro/images/sub_gnb_button.jpg) 0 0 no-repeat}
+#sub_gnb ul li a:hover{text-decoration:none; color:#fff; background:url(http://img.nolzzang.com/aggro/images/gnb_over.png) center 0 no-repeat; background-size:cover}
+#sub_gnb ul li a.sub_select {text-decoration:none; color:#fff; background:url(http://img.nolzzang.com/aggro/images/gnb_over.png) center 0 no-repeat;}
+
+#sub_contents{float:left; width:735px; margin-top:20px;}
+
+/*타이틀*/
+#sub_contents h2{float:left; font-size:30px; font-weight:bold; color:#ffffff}
+
+/*네비메뉴*/
+#sub_contents #navi{float:right; margin-top:16px}
+#sub_contents #navi a{color:#c5c4c4}
+#sub_contents #navi a span{color:#f2c703}
+#sub_contents #navi a:hover{color:#ffffff; text-decoration:none}
+
+
+/*게임 가이드*/
+#sub_contents #introduce{clear:both; float:left; width:735px; margin-top:12px; }
+
+#guide_search{float:left; width:100%; height:82px; text-align:center; background:url(http://img.nolzzang.com/aggro/images/bbs_top_bg.jpg) 0 0 no-repeat}
+#guide_search .guide_input{width:308px; height:13px; margin-top:23px; padding:10px; border:0}
+#guide_search .btn_search{width:73px; height:33px; margin-top:23px; border:0; background:url(http://img.nolzzang.com/aggro/images/btn_search.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+.guide{float:left; width:100%; padding-top:35px; padding-bottom:35px; border-bottom:1px solid #000; border-top:1px solid #505050}
+.guide dl{float:left; width:225px; margin-left:15px; min-height:425px; background-color:#fff; }
+.guide dl dt{float:left; width:100%; height:32px; font-size:14px; color:#000; border-bottom:1px solid #cfcfcf; margin-bottom:12px; font-weight:bold; line-height:2.2; text-indent:12px;}
+.guide dl dt img{margin-left:10px; margin-bottom:2px}
+.guide dl dd a{line-height:2; margin-left:12px;}
+.guide dl dd a:hover{color:#cf2323}
+
+
+/*게임가이드 검색결과*/
+#search_result{float:left; width:100%; padding-top:35px; padding-bottom:35px; background-color:#e6e6e6}
+#search_result .result{width:680px; line-height:3; margin-left:25px; margin-bottom:30px; font-size:14px; border-bottom:1px solid #313131}
+#search_result .result span{color:#c70008; font-weight:bold;}
+#search_result .result_value{width:680px; margin:auto; margin-bottom:30px; line-height:1.5}
+#search_result .result_value h4 a{font-size:14px; font-weight:bold; color:#521312}
+#search_result .result_value .text{width:680px; text-align:justify }
+#search_result .result_value .text a:hover{text-decoration:none}
+#search_result .result_navi{color:#bc643e; margin-top:5px}
+#search_result .result_navi a{color:#bc643e}
+#search_result .result_navi a:hover{color:#bc643e}
+#search_result #page_num{width:100%; margin-top:35px; border-top:1px solid #313131}
+
+
+/*상점*/
+#sub_contents #cashshop{clear:both; float:left; width:735px; margin-top:12px; background-color:#251312;}
+
+#cashshop_top{float:left; width:100%; height:109px; background:url(http://img.nolzzang.com/aggro/images/cashshop_top_bg.jpg) 0 0 no-repeat}
+#cashshop_top .sever_select{float:left; margin:25px 0 0 23px; color:#ffffff}
+#cashshop_top #serverId{clear:both; float:left; width:250px; height:28px; margin-left:23px; margin-top:10px;}
+#cashshop_top #characterID{float:left; height:28px; margin-left:5px; margin-top:10px;}
+#cashshop_top .charge{float:right; position:relative; top:35px; right:23px; color:#e4b1ad; font-size:14px}
+#cashshop_top .charge span{font-size:16px; font-weight:bold; color:#ffd584}
+#cashshop_top .btn_cash{margin-left:13px; width:121px; height:35px; border:0; background:url(http://img.nolzzang.com/aggro/images/btn_cash_charge.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+
+#buy_cash{float:left; width:100%; padding-top:20px; padding-bottom:35px; background:url(http://img.nolzzang.com/aggro/images/cash_shop_body_bg.jpg) 0 0 repeat-y; border-bottom:1px solid #bd9f3f}
+#buy_cash .cash_text{margin-left:29px; margin-bottom:25px; line-height:1.5; color:#fff}
+#buy_cash .cash_text span{color:#ffd200}
+
+#buy_cash dl{float:left; width:332px; height:143px; margin:7px; background:url(http://img.nolzzang.com/aggro/images/cash_shop_bg.jpg) 0 0 no-repeat}
+#buy_cash dl.m_left29{margin-left:29px}
+#buy_cash dl dt{float:left; margin-top:10px; margin-left:9px;}
+#buy_cash dl dt img{width:134px; height:125px;}
+#buy_cash dl dd{float:left; width:180px; height:125px; margin-top:10px; background-color:#ffffff}
+#buy_cash dl dd h3{font-size:20px; color:#d80003; font-weight:bold; margin-top:10px; margin-left:10px}
+#buy_cash dl dd .bonus{font-size:14px; font-weight:bold; margin-left:10px; margin-top:2px; color:#d85e11}
+#buy_cash dl dd .price{font-size:16px; margin-top:5px; margin-left:10px}
+#buy_cash dl dd .price span{font-weight:bold; color:#000000}
+#buy_cash dl dd .btn_buy{float:left; width:77px; height:32px; display:block; margin-top:10px; margin-left:10px; border:0; background:url(http://img.nolzzang.com/aggro/images/btn_buy.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+#buy_cash dl dd .btn_gift{float:left; width:77px; height:32px; display:block; margin-top:10px; margin-left:1px; border:0; background:url(http://img.nolzzang.com/aggro/images/btn_gift.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+
+#cashguide_top{float:left; width:735px; height:82px; background:url(http://img.nolzzang.com/aggro/images/bbs_top_bg.jpg) 0 0 no-repeat}
+#cashguide_top .sever_select{float:left; margin:30px 0 0 23px; color:#ffffff}
+
+#item_list{float:left; width:100%; padding-top:20px; padding-bottom:35px; background:url(http://img.nolzzang.com/aggro/images/cash_shop_body_bg.jpg) 0 0 repeat-y; border-top:1px solid #bd9f3f; border-bottom:1px solid #bd9f3f}
+#item_list h3{font-size:18px; color:#fff; margin-left:29px; font-weight:600}
+#item_list #shop_img{float:left}
+#item_table{float:left; width:673px; margin-top:5px; margin-left:29px; border:1px solid #281714;  background:url(http://img.nolzzang.com/aggro/images/shop_guide_top_bg.jpg) 0 0 no-repeat}
+#item_table th{height:31px; text-align:center; color:#fff;}
+#item_table td{border:1px solid #281714; line-height:1.5; background-color:#ffffff}
+#item_table td p{margin-left:18px}
+#item_table td.blue{color:#0151bd}
+#item_table td.orange{color:#cd2200}
+#item_table td.purple{color:#6d0f93}
+
+
+/*공지사항*/
+#sub_contents #notice{clear:both; float:left; width:735px; margin-top:12px; background:url(http://img.nolzzang.com/aggro/images/bbs_top_bg.jpg) 0 0 no-repeat}
+
+.bbs_top{float:left; width:100%; height:82px;}
+.bbs_top .subject{float:left; width:108px; height:28px; margin-top:25px; margin-left:23px; }
+.bbs_top p{float:right; margin-top:25px; margin-right:23px;}
+.bbs_top p .select_type{width:108px; height:28px;}
+.bbs_top p .bbs_search{width:207px; height:22px;}
+.bbs_top p .btn_bbs_search{width:73px; height:29px; border:0; background:url(http://img.nolzzang.com/aggro/images/btn_bbs_search.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+
+#bbs_list{float:left; width:100%; min-height:626px; padding-top:30px; padding-bottom:35px; border-bottom:1px solid #bd9f3d; background:url(http://img.nolzzang.com/aggro/images/cash_shop_body_bg.jpg) 0 0 no-repeat}
+#bbs_list table{width:673px; margin-left:29px; border:1px solid #291715; background:url(http://img.nolzzang.com/aggro/images/bbs_top_bg3.jpg) 0 0 no-repeat}
+#bbs_list table th{height:33px; text-align:center; color:#fff;}
+#bbs_list table td{height:35px; border-bottom:1px solid #291715; background-color:#fff;}
+#bbs_list table td.subject{padding-left:10px}
+#bbs_list table td.count{padding-right:10px}
+#bbs_list table td.top_notice{color:#cd1f1f}
+#bbs_list table td.white{background-color:#ffeed4}
+
+.paging{clear:both; position:relative; width:673px;  margin-top:25px; margin-left:29px;}
+.paging p{text-align:center}
+.paging #write{position:absolute; right:0; width:70px; height:26px; background:url(http://img.nolzzang.com/aggro/images/btn_write.jpg) 0 0 no-repeat; border:0; text-indent:-99999px; cursor:pointer}
+.paging #list{position:absolute; right:0; width:70px; height:26px; background:url(http://img.nolzzang.com/aggro/images/btn_list.jpg) 0 0 no-repeat; border:0; text-indent:-99999px; cursor:pointer}
+.paging a{display:inline-block; width:26px; height:26px; margin-left:1px; line-height:2; background-color:#ffffff}
+.paging a:hover{background-color:#c90301; color:#ffffff; text-decoration:none}
+
+#bbs_view{float:left; width:100%; padding-top:30px; padding-bottom:35px; background-color:#e6e6e6}
+#bbs_view table{width:673px; margin-left:29px}
+#bbs_view table th{background-color:#ffffff; border-bottom:1px solid #b9b9b9; padding:0 10px 0 10px}
+#bbs_view table th.subject{border-top:1px solid #6f0100; font-size:14px; font-weight:bold; color:#521312}
+#bbs_view table th.day{text-align:right; font-size:11px; color:#8c8b8b}
+#bbs_view table th.day span{color:#4c4c4c; font-weight:bold}
+#bbs_view table tbody td{border-bottom:1px solid #b9b9b9; line-height:1.5; padding:33px 20px 50px 20px;}
+#bbs_view table td .next_prev{float:left; margin-top:16px;}
+#bbs_view table td input{float:right; width:70px; height:26px; margin-top:13px; border:0; background:url(http://img.nolzzang.com/aggro/images/btn_list.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+
+/*이벤트*/
+#sub_contents #event{clear:both; float:left; width:731px; margin-top:12px; background:url(http://img.nolzzang.com/aggro/images/bbs_top_bg.jpg) 0 0 no-repeat}
+#event_list{float:left; width:100%; min-height:626px; padding-top:30px; padding-bottom:35px; border-bottom:1px solid #bd9f3d; background:url(http://img.nolzzang.com/aggro/images/cash_shop_body_bg.jpg) 0 0 repeat-y}
+#event_list ul{width:670px; height:33px; margin-left:29px; background:url(http://img.nolzzang.com/aggro/images/event_tab_bg.jpg) 0 0 no-repeat}
+#event_list ul li{float:left; }
+#event_list ul li a:hover{text-decoration:none}
+#event_list ul li.on a{display:block; width:110px; height:35px; background:url(http://img.nolzzang.com/aggro/images/event_tab_on.jpg) 0 0 no-repeat; text-align:center; line-height:2.8; color:#ffffff}
+#event_list ul li.off a{display:block; width:110px; height:35px; background:url(http://img.nolzzang.com/aggro/images/event_tab_off.jpg) 0 0 no-repeat; text-align:center; line-height:2.8; color:#e3d5b2}
+
+#event_list dl{width:670px; height:143px; margin-left:29px; border-bottom:1px solid #281714; background-color:#fff}
+#event_list dl dt{float:left; margin-left:14px; margin-top:23px;}
+#event_list dl dd{float:left; width:385px; margin-left:14px; margin-top:23px;}
+#event_list dl dd h3{font-size:14px; color:#292929}
+#event_list dl dd h3 a{font-size:14px; color:#521312}
+#event_list dl dd p{height:55px; margin-top:13px; line-height:1.5}
+#event_list dl dd span{color:#7d7d7d}
+
+/*랭킹*/
+#sub_contents #ranking{clear:both; float:left; width:731px; margin-top:12px; background-color:#251312; border:1px solid #402321}
+#sub_contents #ranking ul{float:left}
+#sub_contents #ranking ul li{float:left}
+
+#raking_top{float:left; width:100%; height:80px; color:#ffffff}
+#raking_top p{float:left}
+#raking_top p span{color:#e4b1ad}
+#raking_top .raking_text{float:left; margin-left:23px; margin-top:30px}
+#raking_top .select_server{float:right; margin-right:23px; margin-top:25px}
+#raking_top .select_job{float:right; margin-right:23px; margin-top:25px}
+#raking_top .select_server select{width:108px; height:28px; margin-left:10px;}
+#raking_top .select_job select{width:73px; height:28px; margin-left:10px;}
+
+#ranking_list{float:left; width:100%; min-height:600px; padding-top:30px; padding-bottom:35px; background-color:#e6e6e6}
+#ranking_list table{width:673px; margin-left:29px;}
+#ranking_list table th{height:35px; background-color:#6f0100; color:#f6d0d0; text-align:center}
+#ranking_list table td{height:35px; text-align:center; border-bottom:1px solid #b9b9b9}
+
+/*스크린샷*/
+#sub_contents #screenshot{clear:both; float:left; width:735px; margin-top:12px; background:url(http://img.nolzzang.com/aggro/images/bbs_top_bg.jpg) 0 0 no-repeat}
+#screenshot_list{float:left; width:100%; min-height:626px; padding-top:30px; padding-bottom:35px; border-bottom:1px solid #bd9f3d; background:url(http://img.nolzzang.com/aggro/images/cash_shop_body_bg.jpg) 0 0 no-repeat}
+#screenshot_list dl{float:left; margin-right:23px; margin-bottom:37px; border:1px solid #454646}
+#screenshot_list dl.l_m30{margin-left:30px;}
+*:first-child+html #screenshot_list dl.b_m0{margin-bottom:0}
+#screenshot_list dl dd{width:209px; height:68px; background-color:#1b1b1b; border-top:1px solid #545454}
+#screenshot_list dl dd h3{float:left; width:190px; margin:9px 0 0 8px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap}
+#screenshot_list dl dd h3 a{font-size:13px; color:#fff}
+#screenshot_list dl dd p{float:left; margin-left:8px; color:#a09f9f; margin-top:5px}
+#screenshot_list dl dd p span{color:#ffffff; line-height:1.3}
+
+#screenshot_view{float:left; width:100%; padding-top:30px; padding-bottom:35px; background-color:#e6e6e6}
+#screenshot_view table{width:673px; margin-left:29px}
+#screenshot_view table th{background-color:#ffffff; border-bottom:1px solid #b9b9b9; padding:0 10px 0 10px}
+#screenshot_view table th.nickname{color:#4c4c4c; font-weight:bold}
+#screenshot_view table th.subject{border-top:1px solid #6f0100; font-size:14px; font-weight:bold; color:#521312}
+#screenshot_view table th.day{text-align:right; font-size:11px; color:#8c8b8b}
+#screenshot_view table th.day span{color:#4c4c4c; font-weight:bold}
+#screenshot_view table tbody td{border-bottom:1px solid #b9b9b9; line-height:1.5; padding:33px 20px 50px 20px;}
+#screenshot_view table td .next_prev{float:left; margin-top:16px;}
+#screenshot_view table td #list{float:right; width:70px; height:26px; margin-top:13px; margin-left:1px; border:0; background:url(http://img.nolzzang.com/aggro/images/btn_list.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+#screenshot_view table td #modify{float:right; width:70px; height:26px; margin-top:13px; border:0; background:url(http://img.nolzzang.com/aggro/images/btn_modify.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+
+#remove{float:right; width:70px; height:26px; margin-top:13px; border:0; margin-left:1px; background:url(http://img.nolzzang.com/aggro/images/btn_remove.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+
+
+#screenshot_write{float:left; width:100%; min-height:626px; padding-top:30px; padding-bottom:35px; background-color:#e6e6e6}
+#screenshot_write table{width:673px; margin-left:29px; border-top:1px solid #6f0100}
+#screenshot_write table th{background-color:#fff5ef; color:#6a2822; font-weight:bold; padding-left:15px; border-bottom:1px solid #e6ddd8}
+#screenshot_write table tbody td{background-color:#ffffff; padding-left:15px; border-bottom:1px solid #e6ddd8}
+#screenshot_write table td #title{width:520px; height:26px; border:1px solid #bebebe}
+#screenshot_write table td .server{width:167px; height:26px}
+#screenshot_write table td.text_area{}
+#screenshot_write table tfoot td{background:none; padding-top:20px}
+#screenshot_write table td p{font-size:11px; color:#b8b8b8; margin-top:4px}
+#screenshot_write table td textarea{width:640px; height:415px; border:1px solid #e6ddd8; margin-top:10px; margin-bottom:10px; padding:0}
+
+#comment{width:673px; margin-left:29px; margin-top:35px}
+#comment .comment_input span{color:#be0002; font-weight:bold}
+#comment .comment_input textarea{margin-top:10px; width:575px; height:68px; border:1px solid #b9b9b9}
+#comment .comment_list{border-bottom:1px solid #b9b9b9; padding:23px 14px 23px 14px}
+#comment .comment_list p{line-height:1.6}
+#btn_comment{width:92px; height:71px; margin-top:10px; background:url(http://img.nolzzang.com/aggro/images/btn_regist.jpg) 0 0 no-repeat; border:0; text-indent:-99999px; cursor:pointer}
+.comment_list .comment_date{color:#8c8b8b; margin-top:20px}
+.comment_list .comment_date span{color:#2a2a2a; font-weight:bold}
+.comment_paging{width:100%}
+.comment_paging p{text-align:center; margin-top:20px}
+.comment_paging p a{margin:0 5px 0 5px}
+.comment_paging p a:hover{color:#be0001; font-weight:bold; text-decoration:none}
+
+
+/*커뮤니티*/
+#sub_contents #community{clear:both; float:left; width:735px; margin-top:12px; background:url(http://img.nolzzang.com/aggro/images/bbs_top_bg.jpg) 0 0 no-repeat}
+#community_list{float:left; width:100%; min-height:626px; padding-top:30px; padding-bottom:35px; border-bottom:1px solid #bd9f3d; background:url(http://img.nolzzang.com/aggro/images/cash_shop_body_bg.jpg) 0 0 no-repeat}
+#community_list table{width:673px; margin-left:29px; border:1px solid #291715; background:url(http://img.nolzzang.com/aggro/images/bbs_top_bg2.jpg) 0 0 no-repeat}
+#community_list table th{height:33px; text-align:center; color:#fff;}
+#community_list table td{height:35px; border-bottom:1px solid #291715; background-color:#fff;}
+#community_list table td.subject{padding-left:10px}
+#community_list table td.count{padding-right:10px}
+#community_list table td.top_notice{color:#cd1f1f}
+#community_list table td.white{background-color:#ffeed4}
+
+#community_view{float:left; width:100%; min-height:626px; padding-top:30px; padding-bottom:35px; background-color:#e6e6e6}
+#community_view table{width:673px; margin-left:29px}
+#community_view table th{background-color:#ffffff; border-bottom:1px solid #b9b9b9; padding:0 10px 0 10px}
+#community_view table th.nickname{color:#4c4c4c; font-weight:bold}
+#community_view table th.subject{border-top:1px solid #6f0100; font-size:14px; font-weight:bold; color:#521312}
+#community_view table th.day{text-align:right; font-size:11px; color:#8c8b8b}
+#community_view table th.day span{color:#4c4c4c; font-weight:bold}
+#community_view table tbody td{border-bottom:1px solid #b9b9b9; line-height:1.5; padding:33px 20px 50px 20px;}
+#community_view table td .next_prev{float:left; margin-top:16px;}
+#community_view table td #list{float:right; width:70px; height:26px; margin-top:13px; margin-left:1px; border:0; background:url(http://img.nolzzang.com/aggro/images/btn_list.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+#community_view table td #modify{float:right; width:70px; height:26px; margin-top:13px; border:0; background:url(http://img.nolzzang.com/aggro/images/btn_modify.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+
+#community_write{float:left; width:100%; min-height:626px; padding-top:30px; padding-bottom:35px; background-color:#e6e6e6}
+#community_write table{width:673px; margin-left:29px; border-top:1px solid #6f0100}
+#community_write table th{background-color:#fff5ef; color:#6a2822; font-weight:bold; padding-left:15px; border-bottom:1px solid #e6ddd8}
+#community_write table tbody td{background-color:#ffffff; padding-left:15px; border-bottom:1px solid #e6ddd8}
+#community_write table td #title{width:520px; height:26px; border:1px solid #bebebe}
+#community_write table td .server{width:167px; height:26px}
+#community_write table td .ategory{width:82px; height:26px}
+#community_write table td.text_area{}
+#community_write table tfoot td{background:none; padding-top:20px}
+#community_write table td p{font-size:11px; color:#b8b8b8; margin-top:4px}
+#community_write table td textarea{width:640px; height:415px; border:1px solid #e6ddd8; margin-top:10px; margin-bottom:10px; padding:0}
+
+/*구매 및 선물내역*/
+.purchase_top{float:left; width:100%; height:82px;}
+.purchase_top .subject{ width:108px; height:28px; margin-right:5px; }
+.purchase_top p.purchase_top_text{color:#fff; float:left; margin-top:32px; margin-left:24px;}
+.purchase_top p.purchase_top_select{float:right; margin-top:25px; margin-right:23px;}
+.purchase_top p .select_type{width:108px; height:28px;}
+.purchase_top p .bbs_search{width:207px; height:22px;}
+.purchase_top p .btn_bbs_search{width:73px; height:29px; border:0; background:url(http://img.nolzzang.com/aggro/images/btn_bbs_search.jpg) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+
+#sub_contents #purchase_history{clear:both; float:left; width:735px; margin-top:12px; background:url(http://img.nolzzang.com/aggro/images/bbs_top_bg.jpg) 0 0 no-repeat}'
+#sub_contents #purchase_history .subject{float:right}
+#purchase_list{float:left; width:100%; min-height:626px; padding-top:30px; padding-bottom:35px; border-bottom:1px solid #bd9f3d; background:url(http://img.nolzzang.com/aggro/images/cash_shop_body_bg.jpg) 0 0 no-repeat}
+#purchase_list table.purchase{width:673px; margin-left:29px; border:1px solid #291715; background:url(http://img.nolzzang.com/aggro/images/bbs_top_bg4.jpg) 0 0 no-repeat}
+#purchase_list table.gift{width:673px; margin-left:29px; border:1px solid #291715; background:url(http://img.nolzzang.com/aggro/images/bbs_top_bg5.jpg) 0 0 no-repeat}
+#purchase_list table th{height:33px; text-align:center; color:#fff;}
+#purchase_list table td{height:35px; border-bottom:1px solid #291715; background-color:#fff;}
+#purchase_list table td.subject{padding-left:10px}
+#purchase_list table td.count{padding-right:10px}
+#purchase_list table td.top_notice{color:#cd1f1f}
+#purchase_list table td.white{background-color:#ffeed4}
+
+/*server*/
+#server{position:relative; width:890px; height:527px; background:url(http://img.nolzzang.com/aggro/images/server_bg.png) 0 0 no-repeat}
+#server #recommend{position:absolute; top:105px; left:214px}
+#server #contact{position:absolute; top:105px; left:598px}
+#server #close{position:absolute; top:27px; left:795px}
+#server #btn_server{position:absolute; top:206px; left:74px;}
+#server #btn_server ul{float:left; width:820px;}
+#server #btn_server ul li{float:left; margin-right:3px; margin-bottom:3px;}
+#server #btn_server ul li.m_r0{margin-right:0}
+#server #rolling{position:absolute; top:430px; width:100%;}
+#server #rolling p{text-align:center}
+#server #rolling a{margin:0 5px; display:inline-block; text-align:center; line-height:2; text-decoration:none; color:#3a1510; width:26px; height:26px; background:url(http://img.nolzzang.com/aggro/images/server_rolling_btn.png) 0 0 no-repeat}
+#server #rolling a:hover{background-position:0 -26px; color:#ffffff;}
+
+/*제휴문의*/
+#jehu { width:400px;margin:0 auto;position: absolute; float: left; z-index: 9999; display: none;background:#ffffff;padding:20px;border:2px solid #999999}
+#jehu_in { border-top:2px solid #666666; background:#F2F2F2;margin-top:5px;padding:10px}
+#jehu_in .white { background:#ffffff;padding:15px}
+table.jehu_t { width:94%;border-collapse:collapse; margin:0 auto}
+table.jehu_t th { background:url(http://img.nolzzang.com/aggro/images/SM_icon_02.gif) no-repeat 0 8px;width:100px;padding-left:9px}
+table.jehu_t td { text-align:left;}
+
+
+/*팝업창*/
+#pops, #update_event {float:left;}
+#popup{width:295px;height:319px;border:1px solid #787878;background:#fbfbfb}
+.box{width:283px;height:307px;border:1px solid #dddcdc;margin:5px;background:#fff}
+.c_text{width:246px;height:235px;margin:17px;cursor:pointer}
+.c_text p {line-height:1.8}
+#pops strong {font-weight:bold}
+#pops h3 {font-size:100%}
+#update_event #event_img{float:left; margin:7px 7px 0 7px}
+#update_event #close{float:left; width:95%; height:25px; margin-left:7px; background-color:#d5d5d5}
+#update_event #close p{float:left; margin-top:2px}
+#update_event #close a{float:right}
+
+/* 즐겨찾기*/
+#favorite_layer {position: absolute;float:left;z-index: 500; display: none; width:652px; height:226px;background:url('http://img.nolzzang.com/aggro/images/f_bg.jpg?ver=1') no-repeat;} 
+#favorite_layer .fbt { position:absolute;left:381px;bottom:46px;}
+#favorite_layer .fclose {position:absolute;right:20px;top:20px;cursor:pointer }
+
+/* 실명인증레이어 */
+#nverify {position: absolute;margin:0 auto;float:left;z-index: 300; display: none; background-color: #fff; width:745px; height:330px;background:url('http://img.nolzzang.com/aggro/images/confirm_bg_330.jpg?ver=1') no-repeat;} 
+#nbox {position:relative;width:384px;float:right;margin:10px 10px 0 0}
+#nclose {width:25px; heigth:24px;float:right;margin:15px 15px 0 0;cursor:pointer}
+#form_box {clear:right;margin:0 0 0 10px;padding-top:55px;}
+#form_box table th {font-weight:bold;color:#8f807b}
+#form_box table td {padding:1px 0}
+#form_box table .nname{width:180px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#form_box table .birthday{width:49px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#form_box table .birthday2{width:28px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#form_box table .email {width:73px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#nbt {margin-top:10px;text-align:center;width:100%;}
+#form_box2 {clear:right;margin:0 0 0 10px;padding-top:75px;}
+#form_box2 table th {font-weight:bold;color:#8f807b}
+#form_box2 table td {padding:5px 0}
+#form_box2 table .nname{width:180px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#form_box2 table .birthday{width:49px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#form_box2 table .birthday2{width:28px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#form_box2 table .email {width:73px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#nbt2 {margin-top:10px;text-align:center;width:100%;}
+
+/*실시간 이벤트*/
+#ingame_event{float:left; width:233px; height:217px; margin-top:20px; background-color:#331c1a}
+#ingame_event h3{height:33px; border:1px solid #8b0100; color:#ffffff; font-size:14px; background-color:#6f0100; line-height:2; text-indent:10px}
+#ingame_event ul{float:left; width:204px; margin:12px 0 0 15px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap}
+#ingame_event ul li{width:204px; line-height:2.2; text-overflow:ellipsis; overflow:hidden; white-space:nowrap}
+#ingame_event ul li a{color:#f6d0d0}
+#ingame_event ul li a span{color:#ff8080}
+
+/*이메일인증이벤트*/
+#conform2{position:relative;width:442px;height:263px;background:url('http://img.nolzzang.com/aggro/images/event/bg_email.jpg')}
+#conform2 #email{padding:80px 0 0 20px;}
+.info .id{width:287px;height:49px;border:3px solid #736459;line-height:49px;margin-top:3px;margin-right:5px;font-size:14px}
+#conform2 #e_num{padding:25px 0 0 20px;}
+#conform2 .btn2 img {cursor:pointer}
+
+#conform1{position:relative;width:442px;}
+.sb_select{height:171px;background:url('http://img.nolzzang.com/aggro/images/event/bg_sbselect.jpg')}
+.selectbox{padding:76px 0 0 80px}
+.btn1{margin:-53px 0 0 316px}
+#conform1 .btn1 img {cursor:pointer}
+
+
+#conform3{position:relative;width:442px;height:379px;background:url('http://img.nolzzang.com/aggro/images/event/bg_end.jpg')}
+.btn4{position:absolute;padding:287px 0 0 170px}
+
+.close_bt {position:absolute;top:10px;right:20px;cursor:pointer}
+
+/*sns이벤트*/
+#sns_event{width:100%; height:50px; background-color:#502f4a}
+#sns_event ul{width:1100px; margin:auto}
+#sns_event ul li{float:left; width:275px;}
+#sns_event ul li.event_facebook a{display:block; width:275px; height:50px; background:url(http://img.nolzzang.com/www/images/event/sns_banner01.jpg) 0 0 no-repeat; text-indent:-99999px}
+#sns_event ul li.event_blog a{display:block; width:275px; height:50px; background:url(http://img.nolzzang.com/www/images/event/sns_banner02.jpg) 0 0 no-repeat; text-indent:-99999px}
+#sns_event ul li.event_kakao a{display:block; width:275px; height:50px; background:url(http://img.nolzzang.com/www/images/event/sns_banner03.jpg) 0 0 no-repeat; text-indent:-99999px}
+#sns_event ul li.event_twitter a{display:block; width:275px; height:50px; background:url(http://img.nolzzang.com/www/images/event/sns_banner04.jpg) 0 0 no-repeat; text-indent:-99999px}
+#sns_event ul li a:hover{background-position:0 -50px}
+#sns_event ul li a.complete{background-position:0 -100px; cursor:default}
+#sns_event_close{position:absolute; right:0}
+
+/*점검중*/
+#inspection{width:100%; min-width:1100px; height:760px; background:url('http://img.nolzzang.com/aggro/images/inspection.jpg') center 0 no-repeat; text-indent:-99999px;}
+#inspection_footer{width:100%; height:160px; float:left; border-top:1px solid #222222}
+#footer_position{width:1100px; margin:0 auto}
+
+/*채널링 이용약관동의*/
+.agreement_title{float:left; font-size:30px; font-weight:bold;  text-align:center; margin-top:20px; color:#fff; margin-left:460px}
+#agreement_box{float:left; width:1000px; height:891px; background:url("http://img.nolzzang.com/www/images/event/agreement_body_bg.jpg") 0 0 no-repeat; margin-top:15px; margin-left:50px}
+#agreement_box .agreement_text{float:left; width:860px; height:575px; background-color:#fff; margin-left:49px; margin-top:40px; border:1px solid #303030; padding:20px; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; line-height: 1.8;}
+.agreement_check{clear:both; float:left; color:#fff; margin-left:435px; margin-top:20px; font-size:14px;}
+.btn_agreement{clear:both; float:left; margin-left:455px; margin-top:20px}
+
+#game_nickname{clear:both; float:left; width:900px; height:90px; margin-left:49px;  margin-top:20px;  background-color:#f2e1b6; border:1px solid #e3c67c}
+#game_nickname p{text-align:center; margin-top:12px; font-size:13px;}
+#game_nickname .nickname_input{width:235px; height:30px; padding:0 5px; border:1px solid #e3c67c; }
+#game_nickname a{display:inline-block; width:80px; height:30px; background-color:#000}
+#game_nickname .nickname_check{width:80px; height:30px; border:0; background-color:#000; color:#fff; cursor:pointer}
+
+
+/*다음게이트*/
+#gate_body{width:100%;}
+#aggro_daum_gate{float:left; width:100%; min-width:1024px; height:1070px; background:url("http://img.nolzzang.com/aggro/images/daum_gate/gate_bg.jpg") center 0 no-repeat}
+#gate_btn{width:1024px; margin:0 auto; text-align:center; margin-top:458px}
+#gateFooter{width:1024px; margin:0 auto; text-align:center; margin-top:135px}
+
+
+/*게임해지*/
+#game_cancel{clear:both; float:left; width:735px; height:790px; border-top:1px solid #bea03d; border-bottom:1px solid #bea03d; margin-top:12px; background:url("http://img.nolzzang.com/aggro/images/cash_shop_body_bg.jpg") 0 0 no-repeat}
+#game_cancel #game_cancel_text{background-color:#fff; width:669px; height:170px; border:1px solid #291715; margin-left:29px; margin-top:30px;}
+#game_cancel #game_cancel_text h3{font-size:20px; color:#000; margin-top:30px; margin-left:20px;}
+#game_cancel #game_cancel_text p{margin-top:10px; margin-left:20px; line-height:1.8; font-size:14px}
+#termination_footer {width:735px; margin:0 auto;}
+#termination_guide {width: 100%; text-align: center; margin-top: 30px; color:#fff; font-size:14px;}
+.btn_termination {float: left; margin-left: 254px; margin-top:20px;}
+#termination_footer .btn_gray {float: left; width: 100px; height: 36px; margin-left: 1px; background-color: #8e8e8e; border: 0; color: #fff; cursor: pointer; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; border:1px solid #bcbcbc;}
+.btn_termination img {float: left; margin-left: 10px; margin-right:10px; margin-top:12px}
+#termination_footer .btn_red {float: left; width: 100px; height: 36px; margin-left: 1px; background-color: #ca0300; border: 0;  color: #fff; cursor: pointer; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; border:1px solid #ff2724}
+
+
+/*자주묻는질문*/
+#faq{clear:both; float:left; width:735px; min-height:626px; border-top:1px solid #bea03d; border-bottom:1px solid #bea03d; margin-top:12px; background:url("http://img.nolzzang.com/aggro/images/cash_shop_body_bg.jpg") 0 0 repeat-y}
+#faq_tab{float:left; width:735px; border-bottom:1px solid #bea03d}
+#faq_tab li{float:left; width:183.5px; height:50px; background:linear-gradient(to bottom, #f0f0f0, #dadada); border-right:1px solid #b5b5b5; text-align:center; border-top:0; box-sizing:border-box;}
+#faq_tab li a{display:block; height:50px; font-size:14px; line-height:3.3; text-decoration:none}
+#faq_tab li a:hover{background-color:#fff; color:#444444}
+#faq_tab li.last{border-right:0}
+#faq_tab li.on a{background:linear-gradient(to bottom, #debb61, #8b5700); border-bottom:0; color:#fff; font-weight:bold}
+
+#box_qna{float:left; width:673px; min-height:626px; margin-top:30px; margin-bottom:30px; margin-left:29px; border-top:2px solid #1b0e0c; background-color:#fff}
+#box_qna li{padding:15px 0 15px 0; border-bottom:1px solid #d2d2d2;}
+#box_qna .page_num{text-align:center; margin-top:35px; margin-bottom:35px;}
+#box_qna .question{margin-left:20px; width:633px;}
+.answer{display:none; margin-left:20px; width:633px;}
+.answer_text{ width:580px; margin-left:30px; margin-top:15px; text-align:justify;}
+
+
+/*문의하기*/
+#report{clear:both; float:left; width:735px; min-height:626px; border-top:1px solid #bea03d; border-bottom:1px solid #bea03d; margin-top:12px; background:url("http://img.nolzzang.com/aggro/images/cash_shop_body_bg.jpg") 0 0 repeat-y}
+#report_tab{float:left; width:735px; border-bottom:1px solid #bea03d; background-color:#eeeeee;}
+#report_tab li{float:left; width:121px; height:50px; background-color:#eeeeee; border-right:1px solid #b5b5b5; text-align:center; border-top:0;}
+#report_tab li a{display:block; width:121px; height:50px; font-size:14px; line-height:3.3; text-decoration:none}
+#report_tab li a:hover{display:block; background-color:#fff; color:#444444}
+#report_tab li.last{border-right:0}
+#report_tab li.on a{background:url("http://img.nolzzang.com/aggro/images/tab_bg.jpg") 0 0 repeat-x; border-bottom:0; color:#fff; font-weight:bold}
+
+#my_question{float:left; width:100%; min-height:626px; padding-top:30px; padding-bottom:35px; border-bottom:1px solid #bd9f3d; background:url(http://img.nolzzang.com/aggro/images/cash_shop_body_bg.jpg) 0 0 no-repeat}
+#my_question table{width:673px; margin-left:29px; border:1px solid #291715; background:url(http://img.nolzzang.com/aggro/images/bbs_top_bg6.jpg) 0 0 no-repeat}
+#my_question table th{height:33px; text-align:center; color:#fff;}
+#my_question table td{height:35px; border-bottom:1px solid #291715; background-color:#fff;}
+#my_question table td.subject{padding-left:10px}
+#my_question table td.count{padding-right:10px}
+#my_question table td.top_notice{color:#cd1f1f}
+#my_question table td.white{background-color:#ffeed4}
+#my_question table td.a_ongoing{color:#c70402}
+#my_question table td.a_complete{color:#299902}
+#btn_question{position:absolute; right:0; width:80px; height:26px; background:url(http://img.nolzzang.com/aggro/images/btn_question.jpg) 0 0 no-repeat; border:0; text-indent:-99999px; cursor:pointer}
+#reply{background-color:#fff; }
+.reply_text{color:#c70402}
+
+#my_question .bbs_top p{float:left; margin-left:170px; margin-top:40px}
+#faq .bbs_top p{float:left; margin-left:170px; margin-top:-5px}
+
+#policy{clear:both; float:left; width:735px; min-height:626px; margin-top:12px; background-color:#fff}
+#policy #policy_box{float:left; width:673px; min-height:626px; margin-top:30px; margin-bottom:30px; margin-left:29px;}
+#policy_box h3 {font-size:15px; color: #444444; font-weight: 600;}
+#policy_box p {font-size: 12px; text-align: justify; line-height: 1.8; border-bottom:1px solid #b9b9b9}
+
+#policy_box table {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d2d2d2;
+}
+
+#policy_box table thead th {
+    text-align: center;
+    background-color: #fff8ea;
+    border: 1px solid #d2d2d2;
+}
+
+#policy_box table tbody th {
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #d2d2d2;
+}
+
+#policy_box table td {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #d2d2d2;
+    text-align: center;
+}
+
+
+/*게임매니아 채널링 이벤트*/
+#gamemania_open_event{width:100%; min-width:1100px; height:1350px; background:url("http://img.nolzzang.com/aggro/images/event/gamemania_open/gm_open_event_bg.jpg") center 0 no-repeat}
+#gamemania_event_top{width:1100px; margin:0 auto; }
+#gamemania_event_top h1{float:left}
+#gamemania_event_top p{float:right; margin-top:15px;}
+
+/*다음이벤트*/
+#daum_event{width:100%; min-width:960px; height:2000px; background:url("http://img.nolzzang.com/aggro/images/event/daum_event/daum_event_bg.jpg") center 0 no-repeat}
+#daum_event_box{width:960px; margin:0 auto}
+#daum_event_box h1{float:left; margin-top:15px}
+#event_box_position{position:absolute;}
+#daum_event_box .mobile_number{clear:both; float:left; position:absolute; top:1141px; left:151px;  width:465px; height:54px; padding:0 10px; font-family:arial; font-size:30px; font-weight:bold; border:0;}
+#daum_event_box .btn_daum_event{clear:both; float:left; position:absolute; top:1138px; left:647px;}
+#daum_event_box #movie{position:absolute; top:466px; left:109px;}
+#daum_event_agree{width:280px; color:#fff; font-size:13px; position:absolute; top:1215px; left:345px;}
+
+/*초보자쿠폰이벤트*/
+#coupon_event{width:620px; height:1147px; background:url("http://img.nolzzang.com/aggro/images/event/open/coupon_event_bg.jpg") 0 0 no-repeat}
+#event_position{position:absolute}
+#event_position input{position:absolute; top:605px; left:63px; width:496px; height:43px; border:0; background-color:#fff; text-align:center; font-family:arial, sans-serif; font-size:22px; font-weight:bold}
+#event_position a{position:absolute; top:670px; left:200px;}
+
+/*플러그인 다운로드*/
+#plugin_download_page{width:100%; height:830px; min-width:1100px; background:url("http://img.nolzzang.com/aggro/images/plugin_bg.jpg") center 0 no-repeat}
+#plugin_down_text{width:1100px; height:100%; margin:0 auto}
+#plugin_down_text .down_text{position:absolute; width:1100px; height:100%; z-index:9002;}
+#plugin_down_text .down_text #chrome{display:none;}
+#plugin_down_text .down_text #ie{display:block; position:absolute; width:464px; height:67px; right:95px; bottom:50px}
+#plugin_down_text #btn_plugin_down{position:absolute; width:1100px; height:100%;}
+#plugin_down_text #btn_plugin_down a{position:absolute; top:438px; left:390px}
+#plugin_download_bottom{width:100%; position:fixed; bottom:0;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #plugin_down_text .down_text{position:absolute; top:0; left:0}
+ #plugin_down_text .down_text #ie{display:none;}
+ #plugin_down_text .down_text #chrome{display:block; position:absolute; width:464px; height:67px; left:30px; bottom:0}
+}
+
+@-moz-document url-prefix() {
+ #plugin_down_text .down_text #ie{display:none;}
+ #plugin_down_text .down_text #chrome{display:none;}
+}
+
+/*크롬 접속시 안내 팝업*/
+#chrome_popup{position:absolute; width:100%; height:100%; z-index:9002; }
+#chrome_popup #chrome_popup_box{position:absolute; left:50%; top:50px; margin-left:-414px; width:828px; height:1294px; background:url("http://img.nolzzang.com/aggro/images/chrome_pop_bg.jpg") 0 0 no-repeat}
+#chrome_popup #chrome_popup_box .chrome_popup_close{position:absolute; right:35px; top:12px;}
+#chrome_popup #chrome_popup_box .download_button{position:absolute; left:309px; top:1117px}
+#black_bg{position:absolute; width:100%; height:100%; z-index:9001; background-color:rgba(0,0,0,8); opacity:0.6;}
+
+/*출석체크이벤트*/
+#check_wrap{width:100%; height:100%}
+#check{margin:0 auto; width:620px; height:1276px }
+#check_bg{width:620px; height:669px; background:url("http://img.nolzzang.com/aggro/images/event/attend3/month_check_bg.jpg")  0 0 no-repeat}
+#check_bg .check_bg_wrap{width:570px; height:142px; margin:0 auto; padding-top:25px}
+
+#check_bg .check_bg_wrap .day{float:left; width:81px; height:142px; position:relative}
+#check_bg .check_bg_wrap .day .stamp{width:81px; height:107px;}
+#check_bg .check_bg_wrap .day .btn_absolute{width:68px; height:22px; margin:0 auto; z-index:1000; position:absolute; top:108px; left:7px}
+#check_bg .check_bg_wrap .day .today{width:80px; height:142px; margin:0 auto; z-index:777; position:absolute;}
+#check_bg .check_bg_wrap .day .btn{width:68px; height:22px; margin:0 auto;}
+
+#check_top1{display:none; width:620px; height:475px; background:url(http://img.nolzzang.com/aggro/images/event/attend3/month_check_top1.jpg) 0 0 no-repeat} 
+#check_top1 .btn_check{width:376px; height:90px; padding-top:218px; padding-left:25px}
+#check_top2{display:none; width:620px; height:475px;  background:url(http://img.nolzzang.com/aggro/images/event/attend3/month_check_top2.jpg) 0 0 no-repeat;} 
+#check_top2 .text{float:left; width:220px; height:30px; color:#000; font-size:14px; margin-top:235px; margin-left:75px; font-weight:600; line-height:1.4; text-align:center; }
+#check_top2 .text span{color:#ffd905; font-weight:650;}
+
+/*출석체크팝업*/
+#pop_wrap_150330{width:100%; height:100%;}
+#contents_150330{width:360px; height:340px; margin:0 auto; background:url(http://img.nolzzang.com/aggro/images/event/attend3/pop_bg.jpg) 0 0 no-repeat;}
+#contents_150330 .server{padding-top:17px; padding-left:160px}
+#contents_150330 .item{width:360px; height:78px; padding-top:40px}
+#contents_150330 .btn{width:178px; height:49px; margin:auto; padding-top:0px}

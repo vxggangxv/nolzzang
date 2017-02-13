@@ -1,0 +1,854 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title>어그로</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Cache-Control" content="No-Cache"/>
+<meta http-equiv="Pragma" content="No-Cache"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="imagetoolbar" content="false"/>
+<meta name="author" content="놀짱"/>
+<meta name="description" content="이비즈네트웍스제작, 놀짱, ARPG 전략웹게임, 게임소개, 이벤트 정보제공"/>
+<meta name="keywords" content="이비즈네트웍스제작, 놀짱, ARPG 전략웹게임, 게임소개, 이벤트 정보제공"/>
+<meta name="classification" content="웹게임,놀짱"/>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="어그로">
+<meta property="og:description" content="이비즈네트웍스제작, 놀짱, ARPG 전략웹게임, 게임소개, 이벤트 정보제공">
+<meta property="og:image" content="http://img.nolzzang.com/aggro/images/aggro_icon128x128.png">
+<meta property="og:url" content="http://aggro.nolzzang.com">
+
+<link rel="shortcut icon" href="http://img.nolzzang.com/www/images/common/nolzzang_favicon.ico" />
+<link rel="stylesheet" href="http://static.nolzzang.com/aggro/css/reset.css" type="text/css"/>
+<!-- <link rel="stylesheet" href="http://static.nolzzang.com/aggro/css/layout.css?ver=20170213142455" type="text/css"/> -->
+<link rel="stylesheet" href="../src/css/layout.css" />
+
+<!--공통-->
+<script type="text/javascript" src="http://static.nolzzang.com/aggro/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://static.nolzzang.com/aggro/js/bjqs-1.3.min.js" ></script>
+<!-- <script type="text/javascript" src="http://static.nolzzang.com/common/js/follower.js?ver=55"></script>
+<script type="text/javascript" src="http://static.nolzzang.com/common/js/common.js?ver=55"></script>
+공통
+<script type="text/javascript" src="http://static.nolzzang.com/aggro/js/tab.js"></script>
+<script type="text/javascript" src="http://static.nolzzang.com/aggro/js/placeholders.js"></script>
+<script type="text/javascript" src="http://static.nolzzang.com/aggro/js/scroll_top.js" ></script>
+<script type="text/javascript" src="http://static.nolzzang.com/aggro/js/aggro.js?ver=55"></script>
+<script type="text/javascript" src="http://static.nolzzang.com/aggro/js/EJ_minislide.js?ver=55"></script>
+<script type="text/javascript" src="http://static.go.co.kr/js/jquery.cookie.js"></script> -->
+<!-- Android icon -->
+<link rel="shortcut icon" href="http://img.nolzzang.com/aggro/images/aggro_icon128x128.png" />
+<!-- iPhone icon -->
+<link rel="apple-touch-icon" sizes="57x57" href="http://img.nolzzang.com/aggro/images/aggro_icon57x57.png" />
+<!-- iPad icon -->
+<link rel="apple-touch-icon" sizes="72x72" href="http://img.nolzzang.com/aggro/images/aggro_icon72x72.png" />
+<!-- iPhone icon(Retina) -->
+<link rel="apple-touch-icon" sizes="114x114" href="http://img.nolzzang.com/aggro/images/aggro_icon114x114.png" />
+<!-- iPad icon(Retina) -->
+<link rel="apple-touch-icon" sizes="144x144" href="http://img.nolzzang.com/aggro/images/aggro_icon144x144.png" />
+<!---에디터--->
+<!-- <script type="text/javascript" src="/webnote/webnote.js"></script> -->
+
+<!-- Withpang Tracker v3.0 [공용] start -->
+  <script src="http://cdn.megadata.co.kr/js/enliple_min2.js"></script>
+  <script type="text/javascript">
+  <!--
+  	var rf = new EN();
+  	rf.setData("sc", encodeURIComponent(""));
+  	rf.sendRf();
+  //-->
+  </script>
+<!-- Withpang Tracker v3.0 [공용] end -->
+
+<script type="text/javascript">
+$(function(){
+	/*메뉴노출*/
+	$('#menu_box').mouseover(function() {
+		$('#sub_menu').show();
+	}).mouseout(function() {
+		$('#sub_menu').hide();
+	});
+	$('#gnb').mouseover(function() {
+		$('#sub_menu').hide();
+	});
+
+	/*서브메뉴 오버 */
+	
+	/*메인페이지 배너*/
+	$('#main_banner').bjqs({
+		height      : 440,
+		width       : 1100,
+		responsive  : true,
+		automatic	: true,
+		showcontrols : true,
+		centermarkers : false
+	});
+
+
+
+			
+	
+});
+
+var base_main = "http://www.nolzzang.com";
+var base_request = "FgpXU3oOcT9GJ1FMUBAREllZIU85cEIvTgwWERMbDA==";
+var mcash = "";
+var nov = "";
+var dagame_agree = "";
+var uip = "61.74.233.194";
+var login_mode = "";
+
+var game_start = {
+	on: function () {
+		checkPlugin();
+	}
+}
+
+var loopP;		// 플러그인 설치체크용
+
+function isAgentIE() {
+	var chkB	= false;
+	if(navigator.userAgent.toLowerCase().indexOf('msie') != -1 || navigator.userAgent.toLowerCase().indexOf('rv:11.0') != -1) {
+		chkB	= true;
+	}
+	return chkB;
+}
+
+
+function isAgentChrome() {
+	var chkB	= false;
+	if(navigator.userAgent.toLowerCase().indexOf('chrome') != -1 && navigator.userAgent.toLowerCase().indexOf('edge') == -1) {
+		chkB	= true;
+	}
+	return chkB;
+}
+
+function checkKalydoInstalled() {
+	try {
+		obj = new ActiveXObject("Kalydo.Player"); // Try to create a Kalydo Player and see if it works
+
+		if(obj)		return true;
+		else		return false;
+	} catch (e) {
+		return false; //Didn't work, return false.
+	}
+	return false;
+}
+
+
+
+	
+var checkTimer = null;
+var checkMicroTimer = null;
+var window_focus = true;
+var url = "aggrolauncher://aggro.nolzzang.com/home/common/exeServer.php?userid=&nov="+nov+"&dagame_agree="+dagame_agree+"";
+var pluginPath = "http://file.nolzzang.com/app/aggro/AggroLauncher.exe";
+
+$(window).focus(function() {
+	window_focus = true;
+}).blur(function() {
+	clearInterval(checkMicroTimer);	
+	window_focus = false;
+});
+
+function checkPlugin() {
+	if(isAgentIE()) {
+		if(checkKalydoInstalled()) {
+			$(".browserType").hide();
+			common.on("#server");
+		} else {
+			loopPlugin();
+			document.down.action	= 'http://file.nolzzang.com/app/aggro/plugin/main_aggro_nolzzang.exe';
+			document.down.submit();
+			$("#ie").show();
+			setTimeout("hideBrowserBN()", 60000);
+		}
+	} else {
+		var url_client = url;
+		window.top.location = url_client;
+		if(checkMicroTimer == null)	{
+			checkMicroTimer = setInterval(function(){
+				if(window_focus){
+					if(navigator.userAgent.toLowerCase().indexOf('edge') == -1){
+						loopPlugin();
+						window.location.href = pluginPath;
+						clearInterval(checkMicroTimer);
+						checkMicroTimer = null;
+						$("#chrome").show();
+						setTimeout("hideBrowserBN()", 60000);
+					}
+				}
+			},1000);
+		}
+	}
+	
+}
+
+
+function hideBrowserBN() {
+	$(".browserType").fadeOut(800);
+}
+
+function loopPlugin() {
+	clearTimeout(loopP);
+	if(checkKalydoInstalled()) {
+		$(".browserType").hide();
+		common.on("#server");
+		clearTimeout(loopP);
+	} else {
+		loopP	= setTimeout("loopPlugin()", 1000);
+	}
+}
+function notice_alert(content, url) {
+	alert(content);
+	location.href=url;
+}
+</script>
+ </head>
+
+ <body>
+
+	<div id="plugin_download_bottom">
+		<div id="plugin_down_text">
+			<div class="down_text">
+				<div id="ie" class="browserType" style="display:none;" ><img src="http://img.nolzzang.com/aggro/images/plugin_down_text.png" alt="아래의 실행 버튼을 클릭해서 플러그인을 설치해 주세요" onclick="javascript:hideBrowserBN();" /></div>
+				<div id="chrome" class="browserType" style="display:none;" ><img src="http://img.nolzzang.com/aggro/images/plugin_down_text2.png" alt="아래의 실행 버튼을 클릭해서 플러그인을 설치해 주세요" onclick="javascript:hideBrowserBN();" /></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Top 버튼 -->
+	<div style="display:scroll; position:fixed; bottom:5px; right:5px; z-index:9999; cursor:pointer">
+		<a onclick="go_top();" title="Top"><img src="http://img.nolzzang.com/aggro/images/btn_top.gif" alt="top" /></a>
+	</div>
+
+	<!--놀짱-->
+		<!--top-->
+	<div id="top">
+		<div class="top_menu">
+			<h1>
+				<a href="http://www.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_nolzzang_logo.jpg" alt="놀짱배너"></a>
+								<a href="http://crown.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_crown.jpg" alt="크라운"></a>
+								<a href="http://musa.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_musa.jpg" alt="무사"></a>
+								<a href="http://aggro.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_aggro.jpg" alt="어그로"></a>
+								<a href="http://book.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_book.jpg" alt="천서"></a>
+								<a href="http://1000king.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_king.jpg" alt="천왕"></a>
+							</h1>
+			<ul class="login_menu">
+				<li class="bg_none"><a href="http://www.nolzzang.com/home/mypage/mypage3.php" title="마이페이지">마이페이지</a></li>
+				<li><a href="http://www.nolzzang.com/home/cash.php" title="캐시충전">캐시충전</a></li>
+				<li><a href="http://www.nolzzang.com/home/customer.php" title="고객센터">고객센터</a></li>
+				<li class="bg_none">
+										<a href="http://www.nolzzang.com/home/login.php?rtn=FgpXU3oOcT9GJ1FMUBAREllZIU85cEIvTgwWERMbDA==" title="로그인"><img src="http://img.nolzzang.com/www/images/top_btn_login.jpg" alt="로그인" /></a>
+									</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--top end-->
+
+	<!--
+	
+	<div id="top">
+		<div class="top_menu">
+			<h1>
+				<a href="http://www.nolzzang.com"><img src="http://img.nolzzang.com/www/images/top_nolzzang_logo.jpg" alt="놀짱배너"></a>
+				<a href="#" class="top_crown" style="background-position:0 -45px;">&gt;무사</a>
+				<a href="http://musa.nolzzang.com" class="top_musa">&gt;무사</a>                
+				<a href="http://aggro.nolzzang.com" class="top_aggro">&gt;어그로</a>
+				<a href="http://book.nolzzang.com" class="top_book">&gt;천서세계</a>
+				<a href="http://1000king.nolzzang.com" class="top_king">&gt;천왕온라인</a>
+				
+			</h1>
+			<ul class="login_menu">
+				<li class="bg_none"><a href="http://www.nolzzang.com/home/mypage/mypage3.php" title="마이페이지">마이페이지</a></li>
+				<li><a href="http://www.nolzzang.com/home/cash.php" title="캐시충전">캐시충전</a></li>
+				<li><a href="http://www.nolzzang.com/home/customer.php" title="고객센터">고객센터</a></li>
+				<li class="bg_none"><a href="http://www.nolzzang.com/home/login.php?rtn=FgpXU3oOcT9GJ1FMUBAREllZIU85cEIvTgwWERMbDA==" title="로그인"><img src="http://img.nolzzang.com/aggro/images/top_btn_login.jpg" alt="로그인"></a></li>
+			</ul>
+		</div>
+	</div>
+
+	-->
+
+
+
+	<!--top end-->
+
+	<div id="wrapper">
+		<div id="header">
+
+			<div id="menu_box" style="position:relative;z-index:9000">
+			<!--메인메뉴-->
+			<div id="gnb">
+				<h1>
+					<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="211" height="185" id="FlashID" title="어그로온라인">
+						<param name="movie" value="http://img.nolzzang.com/aggro/flash/logo.swf?ver=2" />
+						<param name="quality" value="high" />
+						<param name="menu" value="false" />
+						<param name="wmode" value="transparent" />
+						<param name="swfversion" value="8.0.35.0" />
+						<param name="allowScriptAccess" value="always" />
+						<!--[if !IE]>-->
+						<object type="application/x-shockwave-flash" data="http://img.nolzzang.com/aggro/flash/logo.swf?ver=3" width="211" height="185" title="어그로온라인">
+						<!--<![endif]-->
+							<param name="quality" value="high" />
+							<param name="menu" value="false" />
+							<param name="wmode" value="transparent" />
+							<param name="swfversion" value="8.0.35.0" />
+							<param name="allowScriptAccess" value="always" />
+							<p><a href="http://aggro.nolzzang.com"><img src="http://img.nolzzang.com/aggro/images/logo.png" alt="어그로온라인" /></a></p>
+					   <!--[if !IE]>-->
+						</object>
+						<!--<![endif]-->
+					</object>
+				</h1>
+				<ul>
+					<li class="game_news"><a href="http://aggro.nolzzang.com/home/list.php?brd=Ty9XKSNE" title="게임소식">게임소식</a></li>
+					<li class="game_info"><a href="http://aggro.nolzzang.com/home/game_info.php" title="게임정보">게임정보</a></li>
+					<li class="ranking"><a href="http://aggro.nolzzang.com/home/game_guide.php" title="게임가이드">게임가이드</a></li>
+					<li class="shop"><a href="http://aggro.nolzzang.com/home/cash_shop.php" title="상점">상점</a></li>
+					<li class="comunity"><a href="http://aggro.nolzzang.com/home/list.php?brd=RzJGJQ==" title="커뮤니티">커뮤니티</a></li>
+					<li class="customer"><a href="http://www.nolzzang.com/home/board/list.php?brd=RyFS" title="고객센터">고객센터</a></li>
+				</ul>
+			</div>
+
+			<!--서브메뉴-->
+			<div id="sub_menu" style="display:none">
+				<dl>
+					<dt class="hidden">서브메뉴</dt>
+					<dd>
+						<ul class="game_news">
+							<li><a href="http://aggro.nolzzang.com/home/list.php?brd=Ty9XKSNE" title="공지사항">공지사항</a></li>
+							<li><a href="http://aggro.nolzzang.com/home/list.php?brd=RDZGLjQ=" title="이벤트">이벤트</a></li>
+						</ul>
+						<ul class="game_info">
+							<li><a href="http://aggro.nolzzang.com/home/game_info.php" title="게임소개">게임소개</a></li>
+							<li><a href="http://aggro.nolzzang.com/home/game_job.php" title="직업소개">직업소개</a></li>
+						</ul>
+						<ul class="ranking">
+							<li><a href="http://aggro.nolzzang.com/home/game_beginner.php" title="초보자가이드">초보자가이드</a></li>
+							<li><a href="http://aggro.nolzzang.com/home/game_guide.php" title="게임가이드">게임가이드</a></li>
+						</ul>
+						<ul class="shop">
+							<li><a href="http://aggro.nolzzang.com/home/cash_shop.php" title="골드구매">골드구매</a></li>
+							<li><a href="http://aggro.nolzzang.com/home/shop_guide.php" title="골드가이드">골드가이드</a></li>
+						</ul>
+						<ul class="comunity">
+							<li><a href="http://aggro.nolzzang.com/home/list.php?brd=RzJGJQ==" title="자유게시판">자유게시판</a></li>
+							<li><a href="http://aggro.nolzzang.com/home/list.php?brd=RiFOJQ==" title="공략게시판">공략게시판</a></li>
+							<li><a href="http://aggro.nolzzang.com/home/list.php?brd=UiNRJSVP" title="스크린샷">스크린샷</a></li>
+						</ul>
+						<ul class="customer">
+							<li><a href="http://www.nolzzang.com/home/board/list.php?brd=RyFS&cate2=%EA%B2%8C%EC%9E%84&catefaq=%EC%96%B4%EA%B7%B8%EB%A1%9C" title="자주묻는질문">자주묻는질문</a></li>
+							<li><a href="http://www.nolzzang.com/home/board/report.php?category1=%EC%96%B4%EA%B7%B8%EB%A1%9C" title="문의사항">문의사항</a></li>
+							<li><a href="http://www.nolzzang.com/home/policy1.php?val=aggro" title="운영정책">운영정책</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			</div>
+
+
+			<!--메인배너-->
+			<div id="main_banner" style="position:relative">
+				<!--배너 이미지-->
+				<ul class="bjqs">
+					<!--
+					<li><a href="http://aggro.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=EncQdnk=" alt="VIP 혜택"><img src="http://img.nolzzang.com/aggro/images/event/cash/main.png" border="0" alt="VIP 혜택" /></a></li>
+					-->
+												<li><a href="/home/view.php?brd=RDZGLjQ=&num=FXkQdHM=&page=" target="_self"><img src="http://file.nolzzang.com/banner/1461025940_1.png" width="1100" /></a></li>
+														<li><a href="/home/view.php?brd=RDZGLjQ=&num=FXkQc3k=&page=" target="_self"><img src="http://file.nolzzang.com/banner/1460978328_1.png" width="1100" /></a></li>
+														<li><a href="/home/view.php?brd=RDZGLjQ=&num=FXkQc3g=&page=" target="_self"><img src="http://file.nolzzang.com/banner/1460975118_1.png" width="1100" /></a></li>
+														<li><a href="/home/view.php?brd=RDZGLjQ=&num=FXkQdHI=&page=" target="_self"><img src="http://file.nolzzang.com/banner/1466765785_1.png" width="1100" /></a></li>
+														<li><a href="/home/view.php?brd=RDZGLjQ=&num=FXkQdHQ=&page=" target="_self"><img src="http://file.nolzzang.com/banner/1461201183_1.png" width="1100" /></a></li>
+							
+					<!--<li><img src="http://img.nolzzang.com/aggro/images/main_title.png" border="0" alt=" 그랜드 오픈" /></li>-->
+				</ul>
+
+				<!--<div id="btn_facebook">
+					<a href="https://www.facebook.com/nolzzang1" target="_blank" title="천왕 페이스북"><img src="http://img.nolzzang.com/aggro/images/btn_facebook.png" width="173" height="45" border="0" alt="천왕 페이스북" /></a>
+				</div>-->
+			</div>
+
+						<!----유입수 아이프레임---->
+			<div style="position:absolute; left:50%; top:5px;">
+				<div style="width:330px; position:absolute; left:580px;">
+					<iframe src="http://www.nolzzang.com/home/common/ebiz_counter_ver2.php?cate=aggro&pvalue=L2hvbWUv" width="330" height="100" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" ></iframe>
+				</div>
+			</div>
+			<!----유입수 아이프레임---->
+			
+		</div>
+
+		<div id="container">
+			<div id="contents">
+
+				<!--서브페이지 메뉴-->
+				
+				<div id="left_contents">
+
+					<!--게임스타트-->
+					<div id="gamestart">
+												<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="264" height="175" id="FlashID" title="게임스타트">
+							<param name="movie" value="http://img.nolzzang.com/aggro/flash/game_start.swf?ver=1" />
+							<param name="quality" value="high" />
+							<param name="menu" value="false" />
+							<param name="wmode" value="transparent" />
+							<param name="swfversion" value="8.0.35.0" />
+							<param name="allowScriptAccess" value="always" />
+							<!--[if !IE]>-->
+							<object type="application/x-shockwave-flash" data="http://img.nolzzang.com/aggro/flash/game_start.swf?ver=1" width="264" height="175" title="게임스타트">
+							<!--<![endif]-->
+								<param name="quality" value="high" />
+								<param name="menu" value="false" />
+								<param name="wmode" value="transparent" />
+								<param name="swfversion" value="8.0.35.0" />
+								<param name="allowScriptAccess" value="always" />
+								<p><a href="javascript:game_start.on();"><img src="http://img.nolzzang.com/aggro/images/game_start.png" alt="게임스타트" /></a></p>
+						   <!--[if !IE]>-->
+							</object>
+							<!--<![endif]-->
+						</object>
+											</div>
+										<script type="text/javascript">
+						function set_bacon(){
+							window.open("http://file.nolzzang.com/app/bacon/main_setup/main_aggro_nolzzang.exe");
+							//location.reload();
+					}
+					</script>
+					<!--게임스타트 끝-->
+					<div id="plugin_download">
+						<a href="javascript: set_bacon();"><img src="http://img.nolzzang.com/aggro/images/plugin_download.png" alt="플러그인다운로드" /></a>
+					</div>
+
+					<!--로그인-->
+					<div id="login">
+												<style type="text/css">
+						#auto_login_info{position:absolute; z-index:99; top:31px; left:15px}</style>
+						<!--아웃-->
+						<form method="post" name="iform" id="out">
+						<input type="hidden" name="rtn" value="FgpXU3oOcT9GJ1FMUBAREllZIU85cEIvTgwWERMbDA=="/>
+							<fieldset>
+								<div id="login_nz" class="login_form" style="margin:0px; padding:0px;">
+									<select id="login_select" name="login_site">
+										<option value="놀짱">놀짱 ID</option>
+										<option value="다게임">다게임 ID</option>
+									</select>
+									<!--자동로그인-->
+									<div id="auto_check"><input type="checkbox" id="auto_login" name="auto_login" onclick="javascript:common.check_auto();" /><label for="auto_login" />자동 로그인</label></div>
+									<div id="auto_login_info" style ='display:none;'><a href="javascript:util.closewin_auto();"><img src="http://img.nolzzang.com/aggro/images/auto_login_info.png" /></a></div>
+									<input type="text" id="id" placeholder="아이디" name="userid" value="" maxlength="12" style="color:#cfb7a0;"/>
+									<input type="password" id="pw" placeholder="비밀번호" name="passwd" maxlength="12" onkeypress="if(event.keyCode==13){ common.login(); event.returnValue=false; }" style="color:#cfb7a0;" />
+									<input type="button" value="로그인" id="btn_login" onclick="common.login();"/>
+									<p class="login_text"><a href="http://www.nolzzang.com/home/member/new_join1.php?g_val=HxlEUS8=" title="회원가입"><span>회원가입</span></a> <img src="http://img.nolzzang.com/aggro/images/vertical_line.gif" width="2" height="11" alt="라인" /> <a onclick="find.pop('id');" title="아이디찾기" style="cursor:pointer;">아이디</a>/<a onclick="find.pop('pw');" title="비밀번호 찾기" style="cursor:pointer;">비밀번호 찾기</a></p>
+								</div>
+								<div id="sns_login">
+									<p>	
+										<a href="javascript:common.login_naver('FgpXU3oOcT9GJ1FMUBAREllZIU85cEIvTgwWERMbDA==');"><img src="http://img.nolzzang.com/aggro/images/btn_naver_login.jpg" title="네이버 아이디 로그인" /></a>
+										<!--<a href=""><img src="http://img.nolzzang.com/aggro/images/btn_facebook.jpg" title="페이스북 아이디 로그인" /></a>-->
+										<a href="javascript:sns_login('kakao','FgpXU3oOcT9GJ1FMUBAREllZIU85cEIvTgwWERMbDA==');"><img src="http://img.nolzzang.com/aggro/images/btn_kakao.jpg" title="카카오톡 아이디 로그인" /></a>
+										<a href="javascript:sns_login('twitter','FgpXU3oOcT9GJ1FMUBAREllZIU85cEIvTgwWERMbDA==');"><img src="http://img.nolzzang.com/aggro/images/btn_twitter.jpg" title="트위터 아이디 로그인" /></a>
+										<a href="javascript:sns_login('google','FgpXU3oOcT9GJ1FMUBAREllZIU85cEIvTgwWERMbDA==');"><img src="http://img.nolzzang.com/aggro/images/btn_google.jpg" title="구글플러스 아이디 로그인" /></a>
+										<a href="javascript:sns_login('daum','FgpXU3oOcT9GJ1FMUBAREllZIU85cEIvTgwWERMbDA==');"><img src="http://img.nolzzang.com/aggro/images/btn_daum.jpg" title="다음 아이디 로그인" /></a>
+									</p>
+								</div>
+							</fieldset>
+						</form>
+											</div>
+										
+
+					<div id="left_banner">
+						<a href="http://aggro.nolzzang.com/home/cash_shop.php" title="게임머니 구매하기"><img src="http://img.nolzzang.com/aggro/images/banner_cashshop.jpg" width="233" height="69" border="0" alt="게임머니 구매하기" /></a>
+						<a href="http://www.nolzzang.com/home/charge/charge1.php" title="무료캐시 충전소"><img src="http://img.nolzzang.com/aggro/images/banner_free_charge.jpg" width="233" height="69" border="0" alt="무료캐시 충전소" /></a>
+						<a href="http://file.nolzzang.com/app/bacon/ch_bacon/aggro_nolzzang.exe" target="_blank" class="m_bottom_0" title="아이콘 설치하기"><img src="http://img.nolzzang.com/aggro/images/banner_icon_ist.jpg" width="233" height="69" border="0" alt="아이콘설치하기" /></a>
+					</div>
+
+					<div id="browser_download">
+						<img src="http://img.nolzzang.com/aggro/images/browser_download.gif" width="233" height="118" border="0" alt="브라우저 다운로드" usemap="#browser" />
+					</div>
+					<map name="browser">
+						<area shape = "rect" coords="2,36,230,117" href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie" target="_blank" title="익스플로러" onfocus="this.blur()" onclick="this.blur()"/>
+
+					</map>
+					<div id="customer_banner">
+						<a href="http://www.nolzzang.com/home/board/list.php?brd=RyFS&cate2=%EA%B2%8C%EC%9E%84&catefaq=%EC%96%B4%EA%B7%B8%EB%A1%9C" title="자주묻는질문"><img src="http://img.nolzzang.com/aggro/images/banner_faq.jpg" border="0" alt="자주묻는질문" /></a>
+						<a href="http://www.nolzzang.com/home/board/report.php?category1=%EC%96%B4%EA%B7%B8%EB%A1%9C" title="문의하기"><img src="http://img.nolzzang.com/aggro/images/banner_qna.jpg" border="0" alt="문의하기" /></a>
+					</div>
+
+					<div id="left_banner">
+											</div>
+				</div><script>
+function closewin() {
+	if($("#today").is(":checked") == true) {
+		pop = "chk_y";
+		setCookie("pop", pop, 1);
+		$("#update_event").css("display", "none");
+	} else {
+		$("#update_event").css("display", "none");
+	}
+}
+</script>
+<!----2013-11-04 16:22 노출:KEJ--->
+<div id="pop_box" style="position:absolute;display:none;z-index:5;width:850px;">
+	<div id="update_event"><div id="event_img"><a href="/home/view.php?brd=RDZGLjQ=&num=FHUReXA="><img src="http://file.nolzzang.com/popup/1486800801.png" width="480" height="640" border="0"/></a></div><div id="close"><p><input type="checkbox" name="today" id="today"/> <label for="today">오늘 그만 보기</label></p><a href="javascript:closewin()"><img src="http://img.nolzzang.com/aggro/images/update_event_close.jpg" width="54" height="25" border="0" alt="닫기" /></a></div></div></div>
+<style>#update_event{width:496px; height:682px; border:1px solid #909090; background-color:#ffffff}</style><div id="main_contents">
+	<div id="m_notice">
+		<dl class="mainTab">
+			<!--공지사항-->
+			<dt onmouseover="show_img_sub('img_tab',1,'tab_name')" style="cursor:pointer"><img src="http://img.nolzzang.com/aggro/images/tab_notice_01_.gif" alt="" name="tab_name" /></dt>
+			<dd id="img_tab1" style="display:block;">
+				<ul>	
+					<li><a href="http://aggro.nolzzang.com/home/view.php?brd=Ty9XKSNE&num=FHUWeXQ=">· <span class="subject">[공지사항]</span> 2월 14일(화) 서버통합 안내</a> <span class="day">2017.02.10</span></li><li><a href="http://aggro.nolzzang.com/home/view.php?brd=Ty9XKSNE&num=FHUQcXE=">· <span class="subject">[점검안내]</span> 2월 7일(화) 정기점검 안내 (완료)</a> <span class="day">2017.02.06</span></li><li><a href="http://aggro.nolzzang.com/home/view.php?brd=Ty9XKSNE&num=FHUReHY=">· <span class="subject">[공지사항]</span> 2월 7일(화) 연결서버 통합 안내</a> <span class="day">2017.02.03</span></li><li><a href="http://aggro.nolzzang.com/home/view.php?brd=Ty9XKSNE&num=FHUReHU=">· <span class="subject">[공지사항]</span> 신규 30서버 [미네르바] 오픈 안내</a> <span class="day">2017.02.03</span></li><li><a href="http://aggro.nolzzang.com/home/view.php?brd=Ty9XKSNE&num=FHUReHQ=">· <span class="subject">[공지사항]</span> 타입충전 미노출 현상 수정완료 및 보상 안내</a> <span class="day">2017.02.03</span></li>				</ul>
+				<p class="more"><a href="http://aggro.nolzzang.com/home/list.php?brd=Ty9XKSNE"><img src="http://img.nolzzang.com/aggro/images/icon_more.jpg" alt="더보기" /></a></p>
+			</dd>
+			<!--이벤트-->
+			<dt onmouseover="show_img_sub('img_tab',2,'tab_name')" style="cursor:pointer"><img src="http://img.nolzzang.com/aggro/images/tab_event_02.gif" alt="" name="tab_name" /></dt>
+			<dd id="img_tab2">
+				<ul>	
+					<li><a href="http://aggro.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=FHUReXA=">· <span class="subject">[진행중]</span> 성장 지원 이벤트!</a> <span class="day">2017.02.13</span></li><li><a href="http://aggro.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=FXkQdHQ=">· <span class="subject">[진행중]</span> 초보자 쿠폰 이벤트!</a> <span class="day">2016.04.18</span></li><li><a href="http://aggro.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=FXkQdHM=">· <span class="subject">[진행중]</span> 첫충전! 제대로 퍼! 드립니다!</a> <span class="day">2016.04.18</span></li><li><a href="http://aggro.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=FXkQdHI=">· <span class="subject">[진행중]</span> 누적충전! 선물 대방출</a> <span class="day">2016.04.18</span></li><li><a href="http://aggro.nolzzang.com/home/view.php?brd=RDZGLjQ=&num=FXkQc3k=">· <span class="subject">[진행중]</span> 출석체크 이벤트!</a> <span class="day">2016.04.18</span></li>				</ul>
+				<p class="more"><a href="http://aggro.nolzzang.com/home/list.php?brd=RDZGLjQ="><img src="http://img.nolzzang.com/aggro/images/icon_more.jpg" alt="더보기" /></a></p>
+			</dd>
+			<!--자유게시판-->
+			<dt onmouseover="show_img_sub('img_tab',3,'tab_name')" style="cursor:pointer"><img src="http://img.nolzzang.com/aggro/images/tab_freebord_03.gif" alt="" name="tab_name" /></dt>
+			<dd id="img_tab3">
+				<ul>	
+					<li><a href="http://aggro.nolzzang.com/home/view.php?brd=RzJGJQ==&num=FHURdnk=">· 법사 염룡 구해봅니다 </a> <span class="day">2017.02.01</span></li><li><a href="http://aggro.nolzzang.com/home/view.php?brd=RzJGJQ==&num=FHURc3c=">· 소원을말해바</a> <span class="day">2017.01.31</span></li><li><a href="http://aggro.nolzzang.com/home/view.php?brd=RzJGJQ==&num=FHURc3Y=">· 소원을빌어버</a> <span class="day">2017.01.31</span></li><li><a href="http://aggro.nolzzang.com/home/view.php?brd=RzJGJQ==&num=FHURc3I=">· 소원을 말해바 이밴트.[하데스/삐뿌]</a> <span class="day">2017.01.30</span></li><li><a href="http://aggro.nolzzang.com/home/view.php?brd=RzJGJQ==&num=FHURc3E=">· 소원을 말해바 이벤트.[하데스/스머프~]</a> <span class="day">2017.01.30</span></li>				</ul>
+				<p class="more"><a href="http://aggro.nolzzang.com/home/list.php?brd=RzJGJQ=="><img src="http://img.nolzzang.com/aggro/images/icon_more.jpg" alt="더보기" /></a></p>
+			</dd>
+		</dl>
+	</div>
+
+	<!--게임가이드-->
+	<div id="guide_banner">
+		<a href="http://aggro.nolzzang.com/home/game_guide.php" title="게임가이드"><img src="http://img.nolzzang.com/aggro/images/banner_guide.jpg" width="460px; height:176px;" alt="게임가이드" /></a>
+	</div>
+
+	<!--캐릭터소개-->
+	<div id="character">
+		<div class="character_img" style="overflow:hidden">
+			<img src="http://img.nolzzang.com/aggro/images/banner_character01.jpg" width="386" height="215" alt="전사" id="cimg1" style="position:absolute;top:0; left:1px;"/>
+			<img src="http://img.nolzzang.com/aggro/images/banner_character02.jpg" width="386" height="215" alt="법사" id="cimg2" style="position:absolute;top:217px; left:1px;"/>
+			<img src="http://img.nolzzang.com/aggro/images/banner_character03.jpg" width="386" height="215" alt="술사" id="cimg3" style="position:absolute;top:434px; left:1px;"/>
+		</div>
+		<ul>
+			<li><a href="javascript:minislide.navi('1')"><img src="http://img.nolzzang.com/aggro/images/thumbnail01_on.jpg" id="navi1" width="71" height="71" border="0" alt="전사" /></a></li>
+			<li><a href="javascript:minislide.navi('2')"><img src="http://img.nolzzang.com/aggro/images/thumbnail02.jpg" id="navi2" width="71" height="71" border="0" alt="법사"/></a></li>
+			<li><a href="javascript:minislide.navi('3')"><img src="http://img.nolzzang.com/aggro/images/thumbnail03.jpg" id="navi3" width="71" height="71" border="0" alt="술사"/></a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="right_contents">
+	<!--랭킹-->
+	<div id="ranking">
+		<form method="" action="">
+			<fieldset>
+				<table>
+					<colgroup>
+						<col width="60" />
+						<col width="110" />
+						<col width="64" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th colspan="4">
+							<h3>랭킹</h3>
+							<p>
+								<select name="serverId" id="serverId" onChange="game.ranking(this.value)">
+								<option value="1">제우스</option><option value="2">헤라</option><option value="3">포세이돈</option><option value="4">하데스</option><option value="5">큐피트</option><option value="6">비너스</option><option value="7">에키온</option><option value="8">아폴론</option><option value="9">사울</option><option value="10">캐리</option><option value="11">아레스</option><option value="12">데바</option><option value="13">에로스</option><option value="14">아테나</option><option value="15">프수케</option><option value="16">이오스</option><option value="17">셀레네</option><option value="18">레토</option><option value="19">유노</option><option value="20">플루톤</option><option value="21">케리스</option><option value="22">베스타</option><option value="23">불카누스</option><option value="24">베누스</option><option value="25">디아나</option><option value="26">마르스</option><option value="27">포르투나</option><option value="28">바코스</option><option value="29">쿠피드</option><option value="30">미네르바</option>								</select>
+							</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="ranklist_main">
+						<!-- <script>game.ranking('1')</script> -->
+					</tbody>
+				</table>
+			</fieldset>
+		</form>
+	</div>
+	<!--네이버검색-->
+	<!--
+	<div id="naver_search">
+		<a href="http://www.nolzzang.com/nolzzang.php?pid=1kbaro1" target="_blank"><img src="http://img.nolzzang.com/aggro/images/banner_naver.jpg" width="233" height="90" border="0" alt="네이버검색[천왕온라인]" /></a>
+	</div>
+	-->
+	<!--실시간 이벤트-->
+	<!--div id="ingame_event">
+		<h3>실시간 이벤트 [인게임]</h3>
+		<ul id="realtime_main">
+			<script>game.realtime('1');</script>
+		</ul>
+	</div-->
+	<div id="naver_search">
+		<a href="https://www.facebook.com/nolzzang1" target="_blank"><img src="http://img.nolzzang.com/aggro/images/m_btn_facebook.jpg" alt="놀짱 페이스북 바로가기" /></a>
+	</div>
+</div>
+<!--스크린샷-->
+<div id="main_screenshot">
+	<h3>스크린샷</h3>
+	<p><a href="http://aggro.nolzzang.com/home/list.php?brd=UiNRJSVP" title="스크린샷 게시판 더보기"><img src="http://img.nolzzang.com/aggro/images/icon_more.jpg" width="35" height="22" border="0" alt="더보기" /></a></p>
+	<dl class="first"><dt><a href="http://aggro.nolzzang.com/home/view.php?brd=UiNRJSVP&num=FHQQcnM="><img src="http://file.nolzzang.com/board/1481551720_1.jpg" width="225" height="138" border="0" alt="시공간 이벤트" /></a></dt><dd><a href="http://aggro.nolzzang.com/home/view.php?brd=UiNRJSVP&num=FHQQcnM=">시공간 이벤트</a></dd></dl><dl><dt><a href="http://aggro.nolzzang.com/home/view.php?brd=UiNRJSVP&num=FHQQcnI="><img src="http://file.nolzzang.com/board/1481548672_1.png" width="225" height="138" border="0" alt="시공간" /></a></dt><dd><a href="http://aggro.nolzzang.com/home/view.php?brd=UiNRJSVP&num=FHQQcnI=">시공간</a></dd></dl><dl><dt><a href="http://aggro.nolzzang.com/home/view.php?brd=UiNRJSVP&num=FHQQcnA="><img src="http://file.nolzzang.com/board/1481548906_1.jpg" width="225" height="138" border="0" alt="시공간의 문 이벤트" /></a></dt><dd><a href="http://aggro.nolzzang.com/home/view.php?brd=UiNRJSVP&num=FHQQcnA=">시공간의 문 이벤트</a></dd></dl></div>
+</div>
+
+<div id="footer">
+<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 --> 
+<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"> </script> 
+<script type="text/javascript"> 
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_2bc9e71edd09";
+if (!_nasa) var _nasa={};
+wcs.inflow("nolzzang.com");
+wcs_do(_nasa);
+</script>
+
+			<!--copyright-->
+						<div id="copyright">
+				<div id="footer_logo">
+					<img src="http://img.nolzzang.com/aggro/images/footer_logo01.jpg" width="89" height="36" border="0" alt="이비즈네트웍스" />
+					<img src="http://img.nolzzang.com/aggro/images/footer_logo02.jpg" width="89" height="36" border="0" alt="놀짱" />
+				</div>
+				<ul>
+					<li><a href="http://www.nolzzang.com/home/clause.php" title="이용약관"><img src="http://img.nolzzang.com/aggro/images/footer_menu01.jpg" width="44" height="13" border="0" alt="이용약관" /></a></li>
+					<li><a href="http://www.nolzzang.com/home/protect.php" title="개인정보보호정책"><img src="http://img.nolzzang.com/aggro/images/footer_menu02.jpg" width="88" height="13" border="0" alt="개인정보보호정책" /></a></li>
+					<li><a href="http://www.nolzzang.com/home/youth.php" title="청소년보호정책"><img src="http://img.nolzzang.com/aggro/images/footer_menu03.jpg" width="76" height="13" border="0" alt="청소년보호정책" /></a></li>
+					<li><a href="http://www.nolzzang.com/home/policy1.php?val=aggro" title="운영정책"><img src="http://img.nolzzang.com/aggro/images/footer_menu04.jpg" width="45" height="13" border="0" alt="운영정책" /></a></li>
+					<li><a href="http://www.nolzzang.com/home/policy2.php" title="캐시정책"><img src="http://img.nolzzang.com/aggro/images/footer_menu05.jpg" width="45" height="13" border="0" alt="캐시정책" /></a></li>
+					<li><a href="javascript:alert('로그인 후 이용하세요.');location.href='http://www.nolzzang.com/home/login.php?rtn=FgpXU3oOcT9GJ1FMUBAREllZIU85cEIvTgwWERMbDA=='" title="제휴문의"><img src="http://img.nolzzang.com/aggro/images/footer_menu06.jpg" width="44" height="13" border="0" alt="제휴문의" /></a></li>
+					<li><a href="http://www.nolzzang.com/home/customer.php" title="고객센터"><img src="http://img.nolzzang.com/aggro/images/footer_menu07.jpg" width="44" height="13" border="0" alt="고객센터" /></a></li>
+					<li><a href="http://www.nolzzang.com/home/board/report.php?category1=%EC%96%B4%EA%B7%B8%EB%A1%9C" title="문의 및 신고하기"><img src="http://img.nolzzang.com/aggro/images/footer_menu08.jpg" width="84" height="13" border="0" alt="문의 및 신고하기" /></a></li>
+				</ul>
+
+			<!----------family----------->
+			<script>
+			var fsite = {
+				go_family: function(url){
+					window.open(url);
+					fsite.click_family();
+				}, 
+
+				click_family: function(){
+					var hh = $("#family_list").attr("class");
+					if(hh == "f_on"){
+						$("#family_list").css({"display":"none"});
+						$("#family_list").removeClass("f_on");
+					}else{
+						$("#family_list").css({"display":"block"});
+						$("#family_list").addClass("f_on");
+					}
+				}
+			}
+			</script>
+			<style>
+			#smenu2 a { float:left; }
+			#family_site a:hover, a:active { color: #ffffff; }
+			#family_site UL LI { margin-right:0px; }
+			#family_site { width:100px; float:left; position:relative; margin-top:13px; }
+			#family_list { border:1px solid #dddddd; min-height:200px; display:none; position:absolute; bottom:20px; left:0; border-bottom:none; background:#000000; }
+			#family_list .fam_btn { padding:0px 3px 0px 3px; cursor:hand; height:20px; line-height:20px; width:100px;  }
+			.fam_btn_m { width:100px; padding:0px 3px 0px 3px; cursor:hand; height:20px; border:1px solid #dddddd; line-height:20px;background:#000000; }
+			</style>
+			<div id="family_site">
+				<div class="fam_btn_m"><a href="javascript:fsite.click_family();" style="color:#a6a6a6">Family Site&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▲</a></div>
+				<ul id="family_list">
+				<li><div class="fam_btn"><a href="http://www.daemon-tools.kr" target="_blank">데몬툴즈</a></div></li><li><div class="fam_btn"><a href="http://www.ancamera.co.kr/home/download_01.html" target="_blank">안카메라</a></div></li><li><div class="fam_btn"><a href="http://www.ancamera.co.kr/home/download_02.html" target="_blank">안캠코더</a></div></li><li><div class="fam_btn"><a href="http://www.startools.co.kr" target="_blank">별툴즈</a></div></li><li><div class="fam_btn"><a href="http://www.badakencoder.com" target="_blank">바닥툴즈</a></div></li><li><div class="fam_btn" style='color:#ffffff;'><b>놀짱</b></div></li><li><div class="fam_btn"><a href="http://www.pcclear.co.kr" target="_blank">피씨클리어</a></div></li><li><div class="fam_btn"><a href="http://www.nurisoop.co.kr" target="_blank">누리숲</a></div></li><li><div class="fam_btn"><a href="http://www.monotower.com/" target="_blank">모노타워</a></div></li><li><div class="fam_btn"><a href="http://www.monopalace.com" target="_blank">모노팰리스</a></div></li><li><div class="fam_btn"><a href="http://partners.monopalace.com" target="_blank">모노팰리스 파트너스</a></div></li><li><div class="fam_btn"><a href="http://www.ebiznetworks.co.kr" target="_blank">이비즈네트웍스</a></div></li><li><div class="fam_btn"><a href="http://www.enasset.co.kr" target="_blank">이엔자산개발</a></div></li><li><div class="fam_btn"><a href="http://www.monocityvil.com" target="_blank">모노씨티빌 등촌</a></div></li><li><div class="fam_btn"><a href="http://www.entv.co.kr" target="_blank">이엔티비</a></div></li><li><div class="fam_btn"><a href="http://www.ditower.co.kr" target="_blank">DI타워</a></div></li><li><div class="fam_btn"><a href="http://www.ssenflower.co.kr" target="_blank">쎈플라워</a></div></li><li><div class="fam_btn"><a href="http://www.onbiz.co.kr/" target="_blank">온비즈 오피스</a></div></li>				</ul>
+			</div>
+			<!----------famaily------------>
+		
+				<p>
+				(주)이비즈네트웍스  l  대표이사 : 박기범  l  서울특별시 강남구 선릉로 99길 12 모노타워  l  고객센터 1544-2950<br />
+				E-mail:help@nolzzang.co.kr  l  사업자등록번호 : 220-87-30865  l  부가통신사업신고번호 : 강남-11501호<br />
+				Copyright ⓒ <span>Ebiznetworks</span> All Rights Reserved.
+				</p>
+				<div id="rating">
+					<img src="http://img.nolzzang.com/aggro/images/18_rating.jpg" width="431" height="54" border="0" alt="청소년 이용불가" />
+				</div>
+				<script>
+					function pop_taxpayer() {
+						var win_tax	= window.open('http://aggro.nolzzang.com/home/common/taxpayer.php','taxpayer','scrollbars=no,resizable=no,width=510,height=720');
+					}
+				</script>
+				<div id="footer_mark"><img src="http://img.nolzzang.com/aggro/images/footer_mark.png" alt="이비즈네트웍스 인증마크" usemap="#Map"  /></div>
+                 <map name="Map" id="Map">
+                    <area shape="rect" coords="311,0,430,33" href="javascript:pop_taxpayer();">
+                  </map>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<!-- 다운로드 링크용 -->
+<form name="down" target="ifrm"></form>
+<iframe name="ifrm" style="width:0px;height:0px;border:none;" frameborder="0"></iframe>
+<!-- 다운로드 링크용 -->
+
+
+
+<div id="server" style="position: absolute;float:left;z-index: 9999; display: none;">
+	<div id="close">
+		<a href="javascript:common.out('#server')"><img src="http://img.nolzzang.com/aggro/images/server_close.jpg" alt="닫기" /></a>
+	</div>
+	<!----추천서버------>
+	<div id="recommend">
+		<a class="c30"><img src="http://img.nolzzang.com/aggro/images/btn_server_re30.png" alt="미네르바" onclick="game.start('30', '', 'Y', 'Y')" style="cursor:pointer" alt='추천서버' title='추천서버'></a>	</div>
+	<div id="contact">
+				<a onclick="game.start('1', '', 'Y', 'Y')" style="cursor:pointer"><img src="http://img.nolzzang.com/aggro/images/btn_server_b01.png" alt="최근접속서버" title="최근접속서버" onerror="this.src='http://img.nolzzang.com/aggro/images/btn_server_b01.png';" style="width:193px; height:49px;" /></a>
+	</div>
+	<div id="server_list_box">
+				<!-- <script>slayer.server_show('1')</script> -->
+			</div>
+	<form id="sv" target="_blank" method="get">
+		<input type="hidden" name="gurl" id="gurl" value="" />
+		<input type="hidden" name="server" id="servers" value="" />
+		<input type="hidden" name="userid" id="userid" value="" />
+			</form>
+</div>
+
+
+
+<script type="text/javascript">
+function isAgentIE() {
+		var chkB	= false;
+		if(navigator.userAgent.toLowerCase().indexOf('msie') != -1 || navigator.userAgent.toLowerCase().indexOf('rv:11.0') != -1 || navigator.userAgent.toLowerCase().indexOf('Trident/7.0') != -1) {
+			chkB	= true;
+		}
+		return chkB;
+	}
+</script>
+
+
+
+<!------------- 20141117 rhdmswl -------------------->
+<div id="jehu">
+<form name="mform" method="post">
+<input type="hidden" name="mode" value="jehu" />
+<input type="hidden" name="cate1" value="어그로" />
+<input type="hidden" name="mobile" value="" />
+	<p><img src="http://img.nolzzang.com/aggro/images/EX_1_t_04.gif" width="200" height="15" alt="메일보내기"></p>
+	<div id="jehu_in">
+		<div class="white">
+			<table class="jehu_t">
+				<tr>
+					<th>문의내용</th>
+					<td>
+						<input type="radio" name="genre" value="ad" checked id="ad"/><label for="ad">광고/제휴문의</label>
+						<input type="radio" name="genre" value="ask" id="ask"/><label for="ask">이용문의</label> 
+					</td>
+				</tr>
+				<tr>
+					<th>보내는 메일</th>
+					<td><input type="text" name="sender" value="" class="form" size="30" onclick="jehu.login_chk('')"></td>
+				</tr>
+				<tr>
+					<th>보내는 사람</th>
+					<td><input type="text" name="sendname" value="" class="form" size="30" onclick="jehu.login_chk('')"></td>
+				</tr>
+				<tr>
+					<th>제목</th>
+					<td><input type="text" name="subject" class="form" size="30" onclick="jehu.login_chk('')"></td>
+				</tr>
+				<tr>
+					<td colspan='2'><textarea name='contents'  style="border:1px solid #B4B4B4;width:99%;height:200px" onclick="jehu.login_chk('')"></textarea></td>
+				</tr>
+				<tr>
+					<td colspan='2' style='text-align:center;padding:10px 0;'>
+							<img src="http://img.nolzzang.com/aggro/images/my_post_button_03.gif" width="60" height="21" border="0" onclick="jehu.mail_send()" style="cursor:pointer">
+							<a onclick="common.out('#jehu');"> <img src="http://img.nolzzang.com/aggro/images/my_post_button_04.gif" width="60" height="21" border="0"></a>
+					  </td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</form>
+</div>
+
+<style type="text/css">
+
+#idenpop {width:100%; height:100%; background-color:#000;}
+#idenpop .pop{width:700px; height:auto; background-color:#FFF; margin:0 auto;}
+#idenpop .pop .pop_top{width:auto; height:26px; background-color:#ffd300; margin:0 auto; padding:24px;}
+#idenpop .pop .pop_top .title {width:146px; height:26px; float:left;} 
+#idenpop .pop .pop_top .close {width:27px; height:27px; float:right;} 
+#idenpop .pop .pop_title {width:auto; height:auto; font-size:16px;  font-family:'Malgun Gothic'; color:#000; letter-spacing:-1.4px; padding:24px;}
+#idenpop .pop .pop_box {width:auto; height:auto;  margin:0 auto; text-align:center; border-top:1px solid #c8c8c8; padding:36px;}
+#idenpop .pop .pop_box img{margin:5px;}
+#idenpop .pop .pop_text {width:700px; height:auto; font-size:12px; color:#646464; background-color:#f8f8f8; letter-spacing:-0.5px; padding: 20px 0 20px 0;}
+#idenpop .pop .pop_text p {margin: 6px 0 0 24px;}
+</style>
+
+<script>
+	function close_kcb_pop(){
+		common.out('#nverify_new');
+		common.out('#overlay');
+	}
+
+	var popup_open = "N";
+	var win = "";
+
+	function phone_chk(){
+		var auth_popup = window.open("", "auth_popup", "width=430,height=590,scrollbar=yes");
+		popup_open = "Y";
+		win = auth_popup;
+
+		var form1 = document.iForm;
+		form1.target = "auth_popup";
+		form1.action = "http://verify.nolzzang.com/chk/safe_hs_cert2.php";
+		form1.submit();	
+
+		jsf_pay_popup_chk();
+	}
+
+	function jsf_pay_popup_chk(){ 
+		if (popup_open =="Y") { 
+			try { 
+				if(typeof(win)=='undefined' || win.closed) { 
+					close_kcb_pop();
+					$.post("/home/common/aj_kcb_chk.php", {}, function(data){
+						popup_open ="N";
+						nov = data;
+					});
+				} 
+			} 
+			catch (e) { 
+				location.reload(); 
+			} 
+		  
+			setTimeout("jsf_pay_popup_chk()", 100); 
+		} 
+	} 
+</script>
+
+<div id="nverify_new"  style="position:fixed; left:50%; top:50%; z-index:99999; display:none;">
+	<div id="idenpop" style="position:relative; ">
+		<div class="pop">
+			<div class="pop_top">
+				<span class="title"><img src="http://img.nolzzang.com/www/images/member/pop_title.jpg" alt="" /></span>
+				<span class="close"><a href="javascript:void(0);" onclick="javascript:close_kcb_pop();"><img src="http://img.nolzzang.com/www/images/member/pop_x.jpg" alt="" /></a></span>
+			</div>
+			<div class="pop_title">
+				개정된 정보통신망법(정보통신망 이용 촉진 및 정보보호 등에 관한 법률 제23조2)에 따라<br />
+				주민번호를 사용하실 수 없으며, 본인인증 또는 아이핀 인증을 통해서만 회원 가입이 가능합니다. 
+			</div>  
+			<div class="pop_box">
+				<a href="javascript:void(0);" onclick="javascript:phone_chk();"><img src="http://img.nolzzang.com/www/images/member/bt_03.jpg" alt="휴대폰 인증" /></a>
+			</div>  
+			<div class="pop_text">
+				<p> - 입력한 본인확인 정보는 본인확인을 위해 사용되며, 그외 용도로 사용 또는 저장되지 않습니다. </p>
+				<p> - 인증이 정상적으로 작동하지 않으면 브라우저의 팝업 차단 기능을 해제하고 이용해 주시기 바랍니다. </p>
+				<p> - 본인 인증 중 공인인증서 인증은 인터넷 익스플로어 브라우저에서만 이용할 수 있습니다. </p>
+			</div>        
+		</div>
+	</div>
+</div>
+
+<form method="post" name="iForm">
+	<input type="hidden" name="r_s" value="hphone"/>
+	<input type="hidden" name="rsv1" value="kcb_chk" />
+	<input type="hidden" name="rsv2" value="" />
+</form>
+</body>
+</html>
+
