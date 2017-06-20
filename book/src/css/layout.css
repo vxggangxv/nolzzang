@@ -1,0 +1,998 @@
+@charset "utf-8";
+@import url("http://static.nolzzang.com/common/css/webfont.css");
+
+body {font-size:13px; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; color:#787878; line-height:1.5; background-color:#000000}
+a:link, a:visited {text-decoration:none; color:#787878}
+a:hover, a:active {text-decoration:underline; color:#611173}
+
+/*탑메뉴*/
+#top{width:100%; height:45px; clear:both; background-color:#ffffff;}
+#top .top_menu{width:1100px; margin:auto; height:45px; background-color:#ffffff;}
+#top .top_menu h1{float:left}
+#top .top_menu h1 a{float:left}
+#top .top_menu h1 .top_reborn{width:138px; height:45px; display:block; background:url(http://img.nolzzang.com/book/images/topmenu_reborn.jpg) 0 0 no-repeat; text-indent:-99999px}
+#top .top_menu h1 .top_sin{width:138px; height:45px; display:block; background:url(http://img.nolzzang.com/book/images/topmenu_sin.jpg) 0 0 no-repeat; text-indent:-99999px}
+#top .top_menu h1 .top_king{width:138px; height:45px; display:block; background:url(http://img.nolzzang.com/book/images/topmenu_king.jpg) 0 0 no-repeat; text-indent:-99999px}
+#top .top_menu h1 .top_book{width:138px; height:45px; display:block; background:url(http://img.nolzzang.com/book/images/topmenu_book.jpg) 0 0 no-repeat; text-indent:-99999px}
+#top .top_menu h1 .top_aggro{width:138px; height:45px; display:block; background:url(http://img.nolzzang.com/www/images/common/topmenu_aggro.jpg) 0 0 no-repeat; text-indent:-99999px}
+#top .top_menu h1 .top_musa{width:138px; height:45px; display:block; background:url(http://img.nolzzang.com/www/images/common/topmenu_musa.jpg) 0 0 no-repeat; text-indent:-99999px}
+#top .top_menu h1 a:hover{background-position:0 -45px}
+#top .top_menu .game{float:left; background-color:#ffffff}
+#top .top_menu .game li{float:left; margin-left:9px; padding-left:9px; margin-top:15px; background:url(http://img.nolzzang.com/healing/images/vertical_line.gif) no-repeat 0 3px}
+#top .top_menu .game li.bg_none{background:none; margin-left:25px}
+#top .top_menu .logout_menu{float:right; position:relative; top:10px; line-height:2}
+#top .top_menu .logout_menu li{float:left; margin-left:10px; padding-left:10px; background:url(http://img.nolzzang.com/healing/images/vertical_line2.gif) no-repeat 0 7px}
+#top .top_menu .logout_menu li.bg_none{background:none}
+#top .top_menu .logout_menu li a{text-decoration:none; font-size:11px; line-height:2}
+#top .top_menu .login_menu{float:right; position:relative; top:10px; line-height:2;}
+#top .top_menu .login_menu li{float:left; margin-left:10px; padding-left:10px; background:url(http://img.nolzzang.com/healing/images/vertical_line2.gif) no-repeat 0 7px}
+#top .top_menu .login_menu li.bg_none{background:none}
+#top .top_menu .login_menu li a{text-decoration:none; font-size:11px; line-height:2}
+
+
+#wrapper{width:100%; min-width:1100px; background:url(http://img.nolzzang.com/book/images/main_bg.jpg) center 3px no-repeat;}
+#header{width:1100px; position:relative; margin:0 auto}
+#header h1{width:304px; margin:0 auto; position:relative; z-index:20}
+
+/*GNB*/
+#header #gnb{width:1100px; height:25px; overflow:hidden; position:absolute; z-index:10; top:82px; background:url(http://img.nolzzang.com/book/images/sub_menu_bg.png) 0 50px no-repeat;}
+#header #gnb > li{float:left; margin-left:32px; margin-right:32px; text-align: center;}
+#header #gnb > li.m_l0{margin-left:20px}
+#header #gnb > li.m_r0{margin-right:0}
+#header #gnb > li.m_l300{margin-left:280px}
+#header #gnb > li > a{font-size:19px; font-weight:400; color:#ffffff; text-decoration:none}
+#header #gnb > li > a:hover{color:#ffd800}
+#header #gnb li .sub_menu{margin-top:43px;}
+#header #gnb li .sub_menu a{display:inline-block; padding:5px 5px 6px 5px; color:#817389; text-decoration:none}
+#header #gnb li .sub_menu a:hover{color:#d30000; font-weight:bold}
+
+/*메인배너*/
+#main_banner{position:relative; width:1100px; height:420px; margin:0 auto;}
+
+/*네이버검색*/
+#naver_search{position:absolute; top:444px;}
+
+/*페이스북*/
+#facebook{position:absolute; top:505px; left:0}
+#go_sns{position:absolute; top:20px; left:0}
+#go_sns ul{float:left; margin-left:10px}
+#go_sns ul li{float:left; margin-left:5px; margin-right:5px}
+#go_sns ul li.blog a{display:block; width:30px; height:30px; background:url(http://img.nolzzang.com/book/images/go_sns01.png) 0 0 no-repeat; text-indent:-99999px}
+#go_sns ul li.facebook a{display:block; width:30px; height:30px; background:url(http://img.nolzzang.com/book/images/go_sns02.png) 0 0 no-repeat; text-indent:-99999px}
+#go_sns ul li.twitter a{display:block; width:30px; height:30px; background:url(http://img.nolzzang.com/book/images/go_sns03.png) 0 0 no-repeat; text-indent:-99999px}
+#go_sns ul li.kakao a{display:block; width:30px; height:30px; background:url(http://img.nolzzang.com/book/images/go_sns04.png) 0 0 no-repeat; text-indent:-99999px}
+#go_sns ul li a:hover{background-position:0 -30px;}
+
+#container {*zoom:1; width:1100px; margin:0 auto;}
+#container:after {content:""; display:block; clear:both; }
+#left_contents{float:left; width:280px;}
+
+/*로그인*/
+#login{width:250px; margin-top:30px}
+#login2{width:250px; margin-top:30px}
+#login #tab ul{overflow:hidden}
+#login #tab li{float:left; }
+#login #tab li a{display:block; width:125px; height:35px; font-size:13px; text-decoration:none; text-align:center; line-height:2.4; background-color:#994baa; color:#e8c2f0; }
+#login #tab li a.active{background-color:#611173; color:#fff}
+#login_contents{position:relative; width:250px; height:260px; background-color:#611173; overflow:hidden;}
+#login_contents2{position:relative; width:250px; height:260px; background-color:#611173; overflow:hidden;}
+#login_contents2 .login_text{color:#fff; text-align:center; font-size:14px; margin-top:14px}
+#out #id_pw{position:absolute; top:60px; left:15px}
+#out .input_style{height:34px; margin:0; padding:0 5px; border:1px solid #d2d2d2; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+#out #btn_login{position:absolute; top:60px; left:155px; width:78px; height:71px; border:0; background-color:#ff7900;}
+#out #btn_login a{display:block; width:78px; height:71px; font-size:16px; color:#ffffff; text-align:center; line-height:4.3; text-decoration:none}
+#out .login_menu{position:absolute; top:138px; left:15px; width:220px;}
+#out .login_menu li{float:left; background:url(http://img.nolzzang.com/book/images/vertical_line.jpg) right 4px no-repeat}
+#out .login_menu li.btn_join{width:61px; text-align:left;}
+#out .login_menu li.btn_join a{color:#ffffff}
+#out .login_menu li.id_sc{width:79px; text-align:center;}
+#out .login_menu li.pw_sc{width:80px; text-align:right; background:none}
+#out .login_menu li a{color:#ecafff; text-decoration:none;}
+#in #thanks{width:220px; height:42px; margin-left:15px; margin-top:15px; font-size:13px; line-height:3; text-indent:15px; color:#ffd7d7; background-color:#41075a}
+#in #user_info{width:220px; height:130px; margin-left:15px; margin-top:1px; background-color:#4b0a64; color:#c1afcb}
+#in #user_info p{float:left; margin:10px 0 0 15px; font-size:13px; line-height:1.7}
+#in #user_info p .purchase_list{color:#ffd800; text-decoration:none}
+#in #user_info p a{color:#ffd800; text-decoration:underline}
+#in #user_info .cash_info{float:left; margin-top:8px; margin-left:15px}
+#in .login_menu{position:absolute; top:232px; left:15px; width:220px;}
+#in .login_menu li{float:left; background:url(http://img.nolzzang.com/book/images/vertical_line.jpg) right 4px no-repeat}
+#in .login_menu li.btn_customer{width:67px; text-align:center;}
+#in .login_menu li.btn_customer a{color:#ffffff}
+#in .login_menu li.btn_mypage{width:86px; text-align:center;}
+#in .login_menu li.btn_logout{width:67px; text-align:center; background:none}
+#in .login_menu li a{color:#ecafff; text-decoration:none;}
+#SNS_login{position:absolute; top:222px; width:250px; height:38px; background-color:#4b0a64; color:#d0afd8}
+#SNS_login p{float:left; margin-top:9px; margin-left:15px;}
+#SNS_login ul{float:left; margin-top:8px;}
+#SNS_login ul li{float:left; margin-right:3px; margin-left:3px}
+#auto_check{position:absolute; left:150px; top:20px; color:#ffffff }
+#auto_login_info{position:absolute; left:13px; top:34px; z-index:99}
+
+#naver_login{position:absolute; top:20px; left:24px}
+#n_login_text{position:absolute; top:80px; left:24px; width:201px; padding:10px 0 13px 0; background-color:#41075a; color:#c1afcb; text-align:center; line-height:1.5}
+#naver_login3{position:absolute; top:164px; left:15px}
+
+/*sns 바로가기 추가*/
+#facebook{position:absolute; top:505px; left:0}
+#go_sns{position:absolute; top:20px; left:0}
+#go_sns ul{float:left; margin-left:10px}
+#go_sns ul li{float:left; margin-left:5px; margin-right:5px}
+#go_sns ul li.blog a{display:block; width:30px; height:30px; background:url(http://img.nolzzang.com/book/images/go_sns01.png) 0 0 no-repeat; text-indent:-99999px}
+#go_sns ul li.facebook a{display:block; width:30px; height:30px; background:url(http://img.nolzzang.com/book/images/go_sns02.png) 0 0 no-repeat; text-indent:-99999px}
+#go_sns ul li.twitter a{display:block; width:30px; height:30px; background:url(http://img.nolzzang.com/book/images/go_sns03.png) 0 0 no-repeat; text-indent:-99999px}
+#go_sns ul li.kakao a{display:block; width:30px; height:30px; background:url(http://img.nolzzang.com/book/images/go_sns04.png) 0 0 no-repeat; text-indent:-99999px}
+#go_sns ul li a:hover{background-position:0 -30px;}
+
+
+
+/*네이버 채널링 로그인*/
+#n_login{width:250px; margin-top:30px}
+#n_login .n_login_contents{position:relative; width:250px; height:211px; background-color:#611173; overflow:hidden;}
+#n_login .naver_login2{position:absolute; top:135px; left:24px}
+#n_login .n_login_text2{position:absolute; top:20px; left:24px; width:201px; font-size:13px; padding:25px 0 28px 0; background-color:#41075a; color:#c1afcb; text-align:center; line-height:1.5}
+#n_login .n_login_text2 span{color:#fff}
+#n_login .naver_login2 a{display:block; width:199px; height:48px; text-align:center; font-size:16px; line-height:3; text-decoration:none; border:1px solid #3ad215; color:#fff; background-color:#23b300}
+
+#login_agree{width:250px; margin-top:30px}
+#login_agree .n_login_contents{position:relative; width:250px; height:211px; background-color:#611173; overflow:hidden;}
+#login_agree .naver_login2{position:absolute; top:135px; left:24px}
+#login_agree .n_login_text2{position:absolute; top:20px; left:24px; width:201px; font-size:13px; padding:17px 0 17px 0; background-color:#41075a; color:#c1afcb; text-align:center; line-height:1.5}
+#login_agree .n_login_text2 span{color:#fff}
+#login_agree .naver_login2 a{display:block; width:199px; height:48px; text-align:center; font-size:16px; line-height:3; text-decoration:none; border:1px solid #3ad215; color:#fff; background-color:#23b300}
+
+/*다음 채널링 로그인*/
+#d_login{width:250px; margin-top:30px}
+#d_login .n_login_contents{position:relative; width:250px; height:211px; background-color:#611173; overflow:hidden;}
+#d_login .naver_login2{position:absolute; top:135px; left:24px}
+#d_login .n_login_text2{position:absolute; top:20px; left:24px; width:201px; font-size:13px; padding:25px 0 28px 0; background-color:#41075a; color:#c1afcb; text-align:center; line-height:1.5}
+#d_login .n_login_text2 span{color:#fff}
+#d_login .naver_login2 a{display:block; width:199px; height:48px; text-align:center; font-size:16px; line-height:3; text-decoration:none; border:1px solid #7ba2f6; color:#fff; background-color:#5a8dfb}
+
+#d_login_agree{width:250px; margin-top:30px}
+#d_login_agree .n_login_contents{position:relative; width:250px; height:211px; background-color:#611173; overflow:hidden;}
+#d_login_agree .naver_login2{position:absolute; top:135px; left:24px}
+#d_login_agree .n_login_text2{position:absolute; top:20px; left:24px; width:201px; font-size:13px; padding:17px 0 17px 0; background-color:#41075a; color:#c1afcb; text-align:center; line-height:1.5}
+#d_login_agree .n_login_text2 span{color:#fff}
+#d_login_agree .naver_login2 a{display:block; width:199px; height:48px; text-align:center; font-size:16px; line-height:3; text-decoration:none; border:1px solid #7ba2f6; color:#fff; background-color:#5a8dfb}
+
+/* Select */
+.select{ position:relative; line-height:normal; display:inline-block; *display:inline; vertical-align:middle; background:#fff; *zoom:1;}
+.select *{ margin:0; padding:0; cursor:pointer; font-size:13px; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+.select .myValue{position:relative; z-index:2; left:0; top:0; border:1px solid #d2d2d2; color:#666; line-height:19px; _line-height:normal; text-align:left; overflow:visible; background:transparent;}
+.select .myValue.selected{ font-weight:normal;}
+.select.open .myValue,
+.select .myValue.outLine{ border:1px solid #999;}
+.select button.myValue{ height:34px; width:100%; text-indent:5px; *text-indent:0; *padding-left:5px;}
+.select div.myValue{ height:19px; text-indent:8px;}
+.select .ctrl{ position:absolute; top:7px; right:5px; width:20px; height:20px; background:#fff;}
+.select .arrow{ position:absolute; width:0; height:0; top:9px; right:6px; line-height:0; font-size:0; }
+.select ul{ position:absolute; top:32px; left:0; z-index:10; width:100%; list-style:none; border:0; border-top:1px solid #bababa; border-bottom:1px solid #bababa; background:#fff; overflow:hidden;}
+.select ul.aList{ display:none;}
+.select.open ul.aList{ display:block;}
+.select ul.iList{ left:-2000%;}
+.select.open ul.iList{ left:0;}
+.select li{ position:relative; overflow:hidden; white-space:nowrap; height:30px; border-left:1px solid #d2d2d2; border-right:1px solid #bababa;}
+.select li input.option{ position:absolute; width:100%; height:20px; line-height:20px;}
+.select li label{ position:absolute; left:0; top:0; width:100%; text-indent:8px; *text-indent:6px; height:18px; line-height:18px; color:#767676; background:#fff;}
+.select li a{ display:block; text-indent:8px; *text-indent:6px; height:30px; line-height:30px; color:#767676; background:#fff; text-decoration:none;}
+.select li.hover *{background:#999; color:#fff;}
+
+/*캐쉬구매하기*/
+#poker_banner{width:250px; margin-top:30px}
+#cash_banner{width:250px; margin-top:30px}
+#cash_banner li.first{margin-bottom:1px}
+#m_event_banner{width:250px; margin-top:30px}
+
+
+/*프로그램 다운로드*/
+#p_download{width:250px; margin-top:30px}
+#p_download h2{width:250px; height:35px; color:#ffffff; font-size:16px; background-color:#611174; line-height:2.1; text-indent:15px}
+#p_download ul{width:250px; height:78px; background-color:#4d4047; margin-top:1px}
+#p_download ul li{float:left}
+
+
+
+#main_contents{float:left; width:540px;}
+
+/*게시판 미리보기*/
+#bbs_preview{width:540px}
+#bbs_preview #preview_tab{height:34px; background-color:#611174}
+#bbs_preview #preview_tab ul{overflow:hidden}
+#bbs_preview #preview_tab li{float:left; }
+#bbs_preview #preview_tab li a{display:block; width:125px; height:34px; font-size:16px; text-decoration:none; text-align:center; line-height:2.1; background-color:#4b0a64; color:#a03fb6; }
+#bbs_preview #preview_tab li a.active{background-color:#994baa; color:#fff}
+#bbs_contents{width:540px; height:157px; margin-top:1px; background-color:#4d4047}
+#bbs_contents ul{float:left; width:500px; margin:18px 0 0 20px;}
+#bbs_contents ul li{height:33px}
+#bbs_contents ul li .text{float:left; width:415px; text-indent:5px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; background:url(http://img.nolzzang.com/book/images/dot.jpg) left 7px no-repeat}
+#bbs_contents ul li .text a{color:#fff; font-size:13px; text-decoration:none}
+#bbs_contents ul li .text a:hover{color:#ffd800}
+#bbs_contents ul li .day{float:right; text-align:right; width:85px; font-size:13px; color:#d2d2d2}
+
+/*게임가이드 배너*/
+#guide_banner{float:left; width:255px; margin-top:30px}
+#guide_banner h2{width:255px; height:35px; color:#ffffff; font-size:16px; background-color:#611174; line-height:2.1; text-indent:15px}
+#guide_banner .img{width:255px; height:225px; background-color:#4d4047; margin-top:1px; overflow:hidden}
+
+/*소개 영상 배너*/
+#ad_movie{float:left; width:255px; margin-top:30px; margin-left:30px}
+#ad_movie h2{width:255px; height:35px; color:#ffffff; font-size:16px; background-color:#611174; line-height:2.1; text-indent:15px}
+#ad_movie .img{width:255px; height:225px; background-color:#4d4047; margin-top:1px; overflow:hidden}
+
+/*캐릭터 소개
+#character_info{clear:both; float:left; width:820px; margin-top:30px}
+#character_info h2{width:820px; height:35px; color:#ffffff; font-size:16px; background-color:#611174; line-height:2.1; text-indent:15px}
+#character_info #character_bg{float:left; width:820px; height:333px; margin-top:1px; background-color:#4e4047}
+#character_info #character_bg ul{float:left; width:228px; margin-top:15px; margin-left:15px;}
+#character_info #character_bg ul li{width:75px; height:75px; float:left; margin-right:1px; margin-bottom:1px}
+#character_info #character_bg ul li a{text-indent:-99999px}
+#character_info #character_bg ul li .c01{display:block; width:75px; height:75px; background:url(http://img.nolzzang.com/book/images/character_sn_img01.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c02{display:block; width:75px; height:75px; background:url(http://img.nolzzang.com/book/images/character_sn_img02.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c03{display:block; width:75px; height:75px; background:url(http://img.nolzzang.com/book/images/character_sn_img03.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c04{display:block; width:75px; height:75px; background:url(http://img.nolzzang.com/book/images/character_sn_img04.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c05{display:block; width:75px; height:75px; background:url(http://img.nolzzang.com/book/images/character_sn_img05.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c06{display:block; width:75px; height:75px; background:url(http://img.nolzzang.com/book/images/character_sn_img06.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c07{display:block; width:75px; height:75px; background:url(http://img.nolzzang.com/book/images/character_sn_img07.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c08{display:block; width:75px; height:75px; background:url(http://img.nolzzang.com/book/images/character_sn_img08.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c09{display:block; width:75px; height:75px; background:url(http://img.nolzzang.com/book/images/character_sn_img09.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c10{display:block; width:75px; height:75px; background:url(http://img.nolzzang.com/book/images/character_sn_img10.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c11{display:block; width:75px; height:75px; background:url(http://img.nolzzang.com/book/images/character_sn_img11.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c12{display:block; width:75px; height:75px; background:url(http://img.nolzzang.com/book/images/character_sn_img12.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .active{background-position:0 -75px}
+#character_info #character_bg #character_img{float:left; width:562px; height:304px; overflow:hidden; margin-top:15px;}
+*/
+
+/*캐릭터 소개*/
+#character_info{clear:both; float:left; width:540px; margin-top:30px}
+#character_info h2{width:540px; height:35px; color:#ffffff; font-size:16px; background-color:#611174; line-height:2.1; text-indent:15px}
+#character_info #character_bg{float:left; width:540px; height:240px; margin-top:1px; background-color:#4e4047}
+#character_info #character_bg ul{float:left; width:162px;}
+#character_info #character_bg ul li{width:162px; height:60px; float:left; margin-right:1px; }
+#character_info #character_bg ul li a{text-indent:-99999px}
+#character_info #character_bg ul li .c01{display:block; width:162px; height:60px; background:url(http://img.nolzzang.com/book/images/character_sn_img01_2.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c02{display:block; width:162px; height:60px; background:url(http://img.nolzzang.com/book/images/character_sn_img02_2.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c03{display:block; width:162px; height:60px; background:url(http://img.nolzzang.com/book/images/character_sn_img03_2.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .c04{display:block; width:162px; height:60px; background:url(http://img.nolzzang.com/book/images/character_sn_img04_2.jpg) 0 0 no-repeat; transition:all 0.4s}
+#character_info #character_bg ul li .active{background-position:0 -60px}
+#character_info #character_bg #character_img{float:left; width:378px; height:240px; overflow:hidden;}
+
+
+#right_contents{float:left; width:280px}
+
+/*랭킹*/
+#ranking{position:relative; margin-left:30px; width:250px; height:483px; background-color:#611173}
+#ranking h2{color:#ffffff; font-size:16px; line-height:3.4; text-indent:15px}
+#ranking #ranking_tb{width:250px;}
+#ranking #ranking_tb th{height:35px; color:#ecafff; text-align:center; background-color:#3e0757}
+#ranking #ranking_tb td{height:36px; color:#ffffff; }
+#ranking #ranking_tb td.pt6{padding-top:6px}
+#ranking #ranking_tb td .c_name{float:left; width:138px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+#ranking .ranking_select{position:absolute; top:17px; right:3px; width:80px; color:#fff; text-align:center}
+#ranking .ranking_select a{margin-left:5px; margin-right:5px; color:#d59de2}
+#ranking .ranking_select a:hover{text-decoration:none; color:#fff}
+#ranking .ranking_select a.left{float:left;}
+#ranking .ranking_select a.right{float:right}
+#ranking .aList{height:300px; overflow-y:scroll}
+
+
+#facebook_banner{float:left; width:250px; height:137px;  margin-left:30px; margin-top:30px}
+#screenshot_banner{float:left; width:250px;height:137px; margin-left:30px; margin-top:1px}
+#event_banner{float:left; margin-left:30px; margin-top:30px}
+#customer_banner{float:left; margin-top:30px;}
+
+
+/*---------------------------------------------------------------------------------메인CSS 끝-----------------------------------------------------------------------*/
+
+
+body.sub #wrapper{width:100%; min-width:1100px; background:url(http://img.nolzzang.com/book/images/sub_bg.jpg) center 3px no-repeat;}
+body.sub #header{height:320px}
+body.sub #container{background:url(http://img.nolzzang.com/book/images/sub_box_bg.jpg) 0 0 repeat-y;}
+
+/*sub GNB*/
+#header #sub_gnb{width:1100px; height:174px; position:absolute; z-index:10; top:82px; background:url(http://img.nolzzang.com/book/images/sub_menu_bg.png) 0 50px no-repeat;}
+#header #sub_gnb > li{float:left; margin-left:32px; margin-right:32px;}
+#header #sub_gnb > li.m_l0{margin-left:20px}
+#header #sub_gnb > li.m_r0{margin-right:0}
+#header #sub_gnb > li.m_l300{margin-left:280px}
+#header #sub_gnb > li > a{font-size:19px; font-weight:400; color:#ffffff; text-decoration:none}
+#header #sub_gnb > li > a:hover{color:#ffd800}
+#header #sub_gnb li .sub_menu{margin-top:43px;}
+#header #sub_gnb li .sub_menu a{display:inline-block; padding:5px 5px 6px 5px; color:#817389; text-decoration:none}
+#header #sub_gnb li .sub_menu a:hover{color:#d30000;}
+
+/*페이스북*/
+body.sub #facebook{position:absolute; top:280px; right:0; text-align:right}
+
+body.sub #left_contents{float:left; background-color:#695b62; margin-bottom:0; padding-bottom:30px}
+body.sub #game_start{margin-top:15px; margin-left:15px}
+body.sub #starter_int{margin-left:15px}
+body.sub #login{margin-left:15px}
+body.sub #cash_banner{margin-left:15px}
+
+/*서브배너*/
+#sub_banner{width:250px; height:260px; margin-top:30px; margin-left:15px; text-align:center;}
+#banner_img {position:relative; width:250px; height:250px; overflow:hidden;  background-color:#611173;}
+#banner_img ul {position:relative; float:left; width:250px; height:250px;}
+#banner_img li {position:absolute; width:250px; height:250px;}
+#banner_img li a {display:block; width:250px; height:250px; text-indent:-99999px}
+#rol_button{display:inline-block; margin-top:7px}
+#rol_button li{background:url(http://img.nolzzang.com/book/images/btnVisual.png) 0 -16px no-repeat; width:14px; height:15px; float:left; overflow:hidden; margin:0 5px; cursor:pointer;}
+#rol_button li.on { background-position:0 0;}
+#rol_button li{text-indent:-9999px}
+
+#sub_contents{float:left; width:820px; background-color:#fff}
+#sub_contents #sub_top{float:left; width:100%; height:67px}
+#sub_contents #sub_top h2{float:left; margin-top:20px; margin-left:30px; font-size:30px; font-weight:bold; color:#444444}
+#sub_contents #navi{float:right; margin-top:37px; margin-right:30px}
+#sub_contents #navi span{color:#611173}
+
+/*게임스토리*/
+#sub_contents #sub_main{float:left; width:760px; min-height:700px; margin-left:30px; border-top:2px solid #444444;}
+#game_story{float:left; margin-top:30px; margin-bottom:30px}
+
+
+/*게임소개*/
+#game_info{float:left; margin-top:30px; margin-bottom:30px}
+
+
+/*게시판*/
+#notice_tab{float:left; width:760px; background:url(http://img.nolzzang.com/book/images/tab_bg.jpg) 0 0 repeat-x}
+#notice_tab li{float:left; width:152px; height:50px; background-color:#f0f0f0; border:1px solid #d2d2d2; text-align:center; border-right:0; border-top:0; box-sizing:border-box;}
+#notice_tab li a{display:block; height:50px; font-size:14px; line-height:3.3; text-decoration:none}
+#notice_tab li a:hover{background-color:#d2d2d2; color:#444444}
+#notice_tab li.last{border-right:1px solid #d2d2d2}
+#notice_tab li.on a{background-color:#fff; border-bottom:0; color:#444444; font-weight:bold}
+
+#freeboard_tab{float:left; width:760px; background:url(http://img.nolzzang.com/book/images/tab_bg.jpg) 0 0 repeat-x}
+#freeboard_tab li{float:left; width:190px; height:50px; background-color:#f0f0f0; border:1px solid #d2d2d2; text-align:center; border-right:0; border-top:0; box-sizing:border-box;}
+#freeboard_tab li a{display:block; height:50px; font-size:14px; line-height:3.3; text-decoration:none}
+#freeboard_tab li a:hover{background-color:#d2d2d2; color:#444444}
+#freeboard_tab li.last{border-right:1px solid #d2d2d2}
+#freeboard_tab li.on a{background-color:#fff; border-bottom:0; color:#444444; font-weight:bold}
+
+#strategy_tab{float:left; width:760px; background:url(http://img.nolzzang.com/book/images/tab_bg.jpg) 0 0 repeat-x}
+#strategy_tab li{float:left; width:152px; height:50px; background-color:#f0f0f0; border:1px solid #d2d2d2; text-align:center; border-right:0; border-top:0; box-sizing:border-box;}
+#strategy_tab li a{display:block; height:50px; font-size:14px; line-height:3.3; text-decoration:none}
+#strategy_tab li a:hover{background-color:#d2d2d2; color:#444444}
+#strategy_tab li.last{border-right:1px solid #d2d2d2}
+#strategy_tab li.on a{background-color:#fff; border-bottom:0; color:#444444; font-weight:bold}
+
+#faq_tab{float:left; width:760px; background:url(../images/tab_bg.jpg) 0 0 repeat-x}
+#faq_tab li{float:left; width:190px; height:50px; background-color:#f0f0f0; border:1px solid #d2d2d2; text-align:center; border-right:0; border-top:0; box-sizing:border-box;}
+#faq_tab li a{display:block; height:50px; font-size:14px; line-height:3.3; text-decoration:none}
+#faq_tab li a:hover{background-color:#d2d2d2; color:#444444}
+#faq_tab li.last{border-right:1px solid #d2d2d2}
+#faq_tab li.on a{background-color:#fff; border-bottom:0; color:#444444; font-weight:bold}
+
+#submit_tab{float:left; width:760px; background:url(../images/tab_bg.jpg) 0 0 repeat-x}
+#submit_tab li{float:left; width:126.5px; height:50px; background-color:#f0f0f0; border:1px solid #d2d2d2; text-align:center; border-right:0; border-top:0; box-sizing:border-box;}
+#submit_tab li a{display:block; height:50px; font-size:14px; line-height:3.3; text-decoration:none}
+#submit_tab li a:hover{background-color:#d2d2d2; color:#444444}
+#submit_tab li.last{border-right:1px solid #d2d2d2}
+#submit_tab li.on a{background-color:#fff; border-bottom:0; color:#444444; font-weight:bold}
+
+#purchase_tab{float:left; width:760px; background:url(../images/tab_bg.jpg) 0 0 repeat-x}
+#purchase_tab li{float:left; width:380px; height:50px; background-color:#f0f0f0; border:1px solid #d2d2d2; text-align:center; border-right:0; border-top:0; box-sizing:border-box;}
+#purchase_tab li a{display:block; height:50px; font-size:14px; line-height:3.3; text-decoration:none}
+#purchase_tab li a:hover{background-color:#d2d2d2; color:#444444}
+#purchase_tab li.last{border-right:1px solid #d2d2d2}
+#purchase_tab li.on a{background-color:#fff; border-bottom:0; color:#444444; font-weight:bold}
+
+.bbs{float:left; width:760px; margin-top:30px; border-top:1px solid #444444}
+.bbs th{height:50px; border-bottom:1px solid #aaaaaa; text-align:center; background-color:#fff8ea}
+.bbs td{height:50px; border-bottom:1px solid #d2d2d2; text-align:center}
+.bbs th.important{text-align:left;}
+.bbs th.important a{color:#444444; font-weight:600; width:590px; height:50px; display:block; float:left; line-height:4.2; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.bbs th.font_red2{font-weight:600}
+.bbs td.bbs_title{text-align:left}
+.bbs td.bbs_title a{width:410px; height:50px; display:block; float:left; line-height:3.8; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.bbs td.bbs_footer{height:100px; border-bottom:0}
+.bbs td.re{background-color:#fff8ea}
+
+.bbs_view{float:left; width:760px}
+.bbs_view td{border-bottom:1px solid #d2d2d2;}
+.bbs_view td.bbs_title{text-indent:15px; font-size:16px; color:#444444; font-weight:600}
+.bbs_view td.user_name{text-indent:15px}
+.bbs_view td.user_name span{color:#444444; font-weight:600}
+.bbs_view td.date{text-align:right; padding-right:15px;}
+.bbs_view td.bbs_body > div{width:730px; min-height:400px; padding:15px;}
+
+.bbs_write{float:left; width:760px}
+.bbs_write th{height:50px; border-bottom:1px solid #d2d2d2; background-color:#e6e6e6; padding-left:10px; color:#444444}
+.bbs_write td{height:50px; border-bottom:1px solid #d2d2d2; padding-left:10px;}
+.bbs_write td .write_title{width:600px; height:22px; padding:5px; border:1px solid #d2d2d2; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+.bbs_write td.write_body{height:500px; border:0}
+
+.bbs_button{float:left}
+.bbs_button li{float:left}
+.bbs_button2{float:right}
+.bbs_button2 li{float:left}
+.bbs_title .pick{color:#611173; font-weight:600; text-decoration:underline}
+
+
+/*스크린샷*/
+.screenshot{float:left; width:760px; margin-top:30px;}
+.screenshot dl{width:240px; float:left; margin-right:20px; margin-bottom:35px}
+.screenshot dl.last{margin-right:0}
+.screenshot dl dt{width:240px; height:170px; background-color:#695b62}
+.screenshot dl dd{width:240px; margin-top:10px;}
+.screenshot dl dd h4 a{width:240px; float:left; font-size:15px; color:#444444; font-weight:600; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; text-decoration:none}
+.screenshot dl dd .date{float:right; color:#aaaaaa}
+.screenshot dl dd .user_name{float:left; margin-top:5px}
+.screenshot dl dd .comment_num{clear:both; float:left}
+#sc_footer{float:left; width:760px; border-top:1px solid #d2d2d2}
+.btn_purple{float:right; width:80px; height:34px; margin-top:15px; margin-left:1px; background-color:#611173; border:0; color:#fff; cursor:pointer; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+.btn_gray{float:right; width:80px; height:34px; margin-top:15px; margin-left:1px; background-color:#8e8e8e; border:0; color:#fff; cursor:pointer; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+
+/*이벤트*/
+#event_tab{float:left; width:760px; background:url(http://img.nolzzang.com/book/images/tab_bg.jpg) 0 0 repeat-x}
+#event_tab li{float:left; width:152px; height:50px; background-color:#f0f0f0; border:1px solid #d2d2d2; text-align:center; border-right:0; border-top:0; box-sizing:border-box;}
+#event_tab li a{display:block; height:50px; font-size:14px; line-height:3.3; text-decoration:none}
+#event_tab li a:hover{background-color:#d2d2d2; color:#444444}
+#event_tab li.last{border-right:1px solid #d2d2d2}
+#event_tab li.on a{background-color:#fff; border-bottom:0; color:#444444; font-weight:bold}
+
+.event_list td{height:130px}
+.event_list td dt{float:left; width:240px; height:100px; background-color:#695b62}
+.event_list td dd{float:left; width:500px; position:relative; margin-left:15px;}
+.event_list td dd h4{float:left; width:440px; text-align:left; font-size:15px; color:#444444; font-weight:600; }
+.event_list td dd h4 a{width:440px; float:left; text-align:left; font-size:15px; color:#444444; font-weight:600;}
+.event_list td dd p{clear:both; float:left; margin-top:10px}
+.event_list td dd .event_go{position:absolute; right:0; top:28px}
+
+/*코멘트*/
+#comment{padding-bottom:30px}
+#comment #comment_num{color:#444444; margin-top:20px}
+#comment #comment_num span{font-size:16px; font-weight:500; color:#fe3131}
+#comment #comment_box{width:100%; height:120px; margin-top:5px; background-color:#f0f0f0}
+#comment #comment_box .comment_text{float:left; width:585px; height:62px; margin-top:20px; margin-left:20px; border:0; padding:10px; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+#comment #comment_box a{float:left; display:block; width:100px; height:80px; background-color:#611174; color:#ffffff; margin-top:20px; margin-left:15px; text-align:center; font-size:15px; text-decoration:none; line-height:5.3}
+#comment .comment_list{float:left; width:730px; padding:15px; border-top:1px solid #d2d2d2}
+#comment .comment_list .comment_id{float:left; color:#444444}
+#comment .comment_list .comment_date{float:right; color:#aaaaaa}
+#comment .comment_list .register_article{clear:both; float:left; margin-top:10px; text-align:justify}
+#refresh{float:left; width:760px; height:45px; line-height:3.4; background-color:#f0f0f0; border-top:1px solid #d2d2d2; text-align:center}
+#refresh a{text-decoration:none; display:block}
+#refresh a:hover{color:#787878}
+
+/*게임가이드*/
+#guide_search{float:left; width:100%; }
+#guide_search #search_box{margin-top:35px; margin-left:177px;}
+#guide_search #search_box input{float:left; width:315px; height:25px; padding:5px; border:1px solid #d2d2d2; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+#guide_search #search_box a{float:left; display:block; width:80px; height:37px; background-color:#611173; color:#ffffff; text-align:center; line-height:2.7; text-decoration:none}
+#guide_search p{clear:both; text-align:center; line-height:2.8; color:#d7d7d7}
+#guide_body{float:left; width:100%; margin-top:20px}
+
+#guide_body dl{float:left; width:252px; height:415px; border:1px solid #d2d2d2; border-right:0; }
+#guide_body dl.last{border-right:1px solid #d2d2d2;}
+#guide_body dl dt{height:37px; background-color:#f0f0f0; color:#611173; font-size:14px; font-weight:600; text-align:center; line-height:2.5; border-bottom:1px solid #d2d2d2;}
+#guide_body ul{margin:20px;}
+#guide_body ul li{line-height:2}
+
+/*
+#guide_body th{width:252px; height:37px; background-color:#f0f0f0; border:1px solid #d2d2d2; color:#611173; font-size:14px; font-weight:600; text-align:center; line-height:2.5; box-sizing:border-box;}
+#guide_body td{width:252px; border:1px solid #d2d2d2; box-sizing:border-box;}
+#guide_body ul{margin:20px;}
+#guide_body ul li{line-height:2}
+*/
+
+#result_num{float:left; margin-top:20px; margin-bottom:5px}
+.result_body{clear:both; width:100%; float:left; border-top:1px solid #d2d2d2; }
+.result_body .navi{float:right; font-size:12px; color:#aaaaaa; margin-top:15px;}
+.result_body h4{clear:both; float:left; margin-top:15px}
+.result_body h4 a{font-size:16px; color:#611173; font-weight:600;}
+.result_body .result_text{clear:both; float:left; margin-top:10px; margin-bottom:15px;}
+.result_body .result_text a{display:block; text-align:justify; text-decoration:none}
+.result_body .result_text a:hover{color:#444444}
+#guide_page{clear:both; width:100%; float:left;  text-align:center; padding-top:30px; border-top:1px solid #d2d2d2}
+
+/*원보가이드*/
+#wonbo_guide{width:760px; margin-top:30px;}
+#wonbo_guide #item_shop{width:760px; height:400px; background-color:#695b62; }
+#wonbo_guide h3{float:left; font-size:16px; color:#444444; font-weight:600; }
+#wonbo_guide .item_info{float:left; width:760px; margin-top:5px; margin-bottom:30px}
+#wonbo_guide .item_info h4{width:759px; height:40px; font-size:15px; line-height:2.6; text-indent:15px; background-color:#695b62; color:#fff; }
+#wonbo_guide .item_info .item_box{float:left; width:189px; height:215px; margin-right:1px; margin-bottom:1px}
+#wonbo_guide .item_info .item_box .item{width:189px; height:175px; background-color:#e6e6e6; text-align:center; transition:all 0.4s}
+#wonbo_guide .item_info .item_box .item:hover{background-color:#611173; color:#fff}
+#wonbo_guide .item_info .item_box .item img{margin-top:19px}
+#wonbo_guide .item_info .item_box .item p{margin-top:7px; line-height:1.5}
+#wonbo_guide .item_info .item_box .item p span{color:#ee4e00; font-size:14px; font-weight:600}
+#wonbo_guide .item_info .item_box .wonbo{width:189px; height:40px; background-color:#dad2da; font-size:18px; color:#da3737; font-weight:bold; text-align:center; line-height:2.2}
+
+#wonbo_guide .item_info .item_box2{float:left; width:189px; height:215px; margin-right:1px; margin-bottom:1px; background-color:#e6e6e6}
+#wonbo_guide .item_info .item_box2 .item{width:189px; height:175px; background-color:#e6e6e6; text-align:center; transition:all 0.4s}
+#wonbo_guide .item_info .item_box2 .item:hover{background-color:#ff7900; color:#fff}
+#wonbo_guide .item_info .item_box2 .item img{margin-top:19px}
+#wonbo_guide .item_info .item_box2 .item p{margin-top:7px; line-height:1.5}
+#wonbo_guide .item_info .item_box2 .item p span{color:#611173; font-size:14px; font-weight:600}
+#wonbo_guide .item_info .item_box2 .wonbo{width:189px; height:40px; background-color:#dad2da; font-size:18px; color:#da3737; font-weight:bold; text-align:center; line-height:2.2}
+
+/*원보구매*/
+#wonbo_shop{width:760px; height:400px;}
+#wonbo_shop h3{float:left; font-size:16px; color:#444444; font-weight:600; margin-top:25px}
+#wonbo_shop #wonbo_text{float:left; width:758px; height:89px; margin-top:5px; border:1px solid #d2d2d2}
+#wonbo_shop #wonbo_text p{margin-top:12px; margin-left:15px; line-height:1.7}
+#wonbo_shop #server_select{position:relative; float:left; width:760px; height:52px; border-bottom:1px solid #000; background-color:#e6e6e6; margin-top:30px;}
+#wonbo_shop #server_select .text{float:left; margin-top:15px; margin-left:15px}
+#wonbo_shop #server_select .btn_cash_charge{float:right}
+
+#wonbo_shop #autopay_banner{float:left; width:760px; height:286px; background-color:#695b62; margin-top:1px}
+#wonbo_shop #wonbo_list{float:left; width:760px; margin-bottom:50px}
+#wonbo_shop #wonbo_list td{height:130px; border-bottom:1px solid #d2d2d2}
+#wonbo_shop #wonbo_list td p{float:left; font-weight:600; margin-left:10px}
+#wonbo_shop #wonbo_list td .basic{font-size:20px; font-weight:600; color:#444444}
+#wonbo_shop #wonbo_list td .bonus{font-size:16px; color:#da3737; font-weight:bold}
+#wonbo_shop #wonbo_list td .sum{font-size:20px; margin-top:7px;}
+#wonbo_shop #wonbo_list td.payment img{float:left;}
+#wonbo_shop #wonbo_list td.payment span{float:left; font-size:22px; font-weight:600; color:#f77400; line-height:1.3; margin-left:5px}
+#wonbo_shop #wonbo_list td a{display:block; width:140px; height:52px; color:#fff; text-align:center; font-size:20px; line-height:2.7; font-weight:600; text-decoration:none; background-color:#da3737}
+#wonbo_shop #wonbo_list td a.gift{display:block; width:140px; height:52px; margin-top:1px; color:#fff; text-align:center; font-size:20px; line-height:2.7; font-weight:600; text-decoration:none; background-color:#611173}
+
+
+/*서버창*/
+#sever_popup{position:fixed; top:0; left:0; z-index:10000; width:100%; height:100%;}
+#server_bg{position:absolute; z-index:10000; width:100%; height:100%; background-color:#000; opacity:0.8;}
+#server{position:absolute; z-index:10001; left:50%; top:50%; margin-top:-266px; margin-left:-442px; width:884px; height:531px; background:url(http://img.nolzzang.com/book/images/sever_bg.jpg) 0 0 no-repeat}
+#server #recommend_s h4{position:absolute; top:133px; left:62px; color:#fff; font-size:16px; }
+#server #recommend_s #btn_recommend_sv{position:absolute; top:123px; left:177px; width:137px; height:47px; background:url(http://img.nolzzang.com/book/images/server_big.jpg) 0 0 no-repeat;}
+#server #recommend_s #btn_recommend_sv a{display:block; width:137px; height:47px; text-decoration:none; color:#fff; font-size:18px; font-weight:600; text-align:center; line-height:2.4}
+#server #recommend_s #btn_recommend_sv a span{color:#fefa5e}
+#server #recently_s h4{position:absolute; top:133px; left:345px; color:#fff; font-size:16px; }
+#server #recently_s #btn_recently_sv{position:absolute; top:123px; left:460px; width:137px; height:47px; background:url(http://img.nolzzang.com/book/images/server_big2.jpg) 0 0 no-repeat;}
+#server #recently_s #btn_recently_sv a{display:block; width:137px; height:47px; text-decoration:none; color:#fff; font-size:18px; font-weight:600; text-align:center; line-height:2.4}
+#server #recently_s #btn_recently_sv a span{color:#fefa5e}
+#server #sever_body{position:absolute; top:208px; left:49px;}
+#server #sever_body h4{color:#fff; font-size:16px; text-indent:12px}
+#server #sever_body ul{float:left; width:787px; height:218px; margin-top:4px; overflow:hidden}
+#server #sever_body ul li{width:109px; height:42px; float:left; margin-right:4px; margin-bottom:4px}
+#server #sever_body ul li.new_server a{display:block; width:109px; height:42px; color:#20012c; font-size:16px; font-weight:600; text-align:center; line-height:2.6; text-decoration:none; background:url(http://img.nolzzang.com/book/images/server_bg.gif) 0 0 no-repeat}
+#server #sever_body ul li.old_server a{display:block; width:109px; height:42px; color:#ffffff; font-size:16px; font-weight:600; text-align:center; line-height:2.6; text-decoration:none; background:url(http://img.nolzzang.com/book/images/server_bg2.jpg) 0 0 no-repeat}
+#server #sever_body ul li.last{margin-right:0}
+#server #sever_body #icon_new{position:absolute; left:-20px; top:15px}
+#page_rol{float:left; width:787px; text-align:center; margin-top:18px; }
+#page_rol a{font-size:16px; color:#fff; text-decoration:none; margin-left:20px; margin-right:20px; opacity:0.8}
+#page_rol a:hover{opacity:1}
+#server .close{position:absolute; right:21px; top:21px}
+
+
+#movie_ad{position:fixed; top:0; left:0; z-index:20000; width:100%; height:100%;}
+#movie .btn_close_viewer{position:absolute; right:0; top:-31px}
+#movie{position:absolute; z-index:10001; left:50%; top:50%; margin-top:-235px; margin-left:-410.5px; width:821px; height:470px; background:url(http://img.nolzzang.com/book/images/movie_bg.jpg) 0 0 no-repeat}
+#movie #m_position{position:absolute; top:10px; left:10px}
+#popup_logo{position:absolute; left:50%; margin-left:-61px; top:-40px; z-index:20002}
+.movie_bg{position:absolute; z-index:10000; width:100%; height:100%; background-color:#000; opacity:0.8}
+
+
+/*페이지 넘버*/
+#page{width:760px; text-align:center; margin-bottom:35px}
+.page_num a{display:inline-block; width:33px; height:33px; text-align:center; border:1px solid #d2d2d2; border-right:0; line-height:2.4; box-sizing:border-box; text-decoration:none}
+.page_num a.b0{border:0}
+.page_num a.last{border-right:1px solid #d2d2d2;}
+.page_num a.on{ width:34px; height:35px; color:#611174; border:2px solid #611174; box-sizing:border-box;}
+
+/*검색창*/
+#bbs_search{clear:both; float:left; width:760px; height:90px; position:relative;}
+.input_box{position:absolute; left:273px; width:255px; height:32px; border:1px solid #d0d0d0; margin:0; padding:0}
+.btn{position:absolute; left:535px; width:80px; height:34px; background-color:#8e8e8e; border:0; color:#fff; cursor:pointer; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+
+/*이용약관동의*/
+#header .agreement_text{color:#fff; width:100%; text-align:center}
+#agreement_box{float:left; width:1100px; height:800px; background-color:#fff}
+#agreement_box h2{font-size:18px; color:#444444; font-weight:600; text-align:center; margin-top:60px}
+#agreement_box .agreement_area{width:800px; height:500px; margin-left:130px; margin-top:15px; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; line-height:1.8; padding:20px; overflow-x:hidden}
+#agreement_box .agree_check{text-align:center; margin-top:20px}
+#btn_agree{float:left; width:1100px;}
+#btn_agree  p{margin-left:470px; margin-top:15px}
+#btn_agree .btn_purple{float:left; width:80px; height:34px; margin-left:1px; background-color:#611173; border:0; color:#fff; cursor:pointer; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+#btn_agree .btn_gray{float:left; width:80px; height:34px; margin-left:1px; background-color:#8e8e8e; border:0; color:#fff; cursor:pointer; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+
+
+/*게임해지,철회*/
+#game_termination{float:left; margin-top:50px; margin-bottom:30px}
+#game_termination h3{font-size:16px; color:#444444; font-weight:600}
+#game_termination p{margin-top:10px; line-height:1.8; margin-bottom:50px}
+#termination_footer{float:left; width:760px; border-top:1px solid #d2d2d2}
+.btn_termination{float:left; margin-left:284px;}
+#termination_guide{width:100%; text-align:center; margin-top:50px}
+.btn_termination img{float:left; margin-top:15px;}
+#termination_footer .btn_purple{float:left; width:80px; height:34px; margin-left:1px; background-color:#611173; border:0; color:#fff; cursor:pointer; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+#termination_footer .btn_gray{float:left; width:80px; height:34px; margin-top:15px; margin-left:1px; background-color:#8e8e8e; border:0; color:#fff; cursor:pointer; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+
+
+/*자주묻는질문*/
+#box_qna{float:left; width:760px; margin-top:30px; border-top:1px solid #444444}
+#box_qna li{padding:15px 0 15px 0; border-bottom:1px solid #d2d2d2;}
+#box_qna .page_num{text-align:center; margin-top:35px; margin-bottom:35px;}
+.answer{display: none;}
+.answer_text{ width:700px; margin-left:30px; margin-top:15px; text-align:justify; }
+
+/*문의하기*/
+#submit_table{width:100%}
+#submit_table th{height:50px; border-bottom:1px solid #d2d2d2; text-indent:10px; background-color:#f0f0f0}
+#submit_table td{height:50px; border-bottom:1px solid #d2d2d2; padding-left:10px;}
+#submit_table td .email{height:30px; border:1px solid #d2d2d2}
+#submit_table td .submit_title{width:580px; height:30px; border:1px solid #d2d2d2}
+#submit_table td .submit_body{width:580px; height:300px; margin-top:10px;  margin-bottom:10px; border:1px solid #d2d2d2}
+#submit_footer .btn_purple{float:left; width:80px; height:34px; margin-top:25px; margin-left:1px; background-color:#611173; border:0; color:#fff; cursor:pointer; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+#submit_footer .btn_gray{float:left; width:80px; height:34px; margin-top:25px; margin-left:1px; background-color:#8e8e8e; border:0; color:#fff; cursor:pointer; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+
+/*운영정책*/
+#policy_box{width:100%; border:5px solid #f0f0f0; padding:15px; margin-top:30px; margin-bottom:30px; box-sizing:border-box}
+#policy_box h3{font-size:15px; color:#444444; font-weight:600}
+#policy_box p{font-size:12px; text-align:justify; line-height:1.8}
+#policy_box table{width:100%; margin-top:10px; margin-bottom:10px; border:1px solid #d2d2d2}
+#policy_box table thead th{text-align:center; background-color:#fff8ea; border:1px solid #d2d2d2}
+#policy_box table tbody th{text-align:center; background-color:#f0f0f0; border:1px solid #d2d2d2}
+#policy_box table td{padding-left:5px; padding-right:5px; border:1px solid #d2d2d2; text-align:center}
+#policy_box span{color:#fe3131}
+
+
+/*다음게임 게이트*/
+#gate_body{height:100%; background:url(http://img.nolzzang.com/book/images/bg_footer.gif) center 611px repeat-x }
+#book_daum_gate{float:left; width:100%;  min-width:1000px; height:611px; background:url(http://img.nolzzang.com/book/images/gate_bg.jpg) center 0 no-repeat}
+#gate_btn{text-align:center; margin-top:458px}
+#gate_info_text{text-align:center; margin-top:15px;}
+#gateFooter{float:left; width:100%; min-width:1000px; }
+#gateFooter .copyright{text-align:center; margin-top:55px; font:12px Dotum, Gulim, Tahoma, Arial, sans-serif; font-weight: normal; color:#afafaf}
+
+
+/*구매 및 선물*/
+#day_select{float:left; position:relative; width:758px; height:50px; margin-top:30px; border:1px solid #d2d2d2}
+#day_select_box{margin-top:8px; margin-left:15px}
+#day_select_box .btn_day_search{width:70px; height:34px; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; color:#fff; border:0; background-color:#611173; cursor:pointer}
+#gift_popup{width:500px; height:470px; overflow:hidden; background-color:#fff}
+#gift_popup #popup_title{float:left; width:500px; height:50px; background-color:#611173}
+#gift_popup #popup_title h2{float:left; color:#fff; font-size:18px; margin-top:10px; margin-left:10px; margin-top:9px;}
+#gift_popup #popup_title .popup_close{float:right; margin-top:12px; margin-right:15px}
+#gift_info{float:left; width:464px; height:60px; background-color:#e6e6e6; margin-left:15px; margin-top:15px; border:3px solid #994baa}
+#gift_info p{margin-top:7px; margin-left:7px; line-height:1.7}
+#gift_info p span{color:#e80000}
+#gift_popup #character_select{float:left; width:470px; margin-left:15px; margin-top:30px;}
+#gift_popup #character_select h3{float:left; font-size:14px;  color:#000}
+#gift_popup #character_select_box{float:left; width:468px; height:50px; margin-top:10px; border:1px solid #994baa}
+#gift_popup #character_select_box th{width:100px; background-color:#f3e2f7; text-align:center; color:#000}
+#gift_popup #character_select_box td{width:368px}
+#gift_popup #character_select_box .character_name{width:170px; height:26px; padding-left:5px; padding-right:5px; margin-left:7px}
+#gift_popup #character_select_box .btn_character_check{width:80px; height:30px; color:#444444; border:1px solid #d2d2d2; background-color:#e6e6e6; cursor:pointer}
+#gift_guide{clear:both; float:left; margin-left:15px; margin-top:10px}
+#gift_popup #btn_gift{float:left; width:470px; margin-left:15px; margin-top:50px; border-top:1px solid #d2d2d2}
+#gift_popup #btn_gift p{text-align:center; margin-top:25px}
+#gift_popup #btn_gift .gift{width:80px; height:34px; color:#e8c2f0; border:0; background-color:#611173; cursor:pointer}
+#gift_popup #btn_gift .cancel{width:80px; height:34px; color:#444444; border:0; background-color:#e6e6e6; cursor:pointer}
+
+
+/*footer*/
+#footer{float:left; width:100%; background-color:#282828; margin-top:50px}
+#ft_contents{position:relative; width:1100px; height:240px; margin:auto; padding-bottom:20px;}
+#ft_contents h3{float:left; margin-top:30px;}
+#ft_contents ul{position:absolute; top:30px; left:113px}
+#ft_contents ul li{float:left; margin-left:12px; padding-right:12px; background:url(http://img.nolzzang.com/book/images/vertical_line2.jpg) right 4px no-repeat}
+#ft_contents ul li.last{background:none}
+#ft_contents ul li a{color:#bdbdbd; text-decoration:none}
+#company_info{position:absolute; top:70px; left:124px; font-size:11px; color:#888888; letter-spacing:-0.3px}
+#company_info .copyright{font-size:10px; margin-top:5px; text-transform:uppercase; color:#646464}
+#rating{position:absolute; top:120px; right:0;}
+#footer_mark{position:absolute; top:190px; right:0;}
+#company_info .channeling_text{margin-top:20px}
+
+
+/*poker*/
+*{-webkit-text-size-adjust:none}
+#poker_wrap{width:100%;}
+#poker_wrap h2{display:none}
+#poker_top{position:fixed; z-index:99; width:100%; min-width:1100px; height:70px; background-color:#4b0a64; border-bottom:1px solid #78478b}
+#poker_top h1{float:left;}
+#poker_top #poker_gng{width:585px; margin:auto;}
+#poker_top #poker_gng li{float:left; width:195px}
+#poker_top #poker_gng li a{display:block; width:195px; height:70px;}
+#poker_top #poker_gng li.poker_menu01 a{background:url(../images/poker_btn01.jpg) 0 0 no-repeat; text-indent:-99999px}
+#poker_top #poker_gng li.poker_menu02 a{background:url(../images/poker_btn02.jpg) 0 0 no-repeat; text-indent:-99999px}
+#poker_top #poker_gng li.poker_menu03 a{background:url(../images/poker_btn03.jpg) 0 0 no-repeat; text-indent:-99999px}
+#poker_top #poker_gng li a:hover{background-position:0 -70px}
+#poker_top #poker_gng li.on a{background-position:0 -70px}
+#poker_top #util_menu{float:right; margin-top:23px; margin-right:10px}
+#poker_top #util_menu a{float:left;}
+
+#poker_contents{float:left; width:100%; }
+#poker_contents h2{display:none}
+#poker1{float:left; width:100%; min-width:1100px; height:909px; background:url(../images/poker_img01.jpg) center 0 no-repeat; margin-top:70px;}
+#poker1 #poker_download{position:relative; top:780px; left:17px; width:1100px; margin:0 auto}
+#poker1 #poker_download .phone_num{float:left; width:108px; height:32px; margin-left:1px; padding-left:5px; padding-right:5px; border:0}
+#poker1 #poker_download .m_left7{margin-left:7px}
+
+.poker_ani{position:absolute; top:0px; left:50%; margin-left:-950px; z-index:9; width:100%; min-width:1900px}
+#ani{position:absolute; z-index:9;  top:30px; left:-390px;}
+#ani2{position:absolute; z-index:9;  top:530px; right:-372px}
+#ani3{position:absolute; z-index:9;  top:70px; left:-246px}
+#ani4{position:absolute; z-index:9;  top:527px; right:-262px}
+
+#poker_contents #poker2{position:relative; float:left; width:100%; min-width:1100px; height:911px; background:url(../images/poker_img02.jpg) center 0 no-repeat; overflow:hidden}
+#poker_contents #poker_img{position:relative; z-index:11; top:255px; width:617px; height:325px; margin:0 auto; overflow:hidden}
+#poker_contents #poker_img .poker_img_box li{position:absolute;}
+#poker_contents #poker_img_control{position:relative; z-index:11; width:1100px; margin:0 auto; margin-top:25px}
+#poker_contents #poker_img_control .poker_img_left{float:left; width:51px; height:101px; background:url(../images/poker_btn_left.png) 0 0 no-repeat; text-indent:-99999px;}
+#poker_contents #poker_img_control .poker_img_right{float:right; width:51px; height:101px; background:url(../images/poker_btn_right.png) 0 0 no-repeat; text-indent:-99999px;}
+#poker_contents #poker_img_control a:hover{background-position:0 -101px}
+#poker_contents #poker_bg{position:absolute; z-index:10; top:0; width:1100px; left:50%; margin-left:-550px }
+
+#poker_contents #poker3{position:relative; float:left; width:100%; min-width:1100px; height:916px; background:url(../images/poker_img03.jpg) center 0 no-repeat; overflow:hidden}
+#poker_join_info{position:relative; z-index:10; width:1100px; margin:0 auto;}
+
+#poker_contents #poker4{float:left; width:100%; min-width:1100px; height:1400px; background-color:#3d0556}
+#poker_info{width:1100px; margin:0 auto; }
+
+#poker_mobile{float:left; width:100%; height:100%; background:url(../images/poker_mobile_bg.jpg) center 0 no-repeat; background-size:100%}
+#poker_mobile #poker_img{float:left; width:80%; height:100%; margin-left:10%; margin-top:77%; overflow:hidden; border:3px solid #ffe31c; box-sizing:border-box}
+#poker_mobile #poker_img .poker_img_box li{float:left; width:100%; height:100%;}
+#poker_mobile #poker_img_control{float:left; width:100%; margin:0 auto; position:absolute; top:0; margin-top:94%;}
+#poker_mobile #poker_img_control .poker_img_left{float:left; width:14px; height:27px; margin-left:7px; background:url(../images/poker_btn_left.png) 0 0 no-repeat; text-indent:-99999px; background-size:100%}
+#poker_mobile #poker_img_control .poker_img_right{float:right; width:14px; height:27px; margin-right:7px; background:url(../images/poker_btn_right.png) 0 0 no-repeat; text-indent:-99999px; background-size:100%}
+#poker_mobile #poker_img_control a:hover{background-position:0 -27px}
+#btn_poker_download{position:fixed; bottom:10px; z-index:99; width:100%}
+#btn_poker_download a{float:left; margin-left:4.5%; margin-top:15px}
+
+#poker_footer{clear:both; float:left; width:100%; font-size:11px; line-height:1.3; margin-top:20px}
+#poker_footer p{margin-left:15px; margin-right:15px; margin-bottom:70px}
+
+
+/*오픈이벤트동영상*/
+.vid{width:100%; height:100%; position:absolute; top:32px; left:-40px; overflow:hidden}
+.vid video{width:auto; height:auto; min-width:100%; min-height:100%}
+#video_top_right{position:absolute;  z-index:103; right:40px; top:67px}
+#title{position:absolute;  z-index:102;  width:100%; text-align:center; margin-top:145px}
+#btn_open_event{position:absolute; bottom:100px; z-index:102; width:100%; text-align:center;}
+#patten{position:absolute; z-index:100; width:100%; height:100%; background:url(http://img.nolzzang.com/book/images/bg_patten_01.png) 0 0 repeat}
+
+#open_landing_top{float:left; position:absolute; top:45px; z-index:120; width:100%; min-width:1100px; height:75px; background-color:#4b0a64}
+#open_landing_top.sticky {position:fixed; top:0;}
+#open_landing_top #top_position{width:1100px; margin:0 auto}
+#open_landing_top #top_position .book_home{float:left;}
+#open_landing_top #top_position #open_event_menu{float:left;}
+#open_landing_top #top_position #open_event_menu li{float:left;}
+#open_landing_top #top_position #open_event_menu li a{display:block;}
+#open_landing_top #top_position #open_event_menu li.event_menu01 a{width:158px; height:75px; background:url(http://img.nolzzang.com/book/images/landing/event_landing/event_top_btn01.jpg) 0 0 no-repeat; text-indent:-99999px}
+#open_landing_top #top_position #open_event_menu li.event_menu02 a{width:161px; height:75px; background:url(http://img.nolzzang.com/book/images/landing/event_landing/event_top_btn02.jpg) 0 0 no-repeat; text-indent:-99999px}
+#open_landing_top #top_position #open_event_menu li.event_menu03 a{width:158px; height:75px; background:url(http://img.nolzzang.com/book/images/landing/event_landing/event_top_btn03.jpg) 0 0 no-repeat; text-indent:-99999px}
+#open_landing_top #top_position #open_event_menu li.event_menu04 a{width:158px; height:75px; background:url(http://img.nolzzang.com/book/images/landing/event_landing/event_top_btn04.jpg) 0 0 no-repeat; text-indent:-99999px}
+#open_landing_top #top_position #open_event_menu li.event_menu05 a{width:158px; height:75px; background:url(http://img.nolzzang.com/book/images/landing/event_landing/event_top_btn05.jpg) 0 0 no-repeat; text-indent:-99999px}
+#open_landing_top #top_position #open_event_menu li.event_menu06 a{width:158px; height:75px; background:url(http://img.nolzzang.com/book/images/landing/event_landing/event_top_btn06.jpg) 0 0 no-repeat; text-indent:-99999px}
+#open_landing_top #top_position #open_event_menu li a:hover{background-position:0 -75px}
+#open_landing_top #top_position #open_event_menu li.on a{background-position:0 -75px}
+#move_btn{clear:both; float:right}
+#move_btn .go_home{float:left; margin-top:10px}
+#move_btn .landing_close{float:left; margin-top:10px}
+
+#landing_movie{float:left; margin-top:45px}
+#landing_contents{float:left; position:relative; top:100%; width:100%;}
+#landing_contents #event01{float:left; position:relative; z-index:110; width:100%; max-width:1920px; min-width:1100px; height:1059px;  background:url(http://img.nolzzang.com/book/images/landing/event_landing/event01_ranking_bg.jpg) center 0 no-repeat; }
+#landing_contents #event02{float:left; position:relative; z-index:110; width:100%; max-width:1920px; min-width:1100px; height:969px;  background:url(http://img.nolzzang.com/book/images/landing/event_landing/event02_contact_bg.jpg) center 0 no-repeat; }
+#landing_contents #event03{float:left; position:relative; z-index:110; width:100%; max-width:1920px; min-width:1100px; height:1197px;  background:url(http://img.nolzzang.com/book/images/landing/event_landing/event03_achievement_bg.jpg) center 0 no-repeat; }
+#landing_contents #event04{float:left; position:relative; z-index:110; width:100%; max-width:1920px; min-width:1100px; height:960px;  background:url(http://img.nolzzang.com/book/images/landing/event_landing/event04_wonbo_bg.jpg) center 0 no-repeat; }
+#landing_contents #event05{float:left; position:relative; z-index:110; width:100%; max-width:1920px; min-width:1100px; height:1080px;  background:url(http://img.nolzzang.com/book/images/landing/event_landing/event05_lotto_bg.jpg) center 0 no-repeat; }
+#landing_contents #event06{float:left; position:relative; z-index:110; width:100%; max-width:1920px; min-width:1100px; height:1029px;  background:url(http://img.nolzzang.com/book/images/landing/event_landing/event06_level_bg.jpg) center 0 no-repeat; }
+.event_position{width:1100px; margin:auto}
+
+
+/* 실명인증레이어 */
+#nverify {position: absolute;margin:0 auto;float:left;z-index: 300; display: none; background-color: #fff; width:745px; height:330px;background:url('http://img.nolzzang.com/1000king/images/confirm_bg_330.jpg?ver=1') no-repeat;}
+#nbox {position:relative;width:384px;float:right;margin:10px 10px 0 0}
+#nclose {width:25px; heigth:24px;float:right;margin:15px 15px 0 0;cursor:pointer}
+#form_box {clear:right;margin:0 0 0 10px;padding-top:55px;}
+#form_box table th {font-weight:bold;color:#8f807b}
+#form_box table td {padding:1px 0}
+#form_box table .nname{width:180px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#form_box table .birthday{width:49px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#form_box table .birthday2{width:28px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#form_box table .email {width:73px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#nbt {margin-top:10px;text-align:center;width:100%;}
+#form_box2 {clear:right;margin:0 0 0 10px;padding-top:75px;}
+#form_box2 table th {font-weight:bold;color:#8f807b}
+#form_box2 table td {padding:5px 0}
+#form_box2 table .nname{width:180px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#form_box2 table .birthday{width:49px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#form_box2 table .birthday2{width:28px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#form_box2 table .email {width:73px;height:14px;border:1px solid #bfbfbf; padding:4px;color:#000}
+#nbt2 {margin-top:10px;text-align:center;width:100%;}
+
+#overlay { position: fixed; top: 0; left: 0; z-index: 1; width: 100%; height: 100%; background-color: #464646; opacity: 0.8 }
+
+
+/*폰트사이즈설정*/
+.font_s12{font-size:12px}
+.font_s13{font-size:13px}
+.font_s14{font-size:14px}
+.font_s15{font-size:15px}
+.font_s16{font-size:16px}
+
+/*폰트컬러설정*/
+.font_purple1{color:#e8c2f0}
+.font_purple2{color:#c1afcb}
+.font_purple3{color:#ecafff}
+.font_purple4{color:#a03fb6}
+.font_purple5{color:#611173}
+
+.font_gray1{color:#d2d2d2}
+.font_gray2{color:#aaaaaa}
+.font_gray3{color:#444444}
+
+.font_white{color:#ffffff}
+.font_black{color:#000000}
+
+.font_orange1{color:#ff7900}
+
+.font_yellow1{color:#ffd800}
+
+.font_red1{color:#ff6363}
+.font_red2{color:#fe3131}
+.font_red3{color:#d30000}
+
+
+/*이벤트 팝업*/
+#event_popup_form{width:455px; height:625px; overflow:hidden}
+#event_popup_form #event_popup_top{position:relative; width:455px; height:594px; background:url(http://img.nolzzang.com/book/images/popup/event_popup_bg.jpg) 0 0 no-repeat}
+#event_popup_form #event_popup_top .popup_title{position:absolute; top:96px; width:455px; text-align:center; font-size:18px; font-weight:bold; color:#fff600}
+#event_popup_form #event_popup_top .popup_body{position:absolute; top:170px; width:395px; height:310px; overflow-y:auto; color:#fff; margin-left:30px; text-align:center; font-size:14px;}
+#event_popup_form #event_popup_top .btn_event_go{position:absolute; left:147px; bottom:20px; text-align:center;}
+#event_popup_form #popup_footer{width:455px; height:31px; font-size:11px; background:url(http://img.nolzzang.com/book/images/popup/popup_footer.jpg) 0 0 no-repeat}
+#event_popup_form #popup_footer #close{float:left; margin-top:4px; margin-left:10px}
+#event_popup_form #popup_footer a{float:right; margin-right:6px}
+
+/*공지사항 팝업*/
+#notice_popup_form{width:455px; height:625px; overflow:hidden}
+#notice_popup_form #notice_popup_top{position:relative; width:455px; height:594px; background:url(http://img.nolzzang.com/book/images/popup/notice_popup_bg.jpg) 0 0 no-repeat}
+#notice_popup_form #notice_popup_top .popup_title{position:absolute; top:96px; width:455px; text-align:center; font-size:18px; font-weight:bold; color:#fff600}
+#notice_popup_form #notice_popup_top .popup_body{position:absolute; top:180px; width:395px; height:380px; overflow-y:auto; color:#fff; margin-left:30px; text-align:center; font-size:14px; }
+#notice_popup_form #popup_footer{width:455px; height:31px; font-size:11px; background:url(http://img.nolzzang.com/book/images/popup/popup_footer.jpg) 0 0 no-repeat}
+#notice_popup_form #popup_footer #close{float:left; margin-top:4px; margin-left:10px}
+#notice_popup_form #popup_footer a{float:right; margin-right:6px}
+
+/*기타 팝업*/
+#etc_popup_form{width:455px; height:480px; overflow:hidden}
+#etc_popup_form #etc_popup_top{position:relative; width:455px; height:449px; background:url(http://img.nolzzang.com/book/images/popup/etc_popup_bg.jpg) 0 0 no-repeat}
+#etc_popup_form #etc_popup_top .popup_title{position:absolute; top:57px; width:455px; text-align:center; font-size:18px; font-weight:bold; color:#fff600}
+#etc_popup_form #etc_popup_top .popup_body{position:absolute; top:140px; width:395px; height:270px; overflow-y:auto; color:#361f1a; margin-left:30px; text-align:center; font-size:14px;}
+#etc_popup_form #popup_footer{width:455px; height:31px; font-size:11px; background:url(http://img.nolzzang.com/book/images/popup/popup_footer.jpg) 0 0 no-repeat}
+#etc_popup_form #popup_footer #close{float:left; margin-top:4px; margin-left:10px}
+#etc_popup_form #popup_footer a{float:right; margin-right:6px}
+
+
+/*제휴문의*/
+#jehu { width:400px;margin:0 auto;position: absolute; float: left; z-index: 9999; display: none;background:#ffffff;padding:20px;border:2px solid #999999}
+#jehu_in { border-top:2px solid #666666; background:#F2F2F2;margin-top:5px;padding:10px}
+#jehu_in .white { background:#ffffff;padding:15px}
+table.jehu_t { width:94%;border-collapse:collapse; margin:0 auto}
+table.jehu_t th { background:url(http://img.nolzzang.com/aggro/images/SM_icon_02.gif) no-repeat 0 8px;width:100px;padding-left:9px}
+table.jehu_t td { text-align:left;}
+
+
+/*점검중*/
+#inspection{width:100%; min-width:1100px; height:730px; background:url(http://img.nolzzang.com/book/images/inspection.jpg) center 0 no-repeat; text-indent:-99999px;}
+
+/*네이버 캐쉬 이벤트*/
+#naver_cash_event{width:100%; min-width:1100px; height:980px; background:url("http://img.nolzzang.com/book/images/event/naver_cash/naver_cash_event.jpg") center 0 no-repeat}
+#naver_cash_event #nc_event_box{position:relative; width:1100px; height:980px; overflow:hidden; margin:0 auto;}
+#naver_cash_event .server_select{position:absolute; top:474px; left:442px; width:216px; height:35px; border:0}
+#naver_cash_event #event_button{position:absolute; top:559px; left:262px; width:575px;}
+#naver_cash_event #event_button li{float:left}
+#naver_cash_event #event_button .naver_cash a{display:block; width:273px; height:169px; background:url("http://img.nolzzang.com/book/images/event/naver_cash/btn_cash.jpg") 0 0 no-repeat; text-indent:-99999px;}
+#naver_cash_event #event_button .sycee a{display:block; width:273px; height:169px; background:url("http://img.nolzzang.com/book/images/event/naver_cash/btn_sycee.jpg") 0 0 no-repeat; text-indent:-99999px;}
+#naver_cash_event #event_button li a:hover{background-position:0 -169px}
+#naver_cash_event #naver_cash_event_footer{width:100%; height:200px; background-color:#000; border-top:1px solid #333333; text-align:center}
+
+/*무한융단 아이템지원 이벤트*/
+#item_event{width:100%; min-width:1100px; height:922px; background:url("http://img.nolzzang.com/book/images/event/itemevent/item_event.jpg") center 0 no-repeat; cursor:pointer}
+#item_event #nc_event_box{position:relative; width:1100px; height:922px; overflow:hidden; margin:0 auto;}
+#item_event #nc_event_box a{position:absolute; right:0; z-index:999;}
+#item_event #naver_cash_event_footer{width:100%; height:200px; background-color:#000; border-top:1px solid #333333; text-align:center}
+
+/*업데이트이벤트 1차*/
+#update_top_menu{ position:absolute; width:100%; min-width:1103px; margin:0 auto; overflow:hidden}
+#update_top_menu #logo{float:left; margin-left:15px;}
+#update_top_menu #top_btn{float:right; margin-top:24px; margin-right:15px;}
+#update1st_contents{color:#fff; min-width:1103px; text-align:center;}
+#top_img {width:100%; height:707px; background:url(http://img.nolzzang.com/book/images/event/update_1st/top_img.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update_contents01 {width:100%; height:769px; margin-top:100px; background:url(http://img.nolzzang.com/book/images/event/update_1st/update_img01.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update_contents02 {width:100%; height:1070px; background:url(http://img.nolzzang.com/book/images/event/update_1st/update_img02.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update_contents03 {width:100%; height:1065px; background:url(http://img.nolzzang.com/book/images/event/update_1st/update_img03.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update_contents04 {width:100%; height:875px; background:url(http://img.nolzzang.com/book/images/event/update_1st/update_img04.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update_contents05 {width:100%; height:1016px; background:url(http://img.nolzzang.com/book/images/event/update_1st/update_img05.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update_contents06 {width:100%; height:1065px; background:url(http://img.nolzzang.com/book/images/event/update_1st/update_img06.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update_contents07 {width:100%; height:1098px; background:url(http://img.nolzzang.com/book/images/event/update_1st/update_img07.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update_contents08 {width:100%; height:994px; background:url(http://img.nolzzang.com/book/images/event/update_1st/update_img08.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update_1st .dot{position:fixed; z-index:106; right:19px; top:50%; margin-top:-75px}
+#update_1st .dot li{background:url(http://img.nolzzang.com/book/images/event/update_1st/btn.png) no-repeat; width:20px; height:20px; margin:5px; cursor:pointer}
+#update_1st .dot li.on{background-position:0 -20px}
+#update_tab_box{position:absolute; top:752px; width:100%; height:102px; background-color:#551107}
+#update_tab_box ul{width:1103px; margin:0 auto}
+#update_tab_box ul li{float:left; width:135px; height:100px; border:1px solid #602119; border-right:0}
+#update_tab_box ul li.end{border-right:1px solid #602119;}
+#update_tab_box ul li a{text-indent:-99999px}
+#update_tab_box ul li.update_tab01 a{display:block; width:135px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_1st/tab_menu01.jpg) no-repeat 0 0}
+#update_tab_box ul li.update_tab02 a{display:block; width:135px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_1st/tab_menu02.jpg) no-repeat 0 0}
+#update_tab_box ul li.update_tab03 a{display:block; width:135px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_1st/tab_menu03.jpg) no-repeat 0 0}
+#update_tab_box ul li.update_tab04 a{display:block; width:135px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_1st/tab_menu04.jpg) no-repeat 0 0}
+#update_tab_box ul li.update_tab05 a{display:block; width:135px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_1st/tab_menu05.jpg) no-repeat 0 0}
+#update_tab_box ul li.update_tab06 a{display:block; width:135px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_1st/tab_menu06.jpg) no-repeat 0 0}
+#update_tab_box ul li.update_tab07 a{display:block; width:135px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_1st/tab_menu07.jpg) no-repeat 0 0}
+#update_tab_box ul li.update_tab08 a{display:block; width:135px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_1st/tab_menu08.jpg) no-repeat 0 0}
+#update_tab_box ul li a:hover{background-position:0 -100px}
+#update_tab_box ul li.on a{background-position:0 -100px}
+#update_tab_box.sticky {position:fixed; top:0;}
+#update_1st .btn_top{position:fixed; z-index:106; right:10px; top:50%; margin-top:140px;}
+
+
+
+/*업데이트이벤트 2차*/
+#update_top_menu{ position:absolute; width:100%; min-width:1103px; margin:0 auto; overflow:hidden}
+#update_top_menu #logo{float:left; margin-left:15px;}
+#update_top_menu #top_btn{float:right; margin-top:24px; margin-right:15px;}
+#update2st_contents{color:#fff; min-width:1103px; text-align:center;}
+#top_img2 {width:100%; height:607px; background:url(http://img.nolzzang.com/book/images/event/update_2st/top_img.jpg) no-repeat center 0; text-align:center; text-indent:-99999px; min-width:1103px}
+#update2_contents01 {width:100%; height:977px; margin-top:100px; background:url(http://img.nolzzang.com/book/images/event/update_2st/update_img01.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update2_contents02 {width:100%; height:911px; background:url(http://img.nolzzang.com/book/images/event/update_2st/update_img02.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update2_contents03 {width:100%; height:977px; background:url(http://img.nolzzang.com/book/images/event/update_2st/update_img03.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update2_contents04 {width:100%; height:950px; background:url(http://img.nolzzang.com/book/images/event/update_2st/update_img04.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update2_contents05 {width:100%; height:1022px; background:url(http://img.nolzzang.com/book/images/event/update_2st/update_img05.jpg) no-repeat center 0; text-align:center; text-indent:-99999px}
+#update_2st .dot{position:fixed; z-index:106; right:19px; top:50%; margin-top:-75px}
+#update_2st .dot li{background:url(http://img.nolzzang.com/book/images/event/update_2st/btn.png) no-repeat; width:20px; height:20px; margin:5px; cursor:pointer}
+#update_2st .dot li.on{background-position:0 -20px}
+#update2_tab_box{position:absolute; top:652px; width:100%; height:100px; background-color:#0a397a}
+#update2_tab_box ul{width:1103px; margin:0 auto}
+#update2_tab_box ul li{float:left; width:220px; height:100px;  border-right:0}
+#update2_tab_box ul li.end{border-right:1px solid #602119;}
+#update2_tab_box ul li a{text-indent:-99999px}
+#update2_tab_box ul li.update_tab01 a{display:block; width:220px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_2st/tab_menu01.jpg) no-repeat 0 0}
+#update2_tab_box ul li.update_tab02 a{display:block; width:220px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_2st/tab_menu02.jpg) no-repeat 0 0}
+#update2_tab_box ul li.update_tab03 a{display:block; width:220px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_2st/tab_menu03.jpg) no-repeat 0 0}
+#update2_tab_box ul li.update_tab04 a{display:block; width:220px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_2st/tab_menu04.jpg) no-repeat 0 0}
+#update2_tab_box ul li.update_tab05 a{display:block; width:223px; height:100px; background:url(http://img.nolzzang.com/book/images/event/update_2st/tab_menu05.jpg) no-repeat 0 0}
+#update2_tab_box ul li a:hover{background-position:0 -100px}
+#update2_tab_box ul li.on a{background-position:0 -100px}
+#update2_tab_box.sticky {position:fixed; top:0;}
+#update_2st .btn_top{position:fixed; z-index:106; right:10px; top:50%; margin-top:70px;}
+
+
+
+/*업데이트이벤트 3차*/
+#update_top_menu{ position:absolute; width:100%; min-width:1103px; margin:0 auto; overflow:hidden}
+#update_top_menu #logo{float:left; margin-left:15px;}
+#update_top_menu #top_btn{float:right; margin-top:24px; margin-right:15px;}
+#update3st_contents{color:#fff; min-width:1103px; text-align:center;}
+#top_img3 {width:100%; height:816px; background:url(http://img.nolzzang.com/book/images/event/update_345st/top3_img.jpg) no-repeat center 0; text-align:center; text-indent:-99999px; min-width:1103px}
+
+/*업데이트이벤트 4차*/
+#update_top_menu{ position:absolute; width:100%; min-width:1103px; margin:0 auto; overflow:hidden}
+#update_top_menu #logo{float:left; margin-left:15px;}
+#update_top_menu #top_btn{float:right; margin-top:24px; margin-right:15px;}
+#update4st_contents{color:#fff; min-width:1103px; text-align:center;}
+#top_img4 {width:100%; height:816px; background:url(http://img.nolzzang.com/book/images/event/update_345st/top4_img.jpg) no-repeat center 0; text-align:center; text-indent:-99999px; min-width:1103px}
+
+/*업데이트이벤트 5차*/
+#update_top_menu{ position:absolute; width:100%; min-width:1103px; margin:0 auto; overflow:hidden}
+#update_top_menu #logo{float:left; margin-left:15px;}
+#update_top_menu #top_btn{float:right; margin-top:24px; margin-right:15px;}
+#update5st_contents{color:#fff; min-width:1103px; text-align:center;}
+#top_img5 {width:100%; height:816px; background:url(http://img.nolzzang.com/book/images/event/update_345st/top5_img.jpg) no-repeat center 0; text-align:center; text-indent:-99999px; min-width:1103px}
+
+/*업데이트이벤트 6차*/
+#update_top_menu{ position:absolute; width:100%; min-width:1103px; margin:0 auto; overflow:hidden}
+#update_top_menu #logo{float:left; margin-left:15px;}
+#update_top_menu #top_btn{float:right; margin-top:24px; margin-right:15px;}
+#update6st_contents{color:#fff; min-width:1103px; text-align:center;}
+#top_img6 {width:100%; height:793px; background:url(http://img.nolzzang.com/book/images/event/update_67st/top6_img.jpg) no-repeat center 0; text-align:center; text-indent:-99999px; min-width:1103px}
+
+/*업데이트이벤트 7차*/
+#update_top_menu{ position:absolute; width:100%; min-width:1103px; margin:0 auto; overflow:hidden}
+#update_top_menu #logo{float:left; margin-left:15px;}
+#update_top_menu #top_btn{float:right; margin-top:24px; margin-right:15px;}
+#update7st_contents{color:#fff; min-width:1103px; text-align:center;}
+#top_img7 {width:100%; height:793px; background:url(http://img.nolzzang.com/book/images/event/update_67st/top7_img.jpg) no-repeat center 0; text-align:center; text-indent:-99999px; min-width:1103px}
+
+
+/*업데이트이벤트 8차*/
+#update_top_menu{ position:absolute; width:100%; min-width:1103px; margin:0 auto; overflow:hidden}
+#update_top_menu #logo{float:left; margin-left:15px;}
+#update_top_menu #top_btn{float:right; margin-top:24px; margin-right:15px;}
+#update8st_contents{color:#fff; min-width:1103px; text-align:center;}
+#top_img8 {width:100%; height:793px; background:url(http://img.nolzzang.com/book/images/event/update_8/top_img.jpg) no-repeat center 0; text-align:center; text-indent:-99999px; min-width:1103px}

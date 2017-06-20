@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+ <head>
+	<title>천왕온라인 :: 신나는 게임포털 놀짱 NolZzang</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Cache-Control" content="No-Cache"/>
+	<meta http-equiv="Pragma" content="No-Cache"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="imagetoolbar" content="false"/>
+	<meta name="author" content="놀짱"/>
+	<meta name="description" content=" 신나는 게임포털 놀짱"/>
+	<meta name="keywords" content=" 게임,겜,게임포털,웹게임,성인,놀짱,놀짱닷컴,온라인,온라인웹게임,천왕"/>
+	<meta name="classification" content="웹게임,놀짱"/>
+<link rel="stylesheet" href="http://static.nolzzang.com/aggro/css/reset.css" type="text/css"/>
+<link rel="stylesheet" href="http://static.nolzzang.com/aggro/css/layout.css?ver=20160321224938" type="text/css"/>
+<!-- <link rel="stylesheet" href="../src/css/layout.css" type="text/css"/> -->
+
+	<style>
+		#server{position:relative; width:890px; height:527px; background:url(http://img.nolzzang.com/aggro/images/server_bg.jpg) 0 0 no-repeat}
+		#server #close {position: absolute; top: 27px; left: 810px;}
+		#server #recommend {position: absolute; top: 52px; left: 598px;}
+		#server #contact {position: absolute; top: 108px; left: 598px;}
+		#server-area {position: absolute; top: 133px; left: 82px}
+		#server-area ul {position: absolute; height: 140px; width: 290px; top: 0px;}
+		#server-area ul:after {content: ""; display: block; clear: both;}
+		#server-area li {float: left; height: 67px;}
+		#server-area li.nth-2 {margin-left: 3px;}
+		#server-area li a {display: block; width: 100%; height: 100%;}
+	</style>
+ </head>
+
+ <body>
+ 	<div id="server-bg"></div>
+
+  <div id="server" style="position: absolute; float: left; z-index:9999; top:226px; left:50%; margin-left:-445px">
+	<div id="close">
+		<a href="javascript:common.out('#server')"><img src="http://img.nolzzang.com/aggro/images/server_cls.png" alt="닫기"></a>
+	</div>
+	<!----추천서버------>
+	<div id="recommend">
+		<a class="c1"><img src="http://img.nolzzang.com/aggro/images/btn_server_re01.png" alt="제우스" onclick="game.start('1', 'kds6861')" style="cursor:pointer"></a>
+	</div>
+	<div id="contact">
+		<a onclick="game.start('1', 'kds6861')" style="cursor:pointer"><img src="http://img.nolzzang.com/aggro/images/btn_server_b01.png" alt="최근접속서버" onerror="this.src='http://img.nolzzang.com/aggro/images/btn_server_b01.png';" style="width:193px; height:49px;"></a>
+	</div>
+	<div id="server_list_box">
+	 	<!-- 추가영역 -->
+		<div id="server-area">
+			<ul>
+				<li class="nth-1"><a href=""><img src="http://img.nolzzang.com/aggro/images/server_origin.png" alt="기존서버"/></a></li>
+				<li class="nth-2"><a href=""><img src="http://img.nolzzang.com/aggro/images/server_new.png" alt="특별서버"/></a></li>
+			</ul>
+		</div>
+	 	<!-- 추가영역 끝-->
+		<div id="btn_server">
+			<ul>
+				<li onclick="game.start('1', 'kds6861')" style="cursor:pointer"><a class="c1"><img src="http://img.nolzzang.com/aggro/images/btn_server01.png" border="0" alt="제우스서버"></a></li>
+				<li onclick="game.start('1', 'kds6861')" style="cursor:pointer"><a class="c1"><img src="http://img.nolzzang.com/aggro/images/btn_server01.png" border="0" alt="제우스서버"></a></li>
+				<li onclick="game.start('1', 'kds6861')" style="cursor:pointer"><a class="c1"><img src="http://img.nolzzang.com/aggro/images/btn_server01.png" border="0" alt="제우스서버"></a></li>
+				<li onclick="game.start('1', 'kds6861')" style="cursor:pointer"><a class="c1"><img src="http://img.nolzzang.com/aggro/images/btn_server01.png" border="0" alt="제우스서버"></a></li>
+				<li onclick="game.start('1', 'kds6861')" style="cursor:pointer"><a class="c1"><img src="http://img.nolzzang.com/aggro/images/btn_server01.png" border="0" alt="제우스서버"></a></li>
+			</ul>
+		</div>
+		<div id="rolling">
+			<p><a href="#">&lt;</a><a href="#">1</a><a href="#">&gt;</a></p>
+		</div>
+	</div>
+	<form id="sv" target="_blank" method="post">
+		<input type="hidden" name="gurl" id="gurl" value="">
+		<input type="hidden" name="server" id="servers" value="">
+		<input type="hidden" name="userid" id="userid" value="kds6861">
+	</form>
+</div>
+ </body>
+</html>
